@@ -22,6 +22,7 @@
 #include <gnunet/platform.h>
 #include <stdbool.h>
 #include <gnunet/gnunet_util_lib.h>
+#include "hybrid-6/ircd_defs.h"
 
 /**
  * @brief closure for inetd
@@ -31,6 +32,34 @@ struct InetdConnection {
 	 * @brief incoming connection
 	 */
 	struct GNUNET_NETWORK_Handle *nhandle;
+	/**
+	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.1]
+	 */
+	char pass[PASSWDLEN + 1];
+	/**
+	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.2]
+	 */
+	char nick[NICKLEN + 1];
+	/**
+	 * @brief any previous nick name
+	 */
+	char pnick[NICKLEN + 1];
+	/**
+	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
+	 */
+	char user[USERLEN + 1];
+	/**
+	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
+	 */
+	char host[HOSTLEN + 1];
+	/**
+	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
+	 */
+	char srvr[HOSTLEN + 1];
+	/**
+	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
+	 */
+	char real[REALLEN + 1];
 	/**
 	 * @brief should the inetd close the connection
 	 *

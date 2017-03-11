@@ -16,12 +16,27 @@
  */
 
 #include "misc_commands.h"
+#include "registration_commands.h"
 #include "command_relay.h"
 
 /**
  * @brief available upon connection
  */
 const struct client_function registration_commands[] = {
+		{ "pass", pass_func },
+		{ "nick", rnick_func },
+		{ "user", user_func },
+		{ "ping", ping_func },
+		{ "quit", quit_func },
+		{ NULL, NULL } };
+
+/**
+ * @brief regular
+ */
+const struct client_function normal_commands[] = {
+		{ "pass", registration_done_func },
+		{ "nick", nick_func },
+		{ "user", registration_done_func },
 		{ "ping", ping_func },
 		{ "quit", quit_func },
 		{ NULL, NULL } };

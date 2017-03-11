@@ -44,9 +44,11 @@ static void LineLocator(struct InetdConnection *conn) {
 				}
 				char *t;
 				int len;
-				len = strlen(token) + 2;
+				len = strlen(token) + NICKLEN + 2;
 				t = GNUNET_malloc(len + 1);
-				strcpy(t, ": ");
+				strcpy(t, ":");
+				strncat(t, conn->nick, NICKLEN + 1);
+				strncat(t, " ", NICKLEN + 2);
 				strncat(t, token, len);
 				token = t;
 				for (str2 = token;; str2 = NULL ) {

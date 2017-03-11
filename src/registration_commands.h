@@ -15,37 +15,15 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef COMMAND_RELAY_H_
-#define COMMAND_RELAY_H_
+#ifndef REGISTRATION_COMMANDS_H_
+#define REGISTRATION_COMMANDS_H_
 
-#include "inetd.h"
+#include "command_relay.h"
 
-/**
- * @brief function called to process commands
- *
- * @param cls closure
- * @param argc number of arguments, length of argv
- * @param argv array of arguments
- */
-typedef int (*CommandFunc)(struct InetdConnection *cls, int argc, char **argv);
+int pass_func(struct ConnectionNode *, int, char **);
+int nick_func(struct ConnectionNode *, int, char **);
+int rnick_func(struct ConnectionNode *, int, char **);
+int user_func(struct ConnectionNode *, int, char **);
+int registration_done_func(struct ConnectionNode *, int, char **);
 
-/**
- * @brief name to function mapping
- */
-struct client_function {
-	/**
-	 * @brief command name
-	 */
-	char * keyword;
-	/**
-	 * @brief called for command
-	 */
-	CommandFunc function;
-};
-
-extern const struct client_function registration_commands[];
-extern const struct client_function normal_commands[];
-
-CommandFunc get_command_function(const struct client_function *, const char *);
-
-#endif /* COMMAND_RELAY_H_ */
+#endif /* REGISTRATION_COMMANDS_H_ */
