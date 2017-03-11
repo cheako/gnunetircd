@@ -16,6 +16,9 @@ OBJS += command_relay.o
 misc_commands.o: misc_commands.h
 OBJS += misc_commands.o
 
+registration_commands.o: registration_commands.h
+OBJS += registration_commands.o
+
 inetd.o: inetd.h
 OBJS += inetd.o
 
