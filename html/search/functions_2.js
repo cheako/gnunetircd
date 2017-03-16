@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fcommand_5ffunction',['get_command_function',['../d1/d20/server_8c.html#a4acb87090cef36a855c24edc96d0709e',1,'server.c']]]
+  ['linelocator',['LineLocator',['../d1/d20/server_8c.html#a981132e5c3d7cb4a26e23e3f93f24680',1,'server.c']]]
 ];

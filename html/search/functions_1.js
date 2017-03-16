@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dht_5finit',['dht_init',['../da/d9f/dht_8c.html#a63ad9c8e78e35429ce987f365b54e1cc',1,'dht_init(const struct GNUNET_CONFIGURATION_Handle *cfg):&#160;dht.c'],['../d1/dbb/dht_8h.html#af8914629633834510726367d25943ea7',1,'dht_init(const struct GNUNET_CONFIGURATION_Handle *):&#160;dht.c']]]
+  ['get_5fcommand_5ffunction',['get_command_function',['../d1/d20/server_8c.html#a4acb87090cef36a855c24edc96d0709e',1,'server.c']]],
+  ['gnunet_5fcontainer_5fcdll_5finsert_5fbefor',['GNUNET_CONTAINER_CDLL_insert_befor',['../d0/d08/gnunet__container__lib_8h.html#ab663f9658673cec702124ca3a14ab86a',1,'gnunet_container_lib.h']]]
 ];
