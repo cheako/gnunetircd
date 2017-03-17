@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,17 +137,17 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">    (element)-&gt;prev = element; \</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">    (element)-&gt;next = element; \</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    (head) = element; \</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  } else</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span>    <a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a>(head,element); \</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  } <span class="keywordflow">while</span> (0)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">  } else \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">    GNUNET_CONTAINER_CDLL_insert_before(head,element); \</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">  } while (0)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#define GNUNET_CONTAINER_CDLL_insert(head,element) do { \</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">  115</a></span>&#160;<span class="preprocessor">#define GNUNET_CONTAINER_CDLL_insert(head,element) do { \</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">  GNUNET_CONTAINER_CDLL_insert_tail(head,element); \</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">  (head) = element; } while (0)</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#define GNUNET_CONTAINER_CDLL_remove(head,element) do { \</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../d7/ddd/group__dll.html#gae80d8ec6b13a188e6d29583d61cfca52">  128</a></span>&#160;<span class="preprocessor">#define GNUNET_CONTAINER_CDLL_remove(head,element) do { \</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">  if ((element) == (head)) \</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">    if ((element)-&gt;next == (element)) \</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">      (head) = NULL \</span></div>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">  (element)-&gt;prev-&gt;next = (element)-&gt;next; \</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">  (element)-&gt;next-&gt;prev = (element)-&gt;prev; } while (0)</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#define GNUNET_CONTAINER_CDLL_insert_sorted(TYPE,comparator,comparator_cls,head,element) do { \</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="../../d7/ddd/group__dll.html#gae78e9f48f56ea3052613bafe88b0325d">  149</a></span>&#160;<span class="preprocessor">#define GNUNET_CONTAINER_CDLL_insert_sorted(TYPE,comparator,comparator_cls,head,element) do { \</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">  if ( (NULL == head) || \</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">       (0 &lt; comparator (comparator_cls, \</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">                        element, \</span></div>
@@ -200,11 +200,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 17 2017 18:39:33 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 17 2017 18:45:53 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
