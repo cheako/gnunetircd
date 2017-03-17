@@ -97,7 +97,6 @@ Macros</h2></td></tr>
 <tr class="separator:gae80d8ec6b13a188e6d29583d61cfca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<dl class="section see"><dt>See Also</dt><dd><a href="https://gnunet.org/mdll-api">Documentation</a> </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga951247cc44ff21099dc39ff800667e0e"></a>
 <div class="memitem">
@@ -125,7 +124,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">\</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">  GNUNET_CONTAINER_CDLL_insert_tail</a>(head,element); \</div>
 <div class="line">  (head) = element; } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:95</div></div>
+<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:80</div></div>
 </div><!-- fragment --><p>Insert an element at the head of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -164,7 +163,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">\</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">    GNUNET_CONTAINER_CDLL_insert_before</a>((other)-&gt;next,element); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:65</div></div>
+<div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:50</div></div>
 </div><!-- fragment --><p>Insert an element into a CDLL after the given other element.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -302,7 +301,7 @@ Macros</h2></td></tr>
 <div class="line">  } <a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">else \</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">    GNUNET_CONTAINER_CDLL_insert_before</a>(head,element); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:65</div></div>
+<div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:50</div></div>
 </div><!-- fragment --><p>Insert an element at the tail of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -360,7 +359,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 17 2017 18:45:53 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 17 2017 19:02:36 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
