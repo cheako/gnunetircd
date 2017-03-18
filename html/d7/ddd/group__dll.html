@@ -37,6 +37,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
@@ -64,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -128,9 +129,10 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">\</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">  GNUNET_CONTAINER_CDLL_insert_tail</a>(head,element); \</div>
 <div class="line">  (head) = element; } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:80</div></div>
+<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:82</div></div>
 </div><!-- fragment --><p>Insert an element at the head of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>See &lt;GNUNET_CONTAINER_CDLL_unshift&gt;</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">head</td><td>pointer to the head of the DLL </td></tr>
@@ -308,6 +310,7 @@ Macros</h2></td></tr>
 <div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:50</div></div>
 </div><!-- fragment --><p>Insert an element at the tail of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>See &lt;GNUNET_CONTAINER_CDLL_push&gt;</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">head</td><td>pointer to the head of the DLL </td></tr>
@@ -344,7 +347,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">\</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">  GNUNET_CONTAINER_CDLL_insert_tail</a>(head,element); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:80</div></div>
+<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:82</div></div>
 </div><!-- fragment --><p>Insert an element at the tail of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -425,7 +428,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">\</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">  GNUNET_CONTAINER_CDLL_insert</a>(head,element); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="group__dll_html_ga951247cc44ff21099dc39ff800667e0e"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">GNUNET_CONTAINER_CDLL_insert</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:115</div></div>
+<div class="ttc" id="group__dll_html_ga951247cc44ff21099dc39ff800667e0e"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">GNUNET_CONTAINER_CDLL_insert</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:119</div></div>
 </div><!-- fragment --><p>Insert an element at the head of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -441,7 +444,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 18 2017 01:32:56 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 18 2017 02:29:20 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
