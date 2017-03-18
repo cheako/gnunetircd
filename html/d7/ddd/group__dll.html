@@ -93,8 +93,12 @@ Macros</h2></td></tr>
 <tr class="separator:gae78e9f48f56ea3052613bafe88b0325d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5b8e14a33def4db90b195eff118efdec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a>(head, element)</td></tr>
 <tr class="separator:ga5b8e14a33def4db90b195eff118efdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5036ab89aad9c51dc7d65a30be17c105"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#ga5036ab89aad9c51dc7d65a30be17c105">GNUNET_CONTAINER_CDLL_push</a>(head, element)</td></tr>
+<tr class="separator:ga5036ab89aad9c51dc7d65a30be17c105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae80d8ec6b13a188e6d29583d61cfca52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#gae80d8ec6b13a188e6d29583d61cfca52">GNUNET_CONTAINER_CDLL_remove</a>(head, element)</td></tr>
 <tr class="separator:gae80d8ec6b13a188e6d29583d61cfca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb81cdfe12e34be57008b55ad75e9d74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#gafb81cdfe12e34be57008b55ad75e9d74">GNUNET_CONTAINER_CDLL_unshift</a>(head, element)</td></tr>
+<tr class="separator:gafb81cdfe12e34be57008b55ad75e9d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -314,6 +318,45 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga5036ab89aad9c51dc7d65a30be17c105"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNUNET_CONTAINER_CDLL_push</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">element&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">\</a></div>
+<div class="line"><a class="code" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">  GNUNET_CONTAINER_CDLL_insert_tail</a>(head,element); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="group__dll_html_ga5b8e14a33def4db90b195eff118efdec"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_tail(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:80</div></div>
+</div><!-- fragment --><p>Insert an element at the tail of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
+<p>This can also be used to create a CDLL.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">head</td><td>pointer to the head of the DLL </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">element</td><td>element to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gae80d8ec6b13a188e6d29583d61cfca52"></a>
 <div class="memitem">
 <div class="memproto">
@@ -356,10 +399,49 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gafb81cdfe12e34be57008b55ad75e9d74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNUNET_CONTAINER_CDLL_unshift</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">element&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { <a class="code" href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">\</a></div>
+<div class="line"><a class="code" href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">  GNUNET_CONTAINER_CDLL_insert</a>(head,element); \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="group__dll_html_ga951247cc44ff21099dc39ff800667e0e"><div class="ttname"><a href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">GNUNET_CONTAINER_CDLL_insert</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert(head, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:115</div></div>
+</div><!-- fragment --><p>Insert an element at the head of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
+<p>This can also be used to create a CDLL.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">head</td><td>pointer to the head of the DLL </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">element</td><td>element to insert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 17 2017 19:02:36 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 18 2017 01:32:56 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
