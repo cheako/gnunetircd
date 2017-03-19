@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keyword',['keyword',['../d3/d29/structclient__function.html#aa5d0219eb197ac4c7dd4ada089135b3e',1,'client_function']]]
+  ['ircd_5fstats',['IRCD_stats',['../d6/d6b/mesh_8c.html#a798b7c732f1542a1413ab96131b4dbe2',1,'mesh.c']]]
 ];

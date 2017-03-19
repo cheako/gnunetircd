@@ -88,13 +88,15 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mesh.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d3b/mesh_8h_source.html">mesh.h</a>&quot;</code><br/>
 <code>#include &lt;gnunet/gnunet_mesh_service.h&gt;</code><br/>
+<code>#include &lt;gnunet/gnunet_statistics_service.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="../../d0/d08/gnunet__container__lib_8h_source.html">gnunet_container_lib.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -113,6 +115,11 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac7f17a91693754ca5fb9342df9c31810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6b/mesh_8c.html#ac7f17a91693754ca5fb9342df9c31810">mesh_init</a> (const struct GNUNET_CONFIGURATION_Handle *cfg)</td></tr>
 <tr class="separator:ac7f17a91693754ca5fb9342df9c31810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a798b7c732f1542a1413ab96131b4dbe2"><td class="memItemLeft" align="right" valign="top">struct GNUNET_STATISTICS_Handle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6b/mesh_8c.html#a798b7c732f1542a1413ab96131b4dbe2">IRCD_stats</a></td></tr>
+<tr class="separator:a798b7c732f1542a1413ab96131b4dbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="aa92c01df0a241fdd8274c86382e00f80"></a>
@@ -144,10 +151,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a798b7c732f1542a1413ab96131b4dbe2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct GNUNET_STATISTICS_Handle* IRCD_stats</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2017 00:52:39 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 19 2017 02:02:15 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
