@@ -205,11 +205,12 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
-<div class="line">    (element)-&gt;prev = (other)-&gt;prev; \</div>
+<div class="line">    (element)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a> = (other)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a>; \</div>
 <div class="line">    (element)-&gt;next = other; \</div>
-<div class="line">    (other)-&gt;prev-&gt;next = element; \</div>
-<div class="line">    (other)-&gt;prev = element; \</div>
+<div class="line">    (other)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a>-&gt;next = element; \</div>
+<div class="line">    (other)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a> = element; \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="structBaseConnectionNodeHandler_html_a90199bb627beddc16b0fd6efd91010c7"><div class="ttname"><a href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">BaseConnectionNodeHandler::prev</a></div><div class="ttdeci">struct BaseConnectionNodeHandler * prev</div><div class="ttdef"><b>Definition:</b> server.h:31</div></div>
 </div><!-- fragment --><p>Insert an element into a CDLL before the given other element.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -301,12 +302,13 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
 <div class="line">  if ((head) == NULL) { \</div>
-<div class="line">    (element)-&gt;prev = element; \</div>
+<div class="line">    (element)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a> = element; \</div>
 <div class="line">    (element)-&gt;next = element; \</div>
 <div class="line">    (head) = element; \</div>
 <div class="line">  } <a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">else \</a></div>
 <div class="line"><a class="code" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">    GNUNET_CONTAINER_CDLL_insert_before</a>(head,element); \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="structBaseConnectionNodeHandler_html_a90199bb627beddc16b0fd6efd91010c7"><div class="ttname"><a href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">BaseConnectionNodeHandler::prev</a></div><div class="ttdeci">struct BaseConnectionNodeHandler * prev</div><div class="ttdef"><b>Definition:</b> server.h:31</div></div>
 <div class="ttc" id="group__dll_html_gad67dfc81fcff1ce179868cddb8b764fb"><div class="ttname"><a href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a></div><div class="ttdeci">#define GNUNET_CONTAINER_CDLL_insert_before(other, element)</div><div class="ttdef"><b>Definition:</b> gnunet_container_lib.h:50</div></div>
 </div><!-- fragment --><p>Insert an element at the tail of a CDLL. Assumes that head and element are structs with prev and next fields.</p>
 <p>This can also be used to create a CDLL.</p>
@@ -389,8 +391,9 @@ Macros</h2></td></tr>
 <div class="line">      (head) = NULL; \</div>
 <div class="line">    } <span class="keywordflow">else</span> \</div>
 <div class="line">      (head) = (element)-&gt;next; \</div>
-<div class="line">  (element)-&gt;prev-&gt;next = (element)-&gt;next; \</div>
-<div class="line">  (element)-&gt;next-&gt;prev = (element)-&gt;prev; } <span class="keywordflow">while</span> (0)</div>
+<div class="line">  (element)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a>-&gt;next = (element)-&gt;next; \</div>
+<div class="line">  (element)-&gt;next-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a> = (element)-&gt;<a class="code" href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">prev</a>; } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="structBaseConnectionNodeHandler_html_a90199bb627beddc16b0fd6efd91010c7"><div class="ttname"><a href="../../d3/d23/structBaseConnectionNodeHandler.html#a90199bb627beddc16b0fd6efd91010c7">BaseConnectionNodeHandler::prev</a></div><div class="ttdeci">struct BaseConnectionNodeHandler * prev</div><div class="ttdef"><b>Definition:</b> server.h:31</div></div>
 </div><!-- fragment --><p>Remove an element from a CDLL. Assumes that head and element point to structs with prev and next fields.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -444,7 +447,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2017 02:02:15 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 19 2017 14:49:11 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -100,10 +100,10 @@ Functions</h2></td></tr>
 <tr class="separator:a4acb87090cef36a855c24edc96d0709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981132e5c3d7cb4a26e23e3f93f24680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/server_8c.html#a981132e5c3d7cb4a26e23e3f93f24680">LineLocator</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn, struct <a class="el" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *h)</td></tr>
 <tr class="separator:a981132e5c3d7cb4a26e23e3f93f24680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99661b405a324e79761947bec618bd11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/server_8c.html#a99661b405a324e79761947bec618bd11">ProccessInput</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn, struct <a class="el" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *h, char *buf, size_t nbytes)</td></tr>
-<tr class="separator:a99661b405a324e79761947bec618bd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad806e75482ca7ca2b1413022af2e2fb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/server_8c.html#ad806e75482ca7ca2b1413022af2e2fb5">ProccessInputFree</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn, struct <a class="el" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *h)</td></tr>
-<tr class="separator:ad806e75482ca7ca2b1413022af2e2fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a323efe6d9a307fe70dd06d2b5f846b35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/server_8c.html#a323efe6d9a307fe70dd06d2b5f846b35">ProccessInput</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn, void *cls, char *buf, size_t nbytes)</td></tr>
+<tr class="separator:a323efe6d9a307fe70dd06d2b5f846b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa747bf2852bb76649f2cee546422c369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/server_8c.html#aa747bf2852bb76649f2cee546422c369">ProccessInputFree</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn, void *cls)</td></tr>
+<tr class="separator:aa747bf2852bb76649f2cee546422c369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/server_8c.html#a4392e503fa86339baf3bdb4ab5b82b3f">run_accept</a> (void *cls, const struct GNUNET_SCHEDULER_TaskContext *ctx)</td></tr>
 <tr class="separator:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99661b405a324e79761947bec618bd11"></a>
+<a class="anchor" id="a323efe6d9a307fe70dd06d2b5f846b35"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -173,8 +173,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *&#160;</td>
-          <td class="paramname"><em>h</em>, </td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad806e75482ca7ca2b1413022af2e2fb5"></a>
+<a class="anchor" id="aa747bf2852bb76649f2cee546422c369"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -211,8 +211,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cls</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,7 +253,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2017 02:02:15 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 19 2017 14:49:11 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
