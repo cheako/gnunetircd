@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['channel',['channel',['../d5/dec/structMeshClient.html#a4cdeebbceb33519511d53b90047f00f8',1,'MeshClient']]],
   ['client_5ffunction',['client_function',['../d3/d29/structclient__function.html',1,'']]],
   ['command_5frelay_2ec',['command_relay.c',['../d7/d37/command__relay_8c.html',1,'']]],
   ['command_5frelay_2eh',['command_relay.h',['../de/d98/command__relay_8h.html',1,'']]],
