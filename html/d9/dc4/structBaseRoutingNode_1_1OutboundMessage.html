@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: src/mesh.c File Reference</title>
+<title>gnunetircd - example distributed application: BaseRoutingNode::OutboundMessage Struct Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -39,8 +39,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../modules.html"><span>Modules</span></a></li>
-      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="../../files.html"><span>Files</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="../../files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -61,8 +61,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="../../files.html"><span>File&#160;List</span></a></li>
-      <li><a href="../../globals.html"><span>Globals</span></a></li>
+      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="../../classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="../../functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -81,89 +82,96 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a></li><li class="navelem"><a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html">OutboundMessage</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">mesh.c File Reference</div>  </div>
+<div class="title">BaseRoutingNode::OutboundMessage Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d3b/mesh_8h_source.html">mesh.h</a>&quot;</code><br/>
-<code>#include &lt;gnunet/gnunet_mesh_service.h&gt;</code><br/>
-<code>#include &lt;gnunet/gnunet_statistics_service.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="../../d0/d08/gnunet__container__lib_8h_source.html">gnunet_container_lib.h</a>&quot;</code><br/>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/structMeshClient.html">MeshClient</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd3/structWriteQueueItem.html">WriteQueueItem</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:aa92c01df0a241fdd8274c86382e00f80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6b/mesh_8c.html#aa92c01df0a241fdd8274c86382e00f80">IDLE_TIMEOUT</a>&#160;&#160;&#160;GNUNET_TIME_relative_multiply (GNUNET_TIME_UNIT_MINUTES, 16)</td></tr>
-<tr class="separator:aa92c01df0a241fdd8274c86382e00f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ac7f17a91693754ca5fb9342df9c31810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6b/mesh_8c.html#ac7f17a91693754ca5fb9342df9c31810">mesh_init</a> (const struct GNUNET_CONFIGURATION_Handle *cfg)</td></tr>
-<tr class="separator:ac7f17a91693754ca5fb9342df9c31810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a798b7c732f1542a1413ab96131b4dbe2"><td class="memItemLeft" align="right" valign="top">struct GNUNET_STATISTICS_Handle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6b/mesh_8c.html#a798b7c732f1542a1413ab96131b4dbe2">IRCD_stats</a></td></tr>
-<tr class="separator:a798b7c732f1542a1413ab96131b4dbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p><code>#include &lt;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a0f7b68ba5702b6549ed618d0a14d7856"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html#a0f7b68ba5702b6549ed618d0a14d7856">data</a></td></tr>
+<tr class="separator:a0f7b68ba5702b6549ed618d0a14d7856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ff8d6f3200e806ab8633cb6cd3c921"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html#a04ff8d6f3200e806ab8633cb6cd3c921">length</a></td></tr>
+<tr class="separator:a04ff8d6f3200e806ab8633cb6cd3c921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124e8c7281db932b97f93d233827ca4b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html">OutboundMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html#a124e8c7281db932b97f93d233827ca4b">next</a></td></tr>
+<tr class="separator:a124e8c7281db932b97f93d233827ca4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41250529b80b947002843c76919f280"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html">OutboundMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html#ac41250529b80b947002843c76919f280">prev</a></td></tr>
+<tr class="separator:ac41250529b80b947002843c76919f280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddc877cc3ca390739851526c573f7fb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html#adddc877cc3ca390739851526c573f7fb">reply</a></td></tr>
+<tr class="separator:adddc877cc3ca390739851526c573f7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="aa92c01df0a241fdd8274c86382e00f80"></a>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a0f7b68ba5702b6549ed618d0a14d7856"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IDLE_TIMEOUT&#160;&#160;&#160;GNUNET_TIME_relative_multiply (GNUNET_TIME_UNIT_MINUTES, 16)</td>
+          <td class="memname">char* BaseRoutingNode::OutboundMessage::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac7f17a91693754ca5fb9342df9c31810"></a>
+<a class="anchor" id="a04ff8d6f3200e806ab8633cb6cd3c921"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void mesh_init </td>
-          <td>(</td>
-          <td class="paramtype">const struct GNUNET_CONFIGURATION_Handle *&#160;</td>
-          <td class="paramname"><em>cfg</em></td><td>)</td>
-          <td></td>
+          <td class="memname">size_t BaseRoutingNode::OutboundMessage::length</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a798b7c732f1542a1413ab96131b4dbe2"></a>
+<a class="anchor" id="a124e8c7281db932b97f93d233827ca4b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GNUNET_STATISTICS_Handle* IRCD_stats</td>
+          <td class="memname">struct <a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html">OutboundMessage</a>* BaseRoutingNode::OutboundMessage::next</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a class="anchor" id="ac41250529b80b947002843c76919f280"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html">OutboundMessage</a>* BaseRoutingNode::OutboundMessage::prev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adddc877cc3ca390739851526c573f7fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a>* BaseRoutingNode::OutboundMessage::reply</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

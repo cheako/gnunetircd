@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user',['user',['../df/d3d/structConnectionNode.html#a560b204e8e3232c38cb5db631dab06b9',1,'ConnectionNode']]]
+  ['srvr',['srvr',['../df/d3d/structConnectionNode.html#a295db963fe631ac62a3d6946cfd5636e',1,'ConnectionNode']]]
 ];

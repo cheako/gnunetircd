@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ircd_5fstats',['IRCD_stats',['../d6/d6b/mesh_8c.html#a798b7c732f1542a1413ab96131b4dbe2',1,'mesh.c']]]
+  ['handler',['handler',['../df/d3d/structConnectionNode.html#a1486d3f0bb481fc5b3009b4dec41a8d8',1,'ConnectionNode']]],
+  ['host',['host',['../df/d3d/structConnectionNode.html#a2b3fc240690c7581793c22e9e288b1f8',1,'ConnectionNode']]]
 ];
