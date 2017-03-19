@@ -91,26 +91,29 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">routing.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
+<code>#include &lt;gnunet/platform.h&gt;</code><br/>
+<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0fd703aa9f22096ea6081af0a28d1436"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a0fd703aa9f22096ea6081af0a28d1436">routing_get</a> (char *enc)</td></tr>
-<tr class="separator:a0fd703aa9f22096ea6081af0a28d1436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c8d1527b3a263013e51ffe119bfc4e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a51c8d1527b3a263013e51ffe119bfc4e">routing_get</a> (const char *enc)</td></tr>
+<tr class="separator:a51c8d1527b3a263013e51ffe119bfc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370c9151bc5bf377bcd24bc08ec73437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a370c9151bc5bf377bcd24bc08ec73437">routing_init</a> ()</td></tr>
 <tr class="separator:a370c9151bc5bf377bcd24bc08ec73437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed6df563ee7712249a32875b713e5d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a4ed6df563ee7712249a32875b713e5d5">routing_put</a> (char *enc, struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *value)</td></tr>
-<tr class="separator:a4ed6df563ee7712249a32875b713e5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f1c97a2a11fb0f35d7d45284e36e61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a72f1c97a2a11fb0f35d7d45284e36e61">routing_put</a> (const char *enc, struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *value)</td></tr>
+<tr class="separator:a72f1c97a2a11fb0f35d7d45284e36e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a0fd703aa9f22096ea6081af0a28d1436"></a>
+<a class="anchor" id="a51c8d1527b3a263013e51ffe119bfc4e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a>* routing_get </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>enc</em></td><td>)</td>
           <td></td>
         </tr>
@@ -134,14 +137,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4ed6df563ee7712249a32875b713e5d5"></a>
+<a class="anchor" id="a72f1c97a2a11fb0f35d7d45284e36e61"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void routing_put </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>enc</em>, </td>
         </tr>
         <tr>
@@ -163,7 +166,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2017 16:49:03 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Mar 19 2017 23:57:46 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

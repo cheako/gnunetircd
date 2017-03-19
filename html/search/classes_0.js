@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['baseconnectionnodehandler',['BaseConnectionNodeHandler',['../d3/d23/structBaseConnectionNodeHandler.html',1,'']]],
+  ['baseconnectionnodehandler',['BaseConnectionNodeHandler',['../dc/d01/structConnectionNode_1_1BaseConnectionNodeHandler.html',1,'ConnectionNode']]],
   ['baseroutingnode',['BaseRoutingNode',['../d1/db7/structBaseRoutingNode.html',1,'']]]
 ];

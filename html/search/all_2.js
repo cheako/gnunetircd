@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data',['data',['../d9/dc4/structBaseRoutingNode_1_1OutboundMessage.html#a0f7b68ba5702b6549ed618d0a14d7856',1,'BaseRoutingNode::OutboundMessage']]],
   ['deprecated_20list',['Deprecated List',['../da/d58/deprecated.html',1,'']]],
   ['dht_2ec',['dht.c',['../da/d9f/dht_8c.html',1,'']]],
   ['dht_2eh',['dht.h',['../d1/dbb/dht_8h.html',1,'']]],

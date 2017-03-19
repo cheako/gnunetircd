@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['free',['free',['../d1/db7/structBaseRoutingNode.html#abb1648b7bc4645efd51220ba40f6484f',1,'BaseRoutingNode::free()'],['../d3/d23/structBaseConnectionNodeHandler.html#a587593d0eabd4e8df1e919ab913ccb1b',1,'BaseConnectionNodeHandler::free()']]],
-  ['func',['func',['../d1/db7/structBaseRoutingNode.html#a1e2e85f0b7b5b4e014aacd2078f78245',1,'BaseRoutingNode::func()'],['../d3/d23/structBaseConnectionNodeHandler.html#a655f7ea8ff3ace99c9cc48492888b909',1,'BaseConnectionNodeHandler::func()']]],
+  ['free',['free',['../dc/d01/structConnectionNode_1_1BaseConnectionNodeHandler.html#a81b5c8ab57503f401dc17fe1bf8b9bdb',1,'ConnectionNode::BaseConnectionNodeHandler']]],
+  ['func',['func',['../d1/db7/structBaseRoutingNode.html#af9df0df775881718616b4254342af719',1,'BaseRoutingNode::func()'],['../dc/d01/structConnectionNode_1_1BaseConnectionNodeHandler.html#a576fede19202e39465df648abe7d6a36',1,'ConnectionNode::BaseConnectionNodeHandler::func()']]],
   ['function',['function',['../d3/d29/structclient__function.html#a2c051c7ed7148375e7a50da1bb91c48b',1,'client_function']]]
 ];
