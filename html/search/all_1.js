@@ -2,7 +2,7 @@ var searchData=
 [
   ['channel',['channel',['../d5/dec/structMeshClient.html#a4cdeebbceb33519511d53b90047f00f8',1,'MeshClient']]],
   ['client_5ffunction',['client_function',['../d3/d29/structclient__function.html',1,'']]],
-  ['code',['code',['../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html#a11a5be7062846234ff2b833789621fad',1,'IrcdDhtHeader::IrcdDhtOpcode']]],
+  ['code',['code',['../d6/d5a/group__dht.html#ga11a5be7062846234ff2b833789621fad',1,'IrcdDhtHeader::IrcdDhtOpcode']]],
   ['command_5frelay_2ec',['command_relay.c',['../d7/d37/command__relay_8c.html',1,'']]],
   ['command_5frelay_2eh',['command_relay.h',['../de/d98/command__relay_8h.html',1,'']]],
   ['commandfunc',['CommandFunc',['../de/d98/command__relay_8h.html#a2677072cca4838b2fb1c31b7790f9441',1,'command_relay.h']]],
