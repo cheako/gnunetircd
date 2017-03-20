@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: src/server.h File Reference</title>
+<title>gnunetircd - example distributed application: IrcdDhtHeader::IrcdDhtOpcode Struct Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -39,8 +39,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="../../modules.html"><span>Modules</span></a></li>
-      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="../../files.html"><span>Files</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="../../files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -61,8 +61,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="../../files.html"><span>File&#160;List</span></a></li>
-      <li><a href="../../globals.html"><span>Globals</span></a></li>
+      <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="../../classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="../../functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -81,64 +82,68 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../db/ddd/structIrcdDhtHeader.html">IrcdDhtHeader</a></li><li class="navelem"><a class="el" href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html">IrcdDhtOpcode</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">server.h File Reference</div>  </div>
+<div class="title">IrcdDhtHeader::IrcdDhtOpcode Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
-<code>#include &lt;gnunet/platform.h&gt;</code><br/>
-<code>#include &lt;stdbool.h&gt;</code><br/>
-<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
-</div>
-<p><a href="../../d8/dc3/server_8h_source.html">Go to the source code of this file.</a></p>
+
+<p>opcodes and pointer to operands  
+ <a href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/dbb/dht_8h_source.html">dht.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d01/structConnectionNode_1_1BaseConnectionNodeHandler.html">ConnectionNode::BaseConnectionNodeHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a8483c264aa0861378887a222bc61df45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc3/server_8h.html#a8483c264aa0861378887a222bc61df45">run_accept</a> (void *, const struct GNUNET_SCHEDULER_TaskContext *)</td></tr>
-<tr class="separator:a8483c264aa0861378887a222bc61df45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a11a5be7062846234ff2b833789621fad"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html#a11a5be7062846234ff2b833789621fad">code</a></td></tr>
+<tr class="memdesc:a11a5be7062846234ff2b833789621fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">opcode instruction  <a href="#a11a5be7062846234ff2b833789621fad">More...</a><br/></td></tr>
+<tr class="separator:a11a5be7062846234ff2b833789621fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efbac2f57dbad6d8512818ca8e80a38"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html#a1efbac2f57dbad6d8512818ca8e80a38">offset</a></td></tr>
+<tr class="memdesc:a1efbac2f57dbad6d8512818ca8e80a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">offset of operand(s)  <a href="#a1efbac2f57dbad6d8512818ca8e80a38">More...</a><br/></td></tr>
+<tr class="separator:a1efbac2f57dbad6d8512818ca8e80a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8483c264aa0861378887a222bc61df45"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>opcodes and pointer to operands </p>
+<p>Instructions for IRCD to process regarding this record. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a11a5be7062846234ff2b833789621fad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void run_accept </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct GNUNET_SCHEDULER_TaskContext *&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">uint16_t IrcdDhtHeader::IrcdDhtOpcode::code</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>opcode instruction </p>
+<p>Indicates instruction to process and length of operand(s). </p>
+
 </div>
 </div>
+<a class="anchor" id="a1efbac2f57dbad6d8512818ca8e80a38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t IrcdDhtHeader::IrcdDhtOpcode::offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>offset of operand(s) </p>
+<p>First byte of first operand minus [<a class="el" href="../../db/ddd/structIrcdDhtHeader.html#a364a88b7dcc4db258962b55aefc6b8f4" title="size of header and opcodes ">IrcdDhtHeader::size</a>]. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/<a class="el" href="../../d1/dbb/dht_8h_source.html">dht.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

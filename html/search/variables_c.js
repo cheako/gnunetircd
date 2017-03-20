@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['terminate_5ftask',['terminate_task',['../d5/dec/structMeshClient.html#a1e187cf0a300ba58e978d3c99a0f29b4',1,'MeshClient']]],
-  ['timeout_5ftask',['timeout_task',['../d5/dec/structMeshClient.html#ab427df8a70ca65b9ec252c9a99a44000',1,'MeshClient']]]
+  ['size',['size',['../db/ddd/structIrcdDhtHeader.html#a364a88b7dcc4db258962b55aefc6b8f4',1,'IrcdDhtHeader']]],
+  ['srvr',['srvr',['../df/d3d/structConnectionNode.html#a295db963fe631ac62a3d6946cfd5636e',1,'ConnectionNode']]]
 ];

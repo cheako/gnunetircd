@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pass',['pass',['../df/d3d/structConnectionNode.html#ab48d41abd487d45e62b822e2ec5f1e5f',1,'ConnectionNode']]],
-  ['prev',['prev',['../d0/dd3/structWriteQueueItem.html#a9fae1b9c88635b436f31134b07c2c1f5',1,'WriteQueueItem::prev()'],['../dc/d01/structConnectionNode_1_1BaseConnectionNodeHandler.html#a71fb503246b5d94d5e21058016123baa',1,'ConnectionNode::BaseConnectionNodeHandler::prev()'],['../d0/dcd/structElement.html#abac35b77e4e57ca2d12f6820952e6f16',1,'Element::prev()']]]
+  ['offset',['offset',['../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html#a1efbac2f57dbad6d8512818ca8e80a38',1,'IrcdDhtHeader::IrcdDhtOpcode']]],
+  ['opcodes',['opcodes',['../db/ddd/structIrcdDhtHeader.html#afbfcf50723860deb8c0654a7636c53af',1,'IrcdDhtHeader']]]
 ];

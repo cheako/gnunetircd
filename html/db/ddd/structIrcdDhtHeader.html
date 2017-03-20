@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: client_function Struct Reference</title>
+<title>gnunetircd - example distributed application: IrcdDhtHeader Struct Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -83,48 +83,101 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">client_function Struct Reference</div>  </div>
+<div class="title">IrcdDhtHeader Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../de/d98/command__relay_8h_source.html">command_relay.h</a>&gt;</code></p>
+<p>header for DHT contents  
+ <a href="../../db/ddd/structIrcdDhtHeader.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/dbb/dht_8h_source.html">dht.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html">IrcdDhtOpcode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">opcodes and pointer to operands  <a href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2c051c7ed7148375e7a50da1bb91c48b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d98/command__relay_8h.html#a2677072cca4838b2fb1c31b7790f9441">CommandFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d29/structclient__function.html#a2c051c7ed7148375e7a50da1bb91c48b">function</a></td></tr>
-<tr class="separator:a2c051c7ed7148375e7a50da1bb91c48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5d0219eb197ac4c7dd4ada089135b3e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d29/structclient__function.html#aa5d0219eb197ac4c7dd4ada089135b3e">keyword</a></td></tr>
-<tr class="separator:aa5d0219eb197ac4c7dd4ada089135b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbfcf50723860deb8c0654a7636c53af"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html">IrcdDhtHeader::IrcdDhtOpcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/structIrcdDhtHeader.html#afbfcf50723860deb8c0654a7636c53af">opcodes</a> []</td></tr>
+<tr class="separator:afbfcf50723860deb8c0654a7636c53af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364a88b7dcc4db258962b55aefc6b8f4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/structIrcdDhtHeader.html#a364a88b7dcc4db258962b55aefc6b8f4">size</a></td></tr>
+<tr class="memdesc:a364a88b7dcc4db258962b55aefc6b8f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of header and opcodes  <a href="#a364a88b7dcc4db258962b55aefc6b8f4">More...</a><br/></td></tr>
+<tr class="separator:a364a88b7dcc4db258962b55aefc6b8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235edd5483d4e825a7a61f16dac14286"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/structIrcdDhtHeader.html#a235edd5483d4e825a7a61f16dac14286">type</a></td></tr>
+<tr class="memdesc:a235edd5483d4e825a7a61f16dac14286"><td class="mdescLeft">&#160;</td><td class="mdescRight">record type  <a href="#a235edd5483d4e825a7a61f16dac14286">More...</a><br/></td></tr>
+<tr class="separator:a235edd5483d4e825a7a61f16dac14286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90af487c06fff313e4b89ff05613ab16"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/structIrcdDhtHeader.html#a90af487c06fff313e4b89ff05613ab16">version</a></td></tr>
+<tr class="memdesc:a90af487c06fff313e4b89ff05613ab16"><td class="mdescLeft">&#160;</td><td class="mdescRight">record version  <a href="#a90af487c06fff313e4b89ff05613ab16">More...</a><br/></td></tr>
+<tr class="separator:a90af487c06fff313e4b89ff05613ab16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a2c051c7ed7148375e7a50da1bb91c48b"></a>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>header for DHT contents </p>
+<p>Used for accessing network globals </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="afbfcf50723860deb8c0654a7636c53af"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d98/command__relay_8h.html#a2677072cca4838b2fb1c31b7790f9441">CommandFunc</a> client_function::function</td>
+          <td class="memname">struct <a class="el" href="../../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html">IrcdDhtHeader::IrcdDhtOpcode</a>  IrcdDhtHeader::opcodes[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa5d0219eb197ac4c7dd4ada089135b3e"></a>
+<a class="anchor" id="a364a88b7dcc4db258962b55aefc6b8f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* client_function::keyword</td>
+          <td class="memname">uint16_t IrcdDhtHeader::size</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>size of header and opcodes </p>
+<p>Byte offset of index 0 or length of this header and opcodes in bytes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a235edd5483d4e825a7a61f16dac14286"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IrcdDhtHeader::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>record type </p>
+<p>Used in case usage expands beyond nick and channel names, should be 0. </p>
+
+</div>
+</div>
+<a class="anchor" id="a90af487c06fff313e4b89ff05613ab16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char IrcdDhtHeader::version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>record version </p>
+<p>Should be 1. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/<a class="el" href="../../de/d98/command__relay_8h_source.html">command_relay.h</a></li>
+<li>src/<a class="el" href="../../d1/dbb/dht_8h_source.html">dht.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

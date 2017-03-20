@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['meshclient',['MeshClient',['../d5/dec/structMeshClient.html',1,'']]]
+  ['ircddhtheader',['IrcdDhtHeader',['../db/ddd/structIrcdDhtHeader.html',1,'']]],
+  ['ircddhtopcode',['IrcdDhtOpcode',['../d7/d39/structIrcdDhtHeader_1_1IrcdDhtOpcode.html',1,'IrcdDhtHeader']]]
 ];
