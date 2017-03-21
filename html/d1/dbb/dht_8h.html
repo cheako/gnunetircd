@@ -95,9 +95,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <p>Distributed Hash Table interface.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
-<code>#include &lt;gnunet/platform.h&gt;</code><br/>
-<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
 </div>
 <p><a href="../../d1/dbb/dht_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,14 +110,20 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af8914629633834510726367d25943ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbb/dht_8h.html#af8914629633834510726367d25943ea7">dht_init</a> (const struct GNUNET_CONFIGURATION_Handle *)</td></tr>
-<tr class="separator:af8914629633834510726367d25943ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17472beb9d1042b514a50f1c9b3da712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbb/dht_8h.html#a17472beb9d1042b514a50f1c9b3da712">dht_register_user</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *cls, const char *user)</td></tr>
+<tr class="separator:a17472beb9d1042b514a50f1c9b3da712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070da06919bebac7e28f6a26a6865296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbb/dht_8h.html#a070da06919bebac7e28f6a26a6865296">dht_insert</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *cls, const void *data, size_t size, struct GNUNET_HashCode *key)</td></tr>
+<tr class="separator:a070da06919bebac7e28f6a26a6865296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1b4d9959e16b565d69f1c61ddc4bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbb/dht_8h.html#a5f1b4d9959e16b565d69f1c61ddc4bd0">dht_lookup</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *cls, const char *enc)</td></tr>
+<tr class="separator:a5f1b4d9959e16b565d69f1c61ddc4bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ad9c8e78e35429ce987f365b54e1cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbb/dht_8h.html#a63ad9c8e78e35429ce987f365b54e1cc">dht_init</a> (const struct GNUNET_CONFIGURATION_Handle *cfg)</td></tr>
+<tr class="separator:a63ad9c8e78e35429ce987f365b54e1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Distributed Hash Table interface. </p>
 <dl class="section author"><dt>Author</dt><dd>Mike Mestnik </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af8914629633834510726367d25943ea7"></a>
+<a class="anchor" id="a63ad9c8e78e35429ce987f365b54e1cc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -127,8 +131,98 @@ Functions</h2></td></tr>
           <td class="memname">void dht_init </td>
           <td>(</td>
           <td class="paramtype">const struct GNUNET_CONFIGURATION_Handle *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a070da06919bebac7e28f6a26a6865296"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dht_insert </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct GNUNET_HashCode *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f1b4d9959e16b565d69f1c61ddc4bd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dht_lookup </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>enc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a17472beb9d1042b514a50f1c9b3da712"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dht_register_user </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -138,7 +232,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 20 2017 21:06:04 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2017 03:45:16 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
