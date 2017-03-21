@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_5ffunc',['user_func',['../df/d2f/registration__commands_8c.html#aa5bdb4938e859b003cac258e26d3b9f1',1,'user_func(struct ConnectionNode *conn, struct ProccessInputHandler *h, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a22bccd64c40c82dd91b43f7af11e507b',1,'user_func(struct ConnectionNode *, struct ProccessInputHandler *, int, char **):&#160;registration_commands.c']]]
+  ['sock_5fsend',['sock_send',['../d1/d20/server_8c.html#a35d629ba991286443bfe97c7b2053eed',1,'server.c']]]
 ];

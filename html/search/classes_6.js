@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['writequeueitem',['WriteQueueItem',['../d0/dd3/structWriteQueueItem.html',1,'']]]
+  ['writequeueitem',['WriteQueueItem',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html',1,'BaseRoutingNode']]]
 ];

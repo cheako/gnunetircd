@@ -91,37 +91,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">routing.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
-<code>#include &lt;gnunet/platform.h&gt;</code><br/>
-<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/d08/gnunet__container__lib_8h_source.html">gnunet_container_lib.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d1/dbb/dht_8h_source.html">dht.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af91bfb8c644dcaf1ce5df813044d34e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#af91bfb8c644dcaf1ce5df813044d34e6">routing_put</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *value, const char *enc)</td></tr>
 <tr class="separator:af91bfb8c644dcaf1ce5df813044d34e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51c8d1527b3a263013e51ffe119bfc4e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a51c8d1527b3a263013e51ffe119bfc4e">routing_get</a> (const char *enc)</td></tr>
-<tr class="separator:a51c8d1527b3a263013e51ffe119bfc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b1c32efa7f04454f42ae0b615eff77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a62b1c32efa7f04454f42ae0b615eff77">routing_send</a> (void *cls, const char *dest, char *src, size_t size)</td></tr>
+<tr class="separator:a62b1c32efa7f04454f42ae0b615eff77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370c9151bc5bf377bcd24bc08ec73437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d32/routing_8c.html#a370c9151bc5bf377bcd24bc08ec73437">routing_init</a> ()</td></tr>
 <tr class="separator:a370c9151bc5bf377bcd24bc08ec73437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a51c8d1527b3a263013e51ffe119bfc4e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a>* routing_get </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>enc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a370c9151bc5bf377bcd24bc08ec73437"></a>
 <div class="memitem">
 <div class="memproto">
@@ -163,10 +145,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a62b1c32efa7f04454f42ae0b615eff77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void routing_send </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2017 04:56:20 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 21 2017 08:13:06 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
