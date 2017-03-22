@@ -25,6 +25,6 @@ OBJS += inetd.o
 gnunetircd: $(OBJS)
 
 clean:
-	rm -f *.o hybrid-6/*.o gnunetircd
+	rm -f *.o hybrid-6/*.o gnunetircd test_container_cdll
 
 .PHONY: clean
