@@ -1,0 +1,32 @@
+# This will run on Travis' 'new' container-based infrastructure
+sudo: false
+
+# Blacklist
+branches:
+  except:
+  - gh-pages
+
+# Environment variables
+env:
+  global:
+  - GH_REPO_NAME: gnunetircd
+  - GH_REPO_REF: github.com/cheako/gnunetircd.git
+
+services:
+- docker
+
+# Install dependencies
+addons:
+  apt:
+    packages:
+    - doxygen
+
+before_install:
+- docker build -t gnunetircd .
+
+script:
+- docker run gnunetircd
+
+# Generate and deploy documentation
+after_success:
+  - /bin/sh .generateDocumentationAndDeploy

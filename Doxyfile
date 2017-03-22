@@ -1,0 +1,8 @@
+PROJECT_NAME           = "gnunetircd - example distributed application"
+INPUT                  = src
+OUTPUT_DIRECTORY       = code_docs/gnunetircd
+CREATE_SUBDIRS         = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+CASE_SENSE_NAMES       = YES
+GENERATE_LATEX         = NO
