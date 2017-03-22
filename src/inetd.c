@@ -15,8 +15,39 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "gnunet_container_lib.h"
 #include "command_relay.h"
 
+void inetd_start_sending(void *cls) {
+	struct ConnectionNode *conn = cls;
+
+	struct WriteQueueItem *e;
+	while (NULL != (e = conn->base.wqi_head)) {
+		int offset = 0;
+
+		while (offset < e->size) {
+			// write isn't guaranteed to send the entire string at once,
+			// so we have to sent it in a loop like this
+			int sent = GNUNET_NETWORK_socket_send(conn->nhandle,
+					e->data + offset, e->size - offset);
+			if (sent == -1) {
+				if (errno != EAGAIN)
+					return;
+				continue;
+			} else if (sent == 0) {
+				// when this returns zero, it generally means
+				// we got disconnected
+				return;
+			}
+
+			offset += sent;
+		}
+		GNUNET_CONTAINER_CDLL_remove(conn->base.wqi_head, e);
+		GNUNET_free(e);
+	}
+}
+
+/** @todo use strchr */
 static void LineLocator(struct ConnectionNode *conn) {
 	/* look for the end of the line */
 	char *str1, *saveptr1, *ntoken, *token;
@@ -47,7 +78,7 @@ static void LineLocator(struct ConnectionNode *conn) {
 				len = strlen(token) + NICKLEN + 2;
 				t = GNUNET_malloc(len + 1);
 				strcpy(t, ":");
-				strncat(t, conn->nick, NICKLEN + 1);
+				strncat(t, conn->base.nick, NICKLEN + 1);
 				strncat(t, " ", NICKLEN + 2);
 				strncat(t, token, len);
 				token = t;
@@ -64,13 +95,13 @@ static void LineLocator(struct ConnectionNode *conn) {
 					}
 				}
 				CommandFunc f;
-				f = get_command_function(conn->commands, argv[1]);
+				f = get_command_function(conn->base.commands, argv[1]);
 				if (!f) {
 					GNUNET_NETWORK_socket_send(conn->nhandle,
 							":gnunetircd 421 %s %s :Unknown command.\r\n",
 							55 - 14);
 				} else
-					f(conn, --argc, argv);
+					f(&conn->base, --argc, argv);
 				GNUNET_free(argv);
 				GNUNET_free(t);
 				if (ntoken == NULL ) {
@@ -121,7 +152,7 @@ static void run_recv(void *cls, const struct GNUNET_SCHEDULER_TaskContext *ctx) 
 			conn->buf = strdup(buf);
 		LineLocator(conn);
 
-		if (conn->quit) {
+		if (conn->base.quit) {
 			close_node(conn);
 		} else
 			GNUNET_SCHEDULER_add_read_net(GNUNET_TIME_UNIT_FOREVER_REL,
@@ -142,9 +173,11 @@ void run_accept(void *cls, const struct GNUNET_SCHEDULER_TaskContext *ctx) {
 		return;
 	struct ConnectionNode *TempNode = NULL;
 	TempNode = GNUNET_new(struct ConnectionNode);
+	TempNode->base.type = IRCD_ROUTING_NODE_INETD;
+	TempNode->base.wqi_head = NULL;
+	TempNode->base.quit = false;
+	TempNode->base.commands = registration_commands;
 	TempNode->nhandle = new;
-	TempNode->quit = false;
-	TempNode->commands = registration_commands;
 	TempNode->buf = NULL;
 	GNUNET_SCHEDULER_add_read_net(GNUNET_TIME_UNIT_FOREVER_REL, new, &run_recv,
 			TempNode);

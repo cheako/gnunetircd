@@ -1,4 +1,4 @@
-use Test::More tests => 18;
+use Test::More tests => 30;
 use IPC::Run qw(start);
 
 my $ihlt =
@@ -49,6 +49,27 @@ $sockets[3]->autoflush(1);
 is $sockets[3]->send("ping\r\n"), 6, 'empty ping';
 $sockets[3]->recv( $response, 1024 );
 is $response, ":gnunetircd PONG gnunetircd\r\n", 'empty pong';
+
+is $sockets[1]->send("nick test[Ali]\r\n"), 16, 'nick alice';
+is $sockets[2]->send("nick Test{bob}\r\n"), 16, 'nick bob';
+is $sockets[3]->send("nick test-char\r\n"), 16, 'nick charlie';
+
+is $sockets[1]->send("ping :Hello World!\r\n"), 20, 'alice ping';
+$sockets[1]->recv( $response, 1024 );
+is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'alice pong';
+
+is $sockets[2]->send("ping :Hello World!\r\n"), 20, 'bob ping';
+$sockets[2]->recv( $response, 1024 );
+is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'bob pong';
+
+is $sockets[3]->send("ping :Hello World!\r\n"), 20, 'charlie ping';
+$sockets[3]->recv( $response, 1024 );
+is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'charlie pong';
+
+is $sockets[1]->send("nick test[Dan]\r\n"), 16, 'nick david';
+is $sockets[1]->send("ping :Hello World!\r\n"), 20, 'dan ping';
+$sockets[1]->recv( $response, 1024 );
+is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'dan pong';
 
 is $sockets[1]->send("quit\r\n"), 6, 'one quit send';
 $sockets[1]->recv( $response, 1024 );

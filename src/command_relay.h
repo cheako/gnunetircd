@@ -27,7 +27,7 @@
  * @param argc number of arguments, length of argv
  * @param argv array of arguments
  */
-typedef int (*CommandFunc)(struct ConnectionNode *cls, int argc, char **argv);
+typedef int (*CommandFunc)(struct BaseRoutingNode *cls, int argc, char **argv);
 
 /**
  * @brief name to function mapping
