@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nick_5ffunc',['nick_func',['../df/d2f/registration__commands_8c.html#af6f2764ab19bdc3967bc00d0af9376fb',1,'nick_func(struct ConnectionNode *conn, struct ProccessInputHandler *h, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a9500df8326055811cc086992bfd84e18',1,'nick_func(struct ConnectionNode *, struct ProccessInputHandler *, int, char **):&#160;registration_commands.c']]]
+  ['quit_5ffunc',['quit_func',['../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7',1,'quit_func(struct ConnectionNode *conn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a90b50c939a8e08d9cb4e8079f0b513fb',1,'quit_func(struct ConnectionNode *, int, char **):&#160;misc_commands.c']]]
 ];

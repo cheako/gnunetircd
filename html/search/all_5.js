@@ -1,17 +1,4 @@
 var searchData=
 [
-  ['get_5fcommand_5ffunction',['get_command_function',['../d1/d20/server_8c.html#a4acb87090cef36a855c24edc96d0709e',1,'server.c']]],
-  ['gh',['gh',['../d1/db7/structBaseRoutingNode.html#a2e7535223ce473a68ad924bd0f0e879d',1,'BaseRoutingNode']]],
-  ['gnunet_5fcontainer_5fcdll_5finsert',['GNUNET_CONTAINER_CDLL_insert',['../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5finsert_5fafter',['GNUNET_CONTAINER_CDLL_insert_after',['../d7/ddd/group__dll.html#ga7388b7b0302ea478c6e10a953318f9f2',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5finsert_5fbefore',['GNUNET_CONTAINER_CDLL_insert_before',['../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5finsert_5fsorted',['GNUNET_CONTAINER_CDLL_insert_sorted',['../d7/ddd/group__dll.html#gae78e9f48f56ea3052613bafe88b0325d',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5finsert_5ftail',['GNUNET_CONTAINER_CDLL_insert_tail',['../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5fpush',['GNUNET_CONTAINER_CDLL_push',['../d7/ddd/group__dll.html#ga5036ab89aad9c51dc7d65a30be17c105',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5fremove',['GNUNET_CONTAINER_CDLL_remove',['../d7/ddd/group__dll.html#gae80d8ec6b13a188e6d29583d61cfca52',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5fcdll_5funshift',['GNUNET_CONTAINER_CDLL_unshift',['../d7/ddd/group__dll.html#gafb81cdfe12e34be57008b55ad75e9d74',1,'gnunet_container_lib.h']]],
-  ['gnunet_5fcontainer_5flib_2eh',['gnunet_container_lib.h',['../d0/d08/gnunet__container__lib_8h.html',1,'']]],
-  ['gnunet_5fpacked',['GNUNET_PACKED',['../d6/d5a/group__dht.html#gaf3a62561dafac3a8c1134f9128e1e111',1,'IrcdDhtHeader::GNUNET_PACKED()'],['../d6/d5a/group__dht.html#ga127dabea2735502e19c043efa9c490f8',1,'IrcdDhtHeader::IrcdDhtOpcode::GNUNET_PACKED()'],['../d6/d5a/group__dht.html#ga4767ed7c4f773301763fc8de8734c6eb',1,'IrcdDhtHeader::IrcdDhtOpcode::GNUNET_PACKED()']]],
-  ['gnunet_5futil_5flib_2eh',['gnunet_util_lib.h',['../d2/d94/gnunet__util__lib_8h.html',1,'']]],
-  ['gnunetircd_2ec',['gnunetircd.c',['../d4/d7e/gnunetircd_8c.html',1,'']]]
+  ['keyword',['keyword',['../d3/d29/structclient__function.html#aa5d0219eb197ac4c7dd4ada089135b3e',1,'client_function']]]
 ];

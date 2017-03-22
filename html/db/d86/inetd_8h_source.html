@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: src/command_relay.h Source File</title>
+<title>gnunetircd - example distributed application: src/inetd.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -84,10 +84,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">command_relay.h</div>  </div>
+<div class="title">inetd.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../de/d98/command__relay_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  gnunetircd Distributed example.</span></div>
+<a href="../../db/d86/inetd_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  gnunetircd Distributed example.</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  Copyright (C) 2017  Michael Mestnik &lt;cheako+github_com@mikemestnik.net&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  This program is free software: you can redistribute it and/or modify</span></div>
@@ -104,27 +104,33 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef COMMAND_RELAY_H_</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define COMMAND_RELAY_H_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef INETD_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INETD_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d86/inetd_8h.html">inetd.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">   30</a></span>&#160;<span class="keyword">typedef</span> int (*<a class="code" href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">CommandFunc</a>)(<span class="keyword">struct </span><a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *cls, <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../d3/d29/structclient__function.html">   35</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d3/d29/structclient__function.html">client_function</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d3/d29/structclient__function.html#aa5d0219eb197ac4c7dd4ada089135b3e">   39</a></span>&#160;    <span class="keywordtype">char</span> * <a class="code" href="../../d3/d29/structclient__function.html#aa5d0219eb197ac4c7dd4ada089135b3e">keyword</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d3/d29/structclient__function.html#a2c051c7ed7148375e7a50da1bb91c48b">   43</a></span>&#160;    <a class="code" href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">CommandFunc</a> <span class="keyword">function</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="../../d3/d29/structclient__function.html">client_function</a> <a class="code" href="../../de/d98/command__relay_8h.html#ad0a2602e66329a99ec94f2740be41602">registration_commands</a>[];</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMAND_RELAY_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;gnunet/gnunet_config.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;gnunet/platform.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;gnunet/gnunet_util_lib.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../df/d3d/structConnectionNode.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../df/d3d/structConnectionNode.html#a344b6dd896e4d23a8a13600bebf7c6dc">   33</a></span>&#160;    <span class="keyword">struct </span>GNUNET_NETWORK_Handle *<a class="code" href="../../df/d3d/structConnectionNode.html#a344b6dd896e4d23a8a13600bebf7c6dc">nhandle</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../df/d3d/structConnectionNode.html#a9690d8bd138130b080716102248c48b1">   39</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../df/d3d/structConnectionNode.html#a9690d8bd138130b080716102248c48b1">quit</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../df/d3d/structConnectionNode.html#aa35cbdfb74de0dcc482e07ed149ae2eb">   43</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="../../d3/d29/structclient__function.html">client_function</a> *<a class="code" href="../../df/d3d/structConnectionNode.html#aa35cbdfb74de0dcc482e07ed149ae2eb">commands</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../df/d3d/structConnectionNode.html#a2731ce0456273c666f1315b3dfc79700">   47</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="../../df/d3d/structConnectionNode.html#a2731ce0456273c666f1315b3dfc79700">buflen</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../df/d3d/structConnectionNode.html#af6198cbfc8da8033a9ee9de52e967783">   51</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="../../df/d3d/structConnectionNode.html#af6198cbfc8da8033a9ee9de52e967783">buf</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../db/d86/inetd_8h.html#a8483c264aa0861378887a222bc61df45">run_accept</a>(<span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keyword">struct</span> GNUNET_SCHEDULER_TaskContext *);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INETD_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="structclient__function_html"><div class="ttname"><a href="../../d3/d29/structclient__function.html">client_function</a></div><div class="ttdoc">name to function mapping </div><div class="ttdef"><b>Definition:</b> command_relay.h:35</div></div>
+<div class="ttc" id="inetd_8h_html_a8483c264aa0861378887a222bc61df45"><div class="ttname"><a href="../../db/d86/inetd_8h.html#a8483c264aa0861378887a222bc61df45">run_accept</a></div><div class="ttdeci">void run_accept(void *, const struct GNUNET_SCHEDULER_TaskContext *)</div><div class="ttdef"><b>Definition:</b> inetd.c:152</div></div>
 <div class="ttc" id="structConnectionNode_html"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html">ConnectionNode</a></div><div class="ttdoc">closure for inetd </div><div class="ttdef"><b>Definition:</b> inetd.h:29</div></div>
-<div class="ttc" id="command__relay_8h_html_a43e0eed804fd8433361cfe44d84f85de"><div class="ttname"><a href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">CommandFunc</a></div><div class="ttdeci">int(* CommandFunc)(struct ConnectionNode *cls, int argc, char **argv)</div><div class="ttdoc">function called to process commands </div><div class="ttdef"><b>Definition:</b> command_relay.h:30</div></div>
-<div class="ttc" id="inetd_8h_html"><div class="ttname"><a href="../../db/d86/inetd_8h.html">inetd.h</a></div></div>
-<div class="ttc" id="structclient__function_html_aa5d0219eb197ac4c7dd4ada089135b3e"><div class="ttname"><a href="../../d3/d29/structclient__function.html#aa5d0219eb197ac4c7dd4ada089135b3e">client_function::keyword</a></div><div class="ttdeci">char * keyword</div><div class="ttdoc">command name </div><div class="ttdef"><b>Definition:</b> command_relay.h:39</div></div>
-<div class="ttc" id="command__relay_8h_html_ad0a2602e66329a99ec94f2740be41602"><div class="ttname"><a href="../../de/d98/command__relay_8h.html#ad0a2602e66329a99ec94f2740be41602">registration_commands</a></div><div class="ttdeci">const struct client_function registration_commands[]</div><div class="ttdoc">initial commands </div><div class="ttdef"><b>Definition:</b> command_relay.c:21</div></div>
+<div class="ttc" id="structConnectionNode_html_aa35cbdfb74de0dcc482e07ed149ae2eb"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html#aa35cbdfb74de0dcc482e07ed149ae2eb">ConnectionNode::commands</a></div><div class="ttdeci">const struct client_function * commands</div><div class="ttdoc">state tracker </div><div class="ttdef"><b>Definition:</b> inetd.h:43</div></div>
+<div class="ttc" id="structConnectionNode_html_a344b6dd896e4d23a8a13600bebf7c6dc"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html#a344b6dd896e4d23a8a13600bebf7c6dc">ConnectionNode::nhandle</a></div><div class="ttdeci">struct GNUNET_NETWORK_Handle * nhandle</div><div class="ttdoc">incoming connection </div><div class="ttdef"><b>Definition:</b> inetd.h:33</div></div>
+<div class="ttc" id="structConnectionNode_html_a2731ce0456273c666f1315b3dfc79700"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html#a2731ce0456273c666f1315b3dfc79700">ConnectionNode::buflen</a></div><div class="ttdeci">size_t buflen</div><div class="ttdoc">remaining byte(s) size </div><div class="ttdef"><b>Definition:</b> inetd.h:47</div></div>
+<div class="ttc" id="structConnectionNode_html_a9690d8bd138130b080716102248c48b1"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html#a9690d8bd138130b080716102248c48b1">ConnectionNode::quit</a></div><div class="ttdeci">bool quit</div><div class="ttdoc">should the inetd close the connection </div><div class="ttdef"><b>Definition:</b> inetd.h:39</div></div>
+<div class="ttc" id="structConnectionNode_html_af6198cbfc8da8033a9ee9de52e967783"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html#af6198cbfc8da8033a9ee9de52e967783">ConnectionNode::buf</a></div><div class="ttdeci">char * buf</div><div class="ttdoc">remaining byte(s) from input stream </div><div class="ttdef"><b>Definition:</b> inetd.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

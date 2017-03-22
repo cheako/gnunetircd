@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: src/server.h File Reference</title>
+<title>gnunetircd - example distributed application: src/inetd.c File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -37,8 +37,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,34 +84,66 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">server.h File Reference</div>  </div>
+<div class="title">inetd.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
-<code>#include &lt;gnunet/platform.h&gt;</code><br/>
-<code>#include &lt;stdbool.h&gt;</code><br/>
-<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
-<code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
-</div>
-<p><a href="../../d8/dc3/server_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d01/structConnectionNode_1_1BaseConnectionNodeHandler.html">ConnectionNode::BaseConnectionNodeHandler</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="../../de/d98/command__relay_8h_source.html">command_relay.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8483c264aa0861378887a222bc61df45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc3/server_8h.html#a8483c264aa0861378887a222bc61df45">run_accept</a> (void *, const struct GNUNET_SCHEDULER_TaskContext *)</td></tr>
-<tr class="separator:a8483c264aa0861378887a222bc61df45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acb87090cef36a855c24edc96d0709e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">CommandFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d37/inetd_8c.html#a4acb87090cef36a855c24edc96d0709e">get_command_function</a> (const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a> *commands, const char *cmd)</td></tr>
+<tr class="separator:a4acb87090cef36a855c24edc96d0709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6f68bb89e187e51ea73ba8ee5dc68f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d37/inetd_8c.html#aec6f68bb89e187e51ea73ba8ee5dc68f">LineLocator</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn)</td></tr>
+<tr class="separator:aec6f68bb89e187e51ea73ba8ee5dc68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d37/inetd_8c.html#a4392e503fa86339baf3bdb4ab5b82b3f">run_accept</a> (void *cls, const struct GNUNET_SCHEDULER_TaskContext *ctx)</td></tr>
+<tr class="separator:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8483c264aa0861378887a222bc61df45"></a>
+<a class="anchor" id="a4acb87090cef36a855c24edc96d0709e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">CommandFunc</a> get_command_function </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a> *&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec6f68bb89e187e51ea73ba8ee5dc68f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LineLocator </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *&#160;</td>
+          <td class="paramname"><em>conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4392e503fa86339baf3bdb4ab5b82b3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -121,13 +151,13 @@ Functions</h2></td></tr>
           <td class="memname">void run_accept </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>cls</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const struct GNUNET_SCHEDULER_TaskContext *&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -142,7 +172,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2017 19:42:26 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 22 2017 17:51:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

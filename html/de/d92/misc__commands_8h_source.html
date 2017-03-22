@@ -37,8 +37,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,24 +109,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d98/command__relay_8h.html">command_relay.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../de/d92/misc__commands_8h.html#a821239838ed613416d199116ee93a2ed">unreg_ping_func</a>(<span class="keyword">struct</span> <a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *, <span class="keyword">struct</span> <a class="code" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *, <span class="keywordtype">int</span>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">char</span> **);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../de/d92/misc__commands_8h.html#af123b66322e1777880adfcf126a5d8e8">ping_func</a>(<span class="keyword">struct</span> <a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *, <span class="keyword">struct</span> <a class="code" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *, <span class="keywordtype">int</span>,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">char</span> **);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../de/d92/misc__commands_8h.html#acacbbe67ab2d267ef5f4bec14c8b1d3e">quit_func</a>(<span class="keyword">struct</span> <a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *, <span class="keyword">struct</span> <a class="code" href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a> *, <span class="keywordtype">int</span>,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">char</span> **);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MISC_COMMANDS_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="misc__commands_8h_html_af123b66322e1777880adfcf126a5d8e8"><div class="ttname"><a href="../../de/d92/misc__commands_8h.html#af123b66322e1777880adfcf126a5d8e8">ping_func</a></div><div class="ttdeci">int ping_func(struct ConnectionNode *, struct ProccessInputHandler *, int, char **)</div><div class="ttdef"><b>Definition:</b> misc_commands.c:49</div></div>
-<div class="ttc" id="structConnectionNode_html"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html">ConnectionNode</a></div><div class="ttdef"><b>Definition:</b> server.h:27</div></div>
-<div class="ttc" id="misc__commands_8h_html_acacbbe67ab2d267ef5f4bec14c8b1d3e"><div class="ttname"><a href="../../de/d92/misc__commands_8h.html#acacbbe67ab2d267ef5f4bec14c8b1d3e">quit_func</a></div><div class="ttdeci">int quit_func(struct ConnectionNode *, struct ProccessInputHandler *, int, char **)</div><div class="ttdef"><b>Definition:</b> misc_commands.c:77</div></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../de/d92/misc__commands_8h.html#a1e4d4d0f148ba877830ed0dcd76b699e">ping_func</a>(<span class="keyword">struct</span> <a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../de/d92/misc__commands_8h.html#a90b50c939a8e08d9cb4e8079f0b513fb">quit_func</a>(<span class="keyword">struct</span> <a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* MISC_COMMANDS_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="misc__commands_8h_html_a1e4d4d0f148ba877830ed0dcd76b699e"><div class="ttname"><a href="../../de/d92/misc__commands_8h.html#a1e4d4d0f148ba877830ed0dcd76b699e">ping_func</a></div><div class="ttdeci">int ping_func(struct ConnectionNode *, int, char **)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.6.2] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:20</div></div>
+<div class="ttc" id="structConnectionNode_html"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html">ConnectionNode</a></div><div class="ttdoc">closure for inetd </div><div class="ttdef"><b>Definition:</b> inetd.h:29</div></div>
+<div class="ttc" id="misc__commands_8h_html_a90b50c939a8e08d9cb4e8079f0b513fb"><div class="ttname"><a href="../../de/d92/misc__commands_8h.html#a90b50c939a8e08d9cb4e8079f0b513fb">quit_func</a></div><div class="ttdeci">int quit_func(struct ConnectionNode *, int, char **)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:41</div></div>
 <div class="ttc" id="command__relay_8h_html"><div class="ttname"><a href="../../de/d98/command__relay_8h.html">command_relay.h</a></div></div>
-<div class="ttc" id="structProccessInputHandler_html"><div class="ttname"><a href="../../da/dca/structProccessInputHandler.html">ProccessInputHandler</a></div><div class="ttdef"><b>Definition:</b> command_relay.h:23</div></div>
-<div class="ttc" id="misc__commands_8h_html_a821239838ed613416d199116ee93a2ed"><div class="ttname"><a href="../../de/d92/misc__commands_8h.html#a821239838ed613416d199116ee93a2ed">unreg_ping_func</a></div><div class="ttdeci">int unreg_ping_func(struct ConnectionNode *, struct ProccessInputHandler *, int, char **)</div><div class="ttdef"><b>Definition:</b> misc_commands.c:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 21 2017 19:42:26 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 22 2017 17:51:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
