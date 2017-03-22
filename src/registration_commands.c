@@ -21,10 +21,10 @@
 #include "hybrid-6/common.h"
 
 static int registration_finish(struct ConnectionNode *conn) {
-	if (strlen(conn->nick) != 0 && strlen(conn->user) != 0
+	if (strlen(conn->base.name) != 0 && strlen(conn->user) != 0
 			&& strlen(conn->host) != 0 && strlen(conn->srvr) != 0
-			&& strlen(conn->real) != 0) {
-		conn->commands = normal_commands;
+			&& strlen(conn->base.real) != 0) {
+		conn->base.commands = normal_commands;
 	}
 	return 0;
 }
@@ -32,16 +32,19 @@ static int registration_finish(struct ConnectionNode *conn) {
 /**
  * @brief you may not reregister
  */
-int registration_done_func(struct ConnectionNode *conn, int argc, char **argv) {
-	GNUNET_NETWORK_socket_send(conn->nhandle,
-			":gnunetircd 462 * :You may not reregister\r\n", 95 - 52);
+int registration_done_func(struct BaseRoutingNode *brn, int argc, char **argv) {
+	routing_send(brn, routing_get(brn, brn->name),
+			":gnunetircd 462 * :You may not reregister\r\n");
 	return 462;
 }
 
 /**
  * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.1]
  */
-int pass_func(struct ConnectionNode *conn, int argc, char **argv) {
+int pass_func(struct BaseRoutingNode *cls, int argc, char **argv) {
+	if (cls->type != IRCD_ROUTING_NODE_INETD)
+		return 1;
+	struct ConnectionNode *conn = (void *) cls;
 	if (argc <= 0) {
 		GNUNET_NETWORK_socket_send(conn->nhandle,
 				":gnunetircd 461 * PASS :Not enough parameters\r\n", 99 - 52);
@@ -56,30 +59,47 @@ int pass_func(struct ConnectionNode *conn, int argc, char **argv) {
  *
  * @todo handle nick collisions for local users
  */
-int nick_func(struct ConnectionNode *conn, int argc, char **argv) {
+int nick_func(struct BaseRoutingNode *brn, int argc, char **argv) {
 	if (argc < 2) {
-		GNUNET_NETWORK_socket_send(conn->nhandle,
-				":gnunetircd 431 * :No nickname given\r\n", 90 - 52);
+		if (brn->type == IRCD_ROUTING_NODE_INETD && brn->name[0] == '\0') {
+			GNUNET_NETWORK_socket_send(((struct ConnectionNode *) brn)->nhandle,
+					":gnunetircd 431 * :No nickname given\r\n", 90 - 52);
+		} else {
+			routing_send(brn, routing_get(brn, brn->name),
+					":gnunetircd 431 * :No nickname given\r\n");
+		}
 		return 461;
 	}
-	strncpy(conn->nick, argv[2], NICKLEN);
-	if(!clean_nick_name(conn->nick))
-		conn->nick[0] = '\0';
+	if (brn->name[0]) {
+		strncpy(brn->pnick, brn->name, NICKLEN);
+		routing_put(NULL, brn->pnick);
+	}
+	strncpy(brn->name, argv[2], NICKLEN);
+	if (!clean_nick_name(brn->name)) {
+		brn->name[0] = '\0';
+	} else
+		routing_put(brn, brn->name);
 	return 0;
 }
 
 /**
  * @brief called during registration
  */
-int rnick_func(struct ConnectionNode *conn, int argc, char **argv) {
-	int ret = nick_func(conn, argc, argv);
+int rnick_func(struct BaseRoutingNode *cls, int argc, char **argv) {
+	if (cls->type != IRCD_ROUTING_NODE_INETD)
+		return 1;
+	int ret = nick_func(cls, argc, argv);
+	struct ConnectionNode *conn = (void *) cls;
 	return ret == 0 ? registration_finish(conn) : ret;
 }
 
 /**
  * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
  */
-int user_func(struct ConnectionNode *conn, int argc, char **argv) {
+int user_func(struct BaseRoutingNode *cls, int argc, char **argv) {
+	if (cls->type != IRCD_ROUTING_NODE_INETD)
+		return 1;
+	struct ConnectionNode *conn = (void *) cls;
 	if (argc < 5) {
 		GNUNET_NETWORK_socket_send(conn->nhandle,
 				":gnunetircd 461 * USER :Not enough parameters\r\n", 99 - 52);
@@ -87,12 +107,14 @@ int user_func(struct ConnectionNode *conn, int argc, char **argv) {
 	}
 	if (!valid_username(argv[2]) || argv[5][0] == '\0') {
 		GNUNET_NETWORK_socket_send(conn->nhandle,
-				":gnunetircd 461 * USER :Invalid user or real name\r\n", 69 - 18);
+				":gnunetircd 461 * USER :Invalid user or real name\r\n",
+				69 - 18);
 		return 461;
 	}
 	strncpy(conn->user, argv[2], USERLEN);
 	strncpy(conn->host, argv[3], HOSTLEN);
 	strncpy(conn->srvr, argv[4], HOSTLEN);
-	strncpy(conn->real, argv[5][0] == ':' ? &argv[5][1] : argv[5], REALLEN);
+	strncpy(conn->base.real, argv[5][0] == ':' ? &argv[5][1] : argv[5],
+			REALLEN);
 	return registration_finish(conn);
 }

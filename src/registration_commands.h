@@ -20,10 +20,10 @@
 
 #include "command_relay.h"
 
-int pass_func(struct ConnectionNode *, int, char **);
-int nick_func(struct ConnectionNode *, int, char **);
-int rnick_func(struct ConnectionNode *, int, char **);
-int user_func(struct ConnectionNode *, int, char **);
-int registration_done_func(struct ConnectionNode *, int, char **);
+int pass_func(struct BaseRoutingNode *, int, char **);
+int nick_func(struct BaseRoutingNode *, int, char **);
+int rnick_func(struct BaseRoutingNode *, int, char **);
+int user_func(struct BaseRoutingNode *, int, char **);
+int registration_done_func(struct BaseRoutingNode *, int, char **);
 
 #endif /* REGISTRATION_COMMANDS_H_ */

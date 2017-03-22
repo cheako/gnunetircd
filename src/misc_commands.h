@@ -20,7 +20,7 @@
 
 #include "command_relay.h"
 
-int ping_func(struct ConnectionNode *, int, char **);
-int quit_func(struct ConnectionNode *, int, char **);
+int ping_func(struct BaseRoutingNode *, int, char **);
+int quit_func(struct BaseRoutingNode *, int, char **);
 
 #endif /* MISC_COMMANDS_H_ */
