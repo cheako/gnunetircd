@@ -20,7 +20,7 @@
 /**
  * @brief [https://tools.ietf.org/html/rfc1459#section-4.6.2]
  */
-int ping_func(struct InetdConnection *conn, int argc, char **argv) {
+int ping_func(struct BaseRoutingNode *brn, int argc, char **argv) {
 	size_t n;
 	char *t = NULL;
 
@@ -36,7 +36,12 @@ int ping_func(struct InetdConnection *conn, int argc, char **argv) {
 		t = GNUNET_realloc(t, n);
 	}
 	strncat(t, "\r\n", n);
-	GNUNET_NETWORK_socket_send(conn->nhandle, t, strlen(t));
+	if (brn->type == IRCD_ROUTING_NODE_INETD && brn->name[0] == '\0') {
+		GNUNET_NETWORK_socket_send(((struct InetdConnection *) brn)->nhandle, t,
+				strlen(t));
+	} else {
+		routing_send(brn, routing_get(brn, brn->name), t);
+	}
 	GNUNET_free(t);
 	return 0;
 }
@@ -44,9 +49,11 @@ int ping_func(struct InetdConnection *conn, int argc, char **argv) {
 /**
  * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.6]
  */
-int quit_func(struct InetdConnection *conn, int argc, char **argv) {
-	conn->quit = true;
-	GNUNET_NETWORK_socket_send(conn->nhandle,
+int quit_func(struct BaseRoutingNode *brn, int argc, char **argv) {
+	if (brn->type != IRCD_ROUTING_NODE_INETD)
+		return 1;
+	brn->quit = true;
+	GNUNET_NETWORK_socket_send(((struct InetdConnection *) brn)->nhandle,
 			"ERROR :Closing Link: * (Quit: )\r\n", 81 - 48);
 	return 0;
 }

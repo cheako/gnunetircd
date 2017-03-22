@@ -10,6 +10,9 @@ OBJS += hybrid-6/match.o
 hybrid-6/s_user.o: $(wildcard hybrid-6/*.h)
 OBJS += hybrid-6/s_user.o
 
+routing.o: routing.h
+OBJS += routing.o
+
 command_relay.o: command_relay.h
 OBJS += command_relay.o
 

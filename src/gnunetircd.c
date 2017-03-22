@@ -16,11 +16,14 @@
  */
 
 #include "inetd.h"
+#include "routing.h"
 
 static int ret = 16;
 
 static void run (void *cls, char *const *args, const char *cfgfile,
 		const struct GNUNET_CONFIGURATION_Handle *cfg) {
+
+	routing_init();
 
 	struct sockaddr_in sa;
 	struct GNUNET_NETWORK_Handle *h;
