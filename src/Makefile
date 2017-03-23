@@ -4,6 +4,12 @@ LDLIBS += $(shell pkg-config --libs $(PKGCONFIGLIBS))
 
 all: gnunetircd
 
+hybrid-6/match.o: $(wildcard hybrid-6/*.h)
+OBJS += hybrid-6/match.o
+
+hybrid-6/s_user.o: $(wildcard hybrid-6/*.h)
+OBJS += hybrid-6/s_user.o
+
 command_relay.o: command_relay.h
 OBJS += command_relay.o
 
@@ -16,6 +22,6 @@ OBJS += inetd.o
 gnunetircd: $(OBJS)
 
 clean:
-	rm -f *.o gnunetircd
+	rm -f *.o hybrid-6/*.o gnunetircd
 
 .PHONY: clean
