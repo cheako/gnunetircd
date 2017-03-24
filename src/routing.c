@@ -17,6 +17,7 @@
 
 #include "gnunet_container_lib.h"
 #include "inetd.h"
+#include "ecdsa.h"
 #include "hybrid-6/irc_string.h"
 
 static struct GNUNET_CONTAINER_MultiHashMap* table;
