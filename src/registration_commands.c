@@ -17,6 +17,7 @@
 
 #include "registration_commands.h"
 #include "command_relay.h"
+#include "ecdsa.h"
 #include "hybrid-6/s_user.h"
 #include "hybrid-6/common.h"
 
@@ -25,6 +26,7 @@ static int registration_finish(struct InetdConnection *conn) {
 			&& strlen(conn->host) != 0 && strlen(conn->srvr) != 0
 			&& strlen(conn->base.real) != 0) {
 		conn->base.commands = normal_commands;
+		ecdsa_lookup(&conn->base);
 	}
 	return 0;
 }
