@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run_5faccept',['run_accept',['../dc/d37/inetd_8c.html#a4392e503fa86339baf3bdb4ab5b82b3f',1,'run_accept(void *cls, const struct GNUNET_SCHEDULER_TaskContext *ctx):&#160;inetd.c'],['../db/d86/inetd_8h.html#a8483c264aa0861378887a222bc61df45',1,'run_accept(void *, const struct GNUNET_SCHEDULER_TaskContext *):&#160;inetd.c']]]
+  ['quit_5ffunc',['quit_func',['../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7',1,'quit_func(struct ConnectionNode *conn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a90b50c939a8e08d9cb4e8079f0b513fb',1,'quit_func(struct ConnectionNode *, int, char **):&#160;misc_commands.c']]]
 ];

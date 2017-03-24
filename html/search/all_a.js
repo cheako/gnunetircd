@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['quit',['quit',['../df/d3d/structConnectionNode.html#a9690d8bd138130b080716102248c48b1',1,'ConnectionNode']]],
-  ['quit_5ffunc',['quit_func',['../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7',1,'quit_func(struct ConnectionNode *conn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a90b50c939a8e08d9cb4e8079f0b513fb',1,'quit_func(struct ConnectionNode *, int, char **):&#160;misc_commands.c']]]
+  ['next',['next',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html#a40dfe04faa8ef1222f5e4c503df5a7bc',1,'BaseRoutingNode::WriteQueueItem::next()'],['../d0/dcd/structElement.html#a88551e77c4b5ed9586aeacf3afb2b404',1,'Element::next()']]],
+  ['nhandle',['nhandle',['../df/d3d/structConnectionNode.html#a344b6dd896e4d23a8a13600bebf7c6dc',1,'ConnectionNode']]],
+  ['nick',['nick',['../df/d3d/structConnectionNode.html#aae1c65947676d55d42ab0155252b0cce',1,'ConnectionNode']]],
+  ['nick_5ffunc',['nick_func',['../df/d2f/registration__commands_8c.html#a3b6bf1af6b39cd64a01b0afe6d55562e',1,'nick_func(struct ConnectionNode *conn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a4845b4fcfa974061518767196558afab',1,'nick_func(struct ConnectionNode *, int, char **):&#160;registration_commands.c']]],
+  ['normal_5fcommands',['normal_commands',['../d7/d37/command__relay_8c.html#a92cb1c5b582c9524479c1b3509680642',1,'normal_commands():&#160;command_relay.c'],['../de/d98/command__relay_8h.html#a92cb1c5b582c9524479c1b3509680642',1,'normal_commands():&#160;command_relay.c']]]
 ];

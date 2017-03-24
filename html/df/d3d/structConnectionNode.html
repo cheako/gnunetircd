@@ -37,6 +37,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="../../files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,6 +99,38 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a344b6dd896e4d23a8a13600bebf7c6dc"><td class="memItemLeft" align="right" valign="top">struct GNUNET_NETWORK_Handle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a344b6dd896e4d23a8a13600bebf7c6dc">nhandle</a></td></tr>
 <tr class="memdesc:a344b6dd896e4d23a8a13600bebf7c6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">incoming connection  <a href="#a344b6dd896e4d23a8a13600bebf7c6dc">More...</a><br/></td></tr>
 <tr class="separator:a344b6dd896e4d23a8a13600bebf7c6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9debb9dbe08bd7eaf0770897edca92"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a8f9debb9dbe08bd7eaf0770897edca92">pass</a> [PASSWDLEN]</td></tr>
+<tr class="memdesc:a8f9debb9dbe08bd7eaf0770897edca92"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.1">https://tools.ietf.org/html/rfc1459#section-4.1.1</a>]  <a href="#a8f9debb9dbe08bd7eaf0770897edca92">More...</a><br/></td></tr>
+<tr class="separator:a8f9debb9dbe08bd7eaf0770897edca92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1c65947676d55d42ab0155252b0cce"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#aae1c65947676d55d42ab0155252b0cce">nick</a> [NICKLEN]</td></tr>
+<tr class="memdesc:aae1c65947676d55d42ab0155252b0cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.2">https://tools.ietf.org/html/rfc1459#section-4.1.2</a>]  <a href="#aae1c65947676d55d42ab0155252b0cce">More...</a><br/></td></tr>
+<tr class="separator:aae1c65947676d55d42ab0155252b0cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c18087caf4ea89ddb29606d22b2133d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a5c18087caf4ea89ddb29606d22b2133d">user</a> [USERLEN]</td></tr>
+<tr class="memdesc:a5c18087caf4ea89ddb29606d22b2133d"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>]  <a href="#a5c18087caf4ea89ddb29606d22b2133d">More...</a><br/></td></tr>
+<tr class="separator:a5c18087caf4ea89ddb29606d22b2133d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b58b7015a8bba5bd4a9c32d08c9d4a6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a6b58b7015a8bba5bd4a9c32d08c9d4a6">host</a> [HOSTLEN]</td></tr>
+<tr class="memdesc:a6b58b7015a8bba5bd4a9c32d08c9d4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>]  <a href="#a6b58b7015a8bba5bd4a9c32d08c9d4a6">More...</a><br/></td></tr>
+<tr class="separator:a6b58b7015a8bba5bd4a9c32d08c9d4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd523daaecd468d231caf0c9aec83dee"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#acd523daaecd468d231caf0c9aec83dee">srvr</a> [HOSTLEN]</td></tr>
+<tr class="memdesc:acd523daaecd468d231caf0c9aec83dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>]  <a href="#acd523daaecd468d231caf0c9aec83dee">More...</a><br/></td></tr>
+<tr class="separator:acd523daaecd468d231caf0c9aec83dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15162fda5829e4501b00e0f8490bb7d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#aa15162fda5829e4501b00e0f8490bb7d">real</a> [REALLEN]</td></tr>
+<tr class="memdesc:aa15162fda5829e4501b00e0f8490bb7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>]  <a href="#aa15162fda5829e4501b00e0f8490bb7d">More...</a><br/></td></tr>
+<tr class="separator:aa15162fda5829e4501b00e0f8490bb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b865b4b656157102bfb064a17af328"><td class="memItemLeft" align="right" valign="top">struct GNUNET_IDENTITY_EgoLookup *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a18b865b4b656157102bfb064a17af328">el</a></td></tr>
+<tr class="memdesc:a18b865b4b656157102bfb064a17af328"><td class="mdescLeft">&#160;</td><td class="mdescRight">saved, never used except to prevent endless loop  <a href="#a18b865b4b656157102bfb064a17af328">More...</a><br/></td></tr>
+<tr class="separator:a18b865b4b656157102bfb064a17af328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cf9263cb4e142f3b36d8a6677c0be6"><td class="memItemLeft" align="right" valign="top">struct <br class="typebreak"/>
+GNUNET_NAMESTORE_QueueEntry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a67cf9263cb4e142f3b36d8a6677c0be6">qe</a></td></tr>
+<tr class="memdesc:a67cf9263cb4e142f3b36d8a6677c0be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">saved, never used except to prevent endless loop  <a href="#a67cf9263cb4e142f3b36d8a6677c0be6">More...</a><br/></td></tr>
+<tr class="separator:a67cf9263cb4e142f3b36d8a6677c0be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab5166c09e79beded9c706a446c1183"><td class="memItemLeft" align="right" valign="top">const struct <br class="typebreak"/>
+GNUNET_CRYPTO_EcdsaPrivateKey *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#abab5166c09e79beded9c706a446c1183">key</a></td></tr>
+<tr class="memdesc:abab5166c09e79beded9c706a446c1183"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to sign gns blocks  <a href="#abab5166c09e79beded9c706a446c1183">More...</a><br/></td></tr>
+<tr class="separator:abab5166c09e79beded9c706a446c1183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f313200e7414a531e2bc76144c6eeff"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a1f313200e7414a531e2bc76144c6eeff">go_gns</a> )(struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *)</td></tr>
+<tr class="memdesc:a1f313200e7414a531e2bc76144c6eeff"><td class="mdescLeft">&#160;</td><td class="mdescRight">called after ecdsa key populated  <a href="#a1f313200e7414a531e2bc76144c6eeff">More...</a><br/></td></tr>
+<tr class="separator:a1f313200e7414a531e2bc76144c6eeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9690d8bd138130b080716102248c48b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d3d/structConnectionNode.html#a9690d8bd138130b080716102248c48b1">quit</a></td></tr>
 <tr class="memdesc:a9690d8bd138130b080716102248c48b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">should the inetd close the connection  <a href="#a9690d8bd138130b080716102248c48b1">More...</a><br/></td></tr>
 <tr class="separator:a9690d8bd138130b080716102248c48b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +189,62 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a18b865b4b656157102bfb064a17af328"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct GNUNET_IDENTITY_EgoLookup* ConnectionNode::el</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>saved, never used except to prevent endless loop </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f313200e7414a531e2bc76144c6eeff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* ConnectionNode::go_gns)(struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>called after ecdsa key populated </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b58b7015a8bba5bd4a9c32d08c9d4a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ConnectionNode::host[HOSTLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>] </p>
+
+</div>
+</div>
+<a class="anchor" id="abab5166c09e79beded9c706a446c1183"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct GNUNET_CRYPTO_EcdsaPrivateKey* ConnectionNode::key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>used to sign gns blocks </p>
+
+</div>
+</div>
 <a class="anchor" id="a344b6dd896e4d23a8a13600bebf7c6dc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +256,48 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>incoming connection </p>
+
+</div>
+</div>
+<a class="anchor" id="aae1c65947676d55d42ab0155252b0cce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ConnectionNode::nick[NICKLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.2">https://tools.ietf.org/html/rfc1459#section-4.1.2</a>] </p>
+
+</div>
+</div>
+<a class="anchor" id="a8f9debb9dbe08bd7eaf0770897edca92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ConnectionNode::pass[PASSWDLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.1">https://tools.ietf.org/html/rfc1459#section-4.1.1</a>] </p>
+
+</div>
+</div>
+<a class="anchor" id="a67cf9263cb4e142f3b36d8a6677c0be6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct GNUNET_NAMESTORE_QueueEntry* ConnectionNode::qe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>saved, never used except to prevent endless loop </p>
 
 </div>
 </div>
@@ -184,13 +316,55 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa15162fda5829e4501b00e0f8490bb7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ConnectionNode::real[REALLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>] </p>
+
+</div>
+</div>
+<a class="anchor" id="acd523daaecd468d231caf0c9aec83dee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ConnectionNode::srvr[HOSTLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>] </p>
+
+</div>
+</div>
+<a class="anchor" id="a5c18087caf4ea89ddb29606d22b2133d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char ConnectionNode::user[USERLEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.1.3">https://tools.ietf.org/html/rfc1459#section-4.1.3</a>] </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="../../db/d86/inetd_8h_source.html">inetd.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2017 18:00:00 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 24 2017 22:08:59 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

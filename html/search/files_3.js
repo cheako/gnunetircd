@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['misc_5fcommands_2ec',['misc_commands.c',['../d9/db3/misc__commands_8c.html',1,'']]],
-  ['misc_5fcommands_2eh',['misc_commands.h',['../de/d92/misc__commands_8h.html',1,'']]]
+  ['inetd_2ec',['inetd.c',['../dc/d37/inetd_8c.html',1,'']]],
+  ['inetd_2eh',['inetd.h',['../db/d86/inetd_8h.html',1,'']]]
 ];

@@ -37,6 +37,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,15 +92,44 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d92/misc__commands_8h_source.html">misc_commands.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../dd/db4/registration__commands_8h_source.html">registration_commands.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d98/command__relay_8h_source.html">command_relay.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ad0a2602e66329a99ec94f2740be41602"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d37/command__relay_8c.html#ad0a2602e66329a99ec94f2740be41602">registration_commands</a> []</td></tr>
-<tr class="memdesc:ad0a2602e66329a99ec94f2740be41602"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial commands  <a href="#ad0a2602e66329a99ec94f2740be41602">More...</a><br/></td></tr>
+<tr class="memdesc:ad0a2602e66329a99ec94f2740be41602"><td class="mdescLeft">&#160;</td><td class="mdescRight">available upon connection  <a href="#ad0a2602e66329a99ec94f2740be41602">More...</a><br/></td></tr>
 <tr class="separator:ad0a2602e66329a99ec94f2740be41602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92cb1c5b582c9524479c1b3509680642"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d37/command__relay_8c.html#a92cb1c5b582c9524479c1b3509680642">normal_commands</a> []</td></tr>
+<tr class="memdesc:a92cb1c5b582c9524479c1b3509680642"><td class="mdescLeft">&#160;</td><td class="mdescRight">regular  <a href="#a92cb1c5b582c9524479c1b3509680642">More...</a><br/></td></tr>
+<tr class="separator:a92cb1c5b582c9524479c1b3509680642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a92cb1c5b582c9524479c1b3509680642"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a> normal_commands[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        { <span class="stringliteral">&quot;pass&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#afa4fc4a161a7940e4a5a0d98588a5543">registration_done_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;nick&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#a3b6bf1af6b39cd64a01b0afe6d55562e">nick_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;user&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#afa4fc4a161a7940e4a5a0d98588a5543">registration_done_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;ping&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627">ping_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;quit&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7">quit_func</a> },</div>
+<div class="line">        { NULL, NULL } }</div>
+<div class="ttc" id="registration__commands_8c_html_a3b6bf1af6b39cd64a01b0afe6d55562e"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#a3b6bf1af6b39cd64a01b0afe6d55562e">nick_func</a></div><div class="ttdeci">int nick_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.2] </div><div class="ttdef"><b>Definition:</b> registration_commands.c:60</div></div>
+<div class="ttc" id="misc__commands_8c_html_a2c705cdf059e1bda92d068c3fc84b6c7"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7">quit_func</a></div><div class="ttdeci">int quit_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:47</div></div>
+<div class="ttc" id="misc__commands_8c_html_ada5405c6e5ce73dc324a38db77517627"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627">ping_func</a></div><div class="ttdeci">int ping_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.6.2] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:23</div></div>
+<div class="ttc" id="registration__commands_8c_html_afa4fc4a161a7940e4a5a0d98588a5543"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#afa4fc4a161a7940e4a5a0d98588a5543">registration_done_func</a></div><div class="ttdeci">int registration_done_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">you may not reregister </div><div class="ttdef"><b>Definition:</b> registration_commands.c:35</div></div>
+</div><!-- fragment -->
+<p>regular </p>
+
+</div>
+</div>
 <a class="anchor" id="ad0a2602e66329a99ec94f2740be41602"></a>
 <div class="memitem">
 <div class="memproto">
@@ -109,20 +140,26 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        { <span class="stringliteral">&quot;pass&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#af31b1542f9c37fee7fc010ea0085d825">pass_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;nick&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#a1941a85d6dc3b89777f996b76b82d278">rnick_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;user&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#a96b7eb466fc07256a77751d44cafab21">user_func</a> },</div>
 <div class="line">        { <span class="stringliteral">&quot;ping&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627">ping_func</a> },</div>
 <div class="line">        { <span class="stringliteral">&quot;quit&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7">quit_func</a> },</div>
 <div class="line">        { NULL, NULL } }</div>
-<div class="ttc" id="misc__commands_8c_html_a2c705cdf059e1bda92d068c3fc84b6c7"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7">quit_func</a></div><div class="ttdeci">int quit_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:41</div></div>
-<div class="ttc" id="misc__commands_8c_html_ada5405c6e5ce73dc324a38db77517627"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627">ping_func</a></div><div class="ttdeci">int ping_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.6.2] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:20</div></div>
+<div class="ttc" id="misc__commands_8c_html_a2c705cdf059e1bda92d068c3fc84b6c7"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7">quit_func</a></div><div class="ttdeci">int quit_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:47</div></div>
+<div class="ttc" id="misc__commands_8c_html_ada5405c6e5ce73dc324a38db77517627"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627">ping_func</a></div><div class="ttdeci">int ping_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.6.2] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:23</div></div>
+<div class="ttc" id="registration__commands_8c_html_af31b1542f9c37fee7fc010ea0085d825"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#af31b1542f9c37fee7fc010ea0085d825">pass_func</a></div><div class="ttdeci">int pass_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.1] </div><div class="ttdef"><b>Definition:</b> registration_commands.c:44</div></div>
+<div class="ttc" id="registration__commands_8c_html_a96b7eb466fc07256a77751d44cafab21"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#a96b7eb466fc07256a77751d44cafab21">user_func</a></div><div class="ttdeci">int user_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.3] </div><div class="ttdef"><b>Definition:</b> registration_commands.c:80</div></div>
+<div class="ttc" id="registration__commands_8c_html_a1941a85d6dc3b89777f996b76b82d278"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#a1941a85d6dc3b89777f996b76b82d278">rnick_func</a></div><div class="ttdeci">int rnick_func(struct ConnectionNode *conn, int argc, char **argv)</div><div class="ttdoc">called during registration </div><div class="ttdef"><b>Definition:</b> registration_commands.c:72</div></div>
 </div><!-- fragment -->
-<p>initial commands </p>
+<p>available upon connection </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2017 18:00:00 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 24 2017 22:08:59 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -37,6 +37,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="../../modules.html"><span>Modules</span></a></li>
       <li><a href="../../annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="../../files.html"><span>Files</span></a></li>
       <li>
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,9 +97,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Functions</h2></td></tr>
 <tr class="memitem:a4acb87090cef36a855c24edc96d0709e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d98/command__relay_8h.html#a43e0eed804fd8433361cfe44d84f85de">CommandFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d37/inetd_8c.html#a4acb87090cef36a855c24edc96d0709e">get_command_function</a> (const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a> *commands, const char *cmd)</td></tr>
 <tr class="separator:a4acb87090cef36a855c24edc96d0709e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec6f68bb89e187e51ea73ba8ee5dc68f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d37/inetd_8c.html#aec6f68bb89e187e51ea73ba8ee5dc68f">LineLocator</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *conn)</td></tr>
-<tr class="separator:aec6f68bb89e187e51ea73ba8ee5dc68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d37/inetd_8c.html#a4392e503fa86339baf3bdb4ab5b82b3f">run_accept</a> (void *cls, const struct GNUNET_SCHEDULER_TaskContext *ctx)</td></tr>
+<tr class="memdesc:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">called on incoming connection  <a href="#a4392e503fa86339baf3bdb4ab5b82b3f">More...</a><br/></td></tr>
 <tr class="separator:a4392e503fa86339baf3bdb4ab5b82b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -121,22 +122,6 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aec6f68bb89e187e51ea73ba8ee5dc68f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LineLocator </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *&#160;</td>
-          <td class="paramname"><em>conn</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -167,12 +152,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>called on incoming connection </p>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 22 2017 18:00:00 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 24 2017 22:08:59 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
