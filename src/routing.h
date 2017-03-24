@@ -59,6 +59,14 @@ struct BaseRoutingNode {
 	 */
 	char real[REALLEN + 1];
 	/**
+	 * @brief saved, never used except to prevent endless loop
+	 */
+	struct GNUNET_IDENTITY_EgoLookup *el;
+	/**
+	 * @brief used to sign gns blocks and for zone in gns lookups
+	 */
+	const struct GNUNET_IDENTITY_Ego *ego;
+	/**
 	 * @brief should the inetd close the connection
 	 *
 	 * set by the quit command
