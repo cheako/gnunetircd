@@ -84,6 +84,8 @@ struct IrcdGnsHeader {
 };
 GNUNET_NETWORK_STRUCT_END
 
+void gns_lookup(const struct BaseRoutingNode *, struct BaseRoutingNode *,
+		const char *);
 void gns_publish(struct BaseRoutingNode *);
 void gns_init(const struct GNUNET_CONFIGURATION_Handle *);
 

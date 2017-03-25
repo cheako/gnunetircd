@@ -17,13 +17,63 @@
 
 #include <stdint.h>
 #include "gns.h"
+#include "mesh.h"
 #include <gnunet/gnunet_gnsrecord_lib.h>
 #include <gnunet/gnunet_namestore_service.h>
+#include <gnunet/gnunet_gns_service.h>
 #include <gnunet/gnunet_identity_service.h>
 #include "hybrid-6/irc_string.h"
 
+struct GNUNET_GNS_Handle *gns;
 static struct GNUNET_NAMESTORE_Handle *ns;
 static struct GNUNET_PeerIdentity pid;
+
+void LookupResultProcessor(void *cls, uint32_t rd_count,
+		const struct GNUNET_GNSRECORD_Data *rd) {
+	struct BaseRoutingNode *brn = cls;
+	while (rd_count--) {
+		if (rd->record_type != 6667) {
+			rd++;
+			continue;
+		}
+
+		const struct IrcdGnsHeader *dht = rd->data;
+		if (dht->type == 0 && dht->version <= 1) {
+			uint16_t nopcodes = ntohs(dht->o_count);
+			size_t hsize = sizeof(struct IrcdGnsHeader)
+					+ sizeof(struct IrcdGnsOpcode) * nopcodes;
+			for (int i = 0; i < nopcodes; i++) {
+				int offset = hsize + ntohs(dht->opcodes[i].offset);
+				switch (ntohs(dht->opcodes[i].code)) {
+				case GNS_OP_NICK: {
+					char *nick = (void *) dht + offset;
+					if (routing_query(nick) != brn) {
+						rd++;
+						continue;
+					}
+					strncpy(brn->nick, nick, NICKLEN);
+					break;
+				}
+				case GNS_OP_REAL:
+					strncpy(brn->real, (void *) dht + offset, REALLEN);
+					break;
+				case GNS_OP_PRID:
+					if (brn->nick[0] == '\0')
+						break;
+					struct MeshClient *sc;
+					sc = GNUNET_realloc(brn, sizeof(struct MeshClient));
+					sc->remote = *(struct GNUNET_PeerIdentity *) ((void *) dht
+							+ offset);
+					sc->base.type = IRCD_ROUTING_NODE_MESH;
+					routing_put(&sc->base, sc->base.nick);
+					mesh_connect(sc);
+					break;
+				}
+			}
+		}
+		rd++;
+	}
+}
 
 static char *label_ucase(const char *str) {
 	char *label, *t;
@@ -34,6 +84,20 @@ static char *label_ucase(const char *str) {
 	t++;
 	strncat(label, ".gnunet.gns.", NICKLEN + 12);
 	return label;
+}
+
+void gns_lookup(const struct BaseRoutingNode *reply,
+		struct BaseRoutingNode *brn, const char *str) {
+	if (!reply->ego)
+		return;
+	struct GNUNET_CRYPTO_EcdsaPublicKey zone;
+	char *name;
+	name = label_ucase(str);
+
+	GNUNET_IDENTITY_ego_get_public_key(reply->ego, &zone);
+	GNUNET_GNS_lookup(gns, name, &zone, 6667, GNUNET_GNS_LO_DEFAULT, NULL,
+			&LookupResultProcessor, brn);
+	GNUNET_free(name);
 }
 
 /**
@@ -99,5 +163,6 @@ void gns_publish(struct BaseRoutingNode *brn) {
  */
 void gns_init(const struct GNUNET_CONFIGURATION_Handle *cfg) {
 	GNUNET_assert(GNUNET_CRYPTO_get_peer_identity(cfg, &pid) == GNUNET_OK);
+	gns = GNUNET_GNS_connect(cfg);
 	ns = GNUNET_NAMESTORE_connect(cfg);
 }

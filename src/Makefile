@@ -2,6 +2,7 @@ PKGCONFIGLIBS += gnunetutil
 PKGCONFIGLIBS += gnunetarm
 PKGCONFIGLIBS += gnunetidentity
 PKGCONFIGLIBS += gnunetnamestore
+PKGCONFIGLIBS += gnunetgns
 PKGCONFIGLIBS += gnunetmesh
 CFLAGS += $(shell pkg-config --cflags $(PKGCONFIGLIBS))
 LDLIBS += $(shell pkg-config --libs $(PKGCONFIGLIBS))
