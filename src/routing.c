@@ -17,6 +17,7 @@
 
 #include "gnunet_container_lib.h"
 #include "inetd.h"
+#include "gns.h"
 #include "mesh.h"
 #include "ecdsa.h"
 #include "hybrid-6/irc_string.h"
@@ -80,6 +81,7 @@ struct BaseRoutingNode *routing_get(struct BaseRoutingNode *reply,
 		brn->quit = false;
 		brn->wqi_head = NULL;
 		routing_put(brn, label);
+		gns_lookup(reply, brn, label);
 	}
 	return brn;
 }
