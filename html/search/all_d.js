@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['qe',['qe',['../df/d3d/structConnectionNode.html#a67cf9263cb4e142f3b36d8a6677c0be6',1,'ConnectionNode']]],
-  ['quit',['quit',['../df/d3d/structConnectionNode.html#a9690d8bd138130b080716102248c48b1',1,'ConnectionNode']]],
-  ['quit_5ffunc',['quit_func',['../d9/db3/misc__commands_8c.html#a2c705cdf059e1bda92d068c3fc84b6c7',1,'quit_func(struct ConnectionNode *conn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a90b50c939a8e08d9cb4e8079f0b513fb',1,'quit_func(struct ConnectionNode *, int, char **):&#160;misc_commands.c']]]
+  ['pass',['pass',['../df/d3d/structConnectionNode.html#aff700f0e00fef858e3ecc0b213b1a2e8',1,'ConnectionNode']]],
+  ['pass_5ffunc',['pass_func',['../df/d2f/registration__commands_8c.html#af31b1542f9c37fee7fc010ea0085d825',1,'pass_func(struct ConnectionNode *conn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#af497438bdb50be1463d38309e6ce6e3c',1,'pass_func(struct ConnectionNode *, int, char **):&#160;registration_commands.c']]],
+  ['ping_5ffunc',['ping_func',['../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627',1,'ping_func(struct ConnectionNode *conn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a1e4d4d0f148ba877830ed0dcd76b699e',1,'ping_func(struct ConnectionNode *, int, char **):&#160;misc_commands.c']]],
+  ['platform_2eh',['platform.h',['../de/d03/platform_8h.html',1,'']]],
+  ['pnick',['pnick',['../df/d3d/structConnectionNode.html#a5701d0691475c661d5d1c844f4328597',1,'ConnectionNode']]],
+  ['prev',['prev',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html#ae1f7c608d9f8fd4fd4fe164cc315843a',1,'BaseRoutingNode::WriteQueueItem::prev()'],['../d0/dcd/structElement.html#abac35b77e4e57ca2d12f6820952e6f16',1,'Element::prev()']]]
 ];

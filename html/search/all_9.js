@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../d4/d7e/gnunetircd_8c.html#ad1835a0a190dc5fe4f925bb69443c770',1,'main(int argc, char *const *argv):&#160;gnunetircd.c'],['../d6/da2/test__container__cdll_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_container_cdll.c']]],
-  ['misc_5fcommands_2ec',['misc_commands.c',['../d9/db3/misc__commands_8c.html',1,'']]],
-  ['misc_5fcommands_2eh',['misc_commands.h',['../de/d92/misc__commands_8h.html',1,'']]]
+  ['lookupresultprocessor',['LookupResultProcessor',['../d7/da7/gns_8c.html#aa74b2e8ad58a3ee440bc731a34f6b370',1,'gns.c']]]
 ];

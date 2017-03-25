@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['next',['next',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html#a40dfe04faa8ef1222f5e4c503df5a7bc',1,'BaseRoutingNode::WriteQueueItem::next()'],['../d0/dcd/structElement.html#a88551e77c4b5ed9586aeacf3afb2b404',1,'Element::next()']]],
-  ['nhandle',['nhandle',['../df/d3d/structConnectionNode.html#a344b6dd896e4d23a8a13600bebf7c6dc',1,'ConnectionNode']]],
-  ['nick',['nick',['../df/d3d/structConnectionNode.html#aae1c65947676d55d42ab0155252b0cce',1,'ConnectionNode']]],
-  ['nick_5ffunc',['nick_func',['../df/d2f/registration__commands_8c.html#a3b6bf1af6b39cd64a01b0afe6d55562e',1,'nick_func(struct ConnectionNode *conn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a4845b4fcfa974061518767196558afab',1,'nick_func(struct ConnectionNode *, int, char **):&#160;registration_commands.c']]],
-  ['normal_5fcommands',['normal_commands',['../d7/d37/command__relay_8c.html#a92cb1c5b582c9524479c1b3509680642',1,'normal_commands():&#160;command_relay.c'],['../de/d98/command__relay_8h.html#a92cb1c5b582c9524479c1b3509680642',1,'normal_commands():&#160;command_relay.c']]]
+  ['main',['main',['../d4/d7e/gnunetircd_8c.html#ad1835a0a190dc5fe4f925bb69443c770',1,'main(int argc, char *const *argv):&#160;gnunetircd.c'],['../d6/da2/test__container__cdll_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_container_cdll.c']]],
+  ['misc_5fcommands_2ec',['misc_commands.c',['../d9/db3/misc__commands_8c.html',1,'']]],
+  ['misc_5fcommands_2eh',['misc_commands.h',['../de/d92/misc__commands_8h.html',1,'']]]
 ];

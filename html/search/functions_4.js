@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pass_5ffunc',['pass_func',['../df/d2f/registration__commands_8c.html#af31b1542f9c37fee7fc010ea0085d825',1,'pass_func(struct ConnectionNode *conn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#af497438bdb50be1463d38309e6ce6e3c',1,'pass_func(struct ConnectionNode *, int, char **):&#160;registration_commands.c']]],
-  ['ping_5ffunc',['ping_func',['../d9/db3/misc__commands_8c.html#ada5405c6e5ce73dc324a38db77517627',1,'ping_func(struct ConnectionNode *conn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a1e4d4d0f148ba877830ed0dcd76b699e',1,'ping_func(struct ConnectionNode *, int, char **):&#160;misc_commands.c']]]
+  ['main',['main',['../d4/d7e/gnunetircd_8c.html#ad1835a0a190dc5fe4f925bb69443c770',1,'main(int argc, char *const *argv):&#160;gnunetircd.c'],['../d6/da2/test__container__cdll_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_container_cdll.c']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['test_5fcontainer_5fcdll_2ec',['test_container_cdll.c',['../d6/da2/test__container__cdll_8c.html',1,'']]],
-  ['todo_20list',['Todo List',['../dd/da0/todo.html',1,'']]],
-  ['type',['type',['../db/ddd/structIrcdDhtHeader.html#a235edd5483d4e825a7a61f16dac14286',1,'IrcdDhtHeader']]]
+  ['size',['size',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html#a28dc45a938f8facc02086eabf4fe7edf',1,'BaseRoutingNode::WriteQueueItem']]],
+  ['srvr',['srvr',['../df/d3d/structConnectionNode.html#a2a7db4c1b9374d862e6a26e2cd1f8c45',1,'ConnectionNode']]]
 ];
