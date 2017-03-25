@@ -16,6 +16,7 @@
  */
 
 #include "ecdsa.h"
+#include "gns.h"
 #include <gnunet/gnunet_identity_service.h>
 
 static struct GNUNET_IDENTITY_Handle *id;
@@ -28,6 +29,7 @@ static void EgoCallback(void *cls, const struct GNUNET_IDENTITY_Ego *ego) {
 	brn->el = NULL;
 	if (ego) {
 		brn->ego = ego;
+		gns_publish(brn);
 	} else
 		GNUNET_IDENTITY_create(id, brn->real, &Continuation, brn);
 }
