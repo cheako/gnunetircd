@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,9 +109,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a57cc2321ecc5598837541bb164c66eb3"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/structIrcdGnsHeader.html#a57cc2321ecc5598837541bb164c66eb3">version</a></td></tr>
 <tr class="memdesc:a57cc2321ecc5598837541bb164c66eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">record version  <a href="#a57cc2321ecc5598837541bb164c66eb3">More...</a><br/></td></tr>
 <tr class="separator:a57cc2321ecc5598837541bb164c66eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b949e7ecef1ce3d012720afce6b0a9"><td class="memItemLeft" align="right" valign="top">uint16_t size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/structIrcdGnsHeader.html#a66b949e7ecef1ce3d012720afce6b0a9">GNUNET_PACKED</a></td></tr>
-<tr class="memdesc:a66b949e7ecef1ce3d012720afce6b0a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of header and opcodes  <a href="#a66b949e7ecef1ce3d012720afce6b0a9">More...</a><br/></td></tr>
-<tr class="separator:a66b949e7ecef1ce3d012720afce6b0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96272a653a7b007b509852bf4ebed2e0"><td class="memItemLeft" align="right" valign="top">uint16_t o_count&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/structIrcdGnsHeader.html#a96272a653a7b007b509852bf4ebed2e0">GNUNET_PACKED</a></td></tr>
+<tr class="memdesc:a96272a653a7b007b509852bf4ebed2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of opcode(s) following  <a href="#a96272a653a7b007b509852bf4ebed2e0">More...</a><br/></td></tr>
+<tr class="separator:a96272a653a7b007b509852bf4ebed2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2b2538a0a2d2fd1a472f73c45d8119"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/d8f/structIrcdGnsHeader_1_1IrcdGnsOpcode.html">IrcdGnsHeader::IrcdGnsOpcode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/structIrcdGnsHeader.html#afe2b2538a0a2d2fd1a472f73c45d8119">opcodes</a> []</td></tr>
 <tr class="separator:afe2b2538a0a2d2fd1a472f73c45d8119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -119,18 +119,17 @@ Data Fields</h2></td></tr>
 <div class="textblock"><p>header for DHT contents </p>
 <p>Used for accessing network globals </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a66b949e7ecef1ce3d012720afce6b0a9"></a>
+<a class="anchor" id="a96272a653a7b007b509852bf4ebed2e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t size IrcdGnsHeader::GNUNET_PACKED</td>
+          <td class="memname">uint16_t o_count IrcdGnsHeader::GNUNET_PACKED</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>size of header and opcodes </p>
-<p>Byte offset of index 0 or length of this header and opcodes in bytes. </p>
+<p>number of opcode(s) following </p>
 
 </div>
 </div>
@@ -182,7 +181,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 25 2017 05:09:08 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 25 2017 23:43:47 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
