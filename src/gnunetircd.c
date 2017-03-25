@@ -18,6 +18,7 @@
 #include "inetd.h"
 #include "ecdsa.h"
 #include "gns.h"
+#include "mesh.h"
 #include "routing.h"
 #include "arm.h"
 
@@ -28,6 +29,7 @@ static void run (void *cls, char *const *args, const char *cfgfile,
 
 	ecdsa_init(cfg);
 	gns_init(cfg);
+	mesh_init(cfg);
 	routing_init();
 	arm_init(cfg);
 

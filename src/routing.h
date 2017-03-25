@@ -36,6 +36,12 @@ enum IRCD_ROUTING_NODE_TYPE {
 	 * @brief local connection
 	 */
 	IRCD_ROUTING_NODE_INETD,
+
+	/**
+	 * @brief once we get the peer identity from gns
+	 */
+	IRCD_ROUTING_NODE_MESH,
+
 };
 
 /**

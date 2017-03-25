@@ -15,38 +15,25 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef COMMAND_RELAY_H_
-#define COMMAND_RELAY_H_
+#ifndef MESH_H_
+#define MESH_H_
 
-#include "inetd.h"
+#include <gnunet/gnunet_config.h>
+#include <gnunet/platform.h>
+#include <gnunet/gnunet_util_lib.h>
+#include "routing.h"
 
-/**
- * @brief function called to process commands
- *
- * @param cls closure
- * @param argc number of arguments, length of argv
- * @param argv array of arguments
- */
-typedef int (*CommandFunc)(struct BaseRoutingNode *cls, int argc, char **argv);
-
-/**
- * @brief name to function mapping
- */
-struct client_function {
-	/**
-	 * @brief command name
-	 */
-	char * keyword;
-	/**
-	 * @brief called for command
-	 */
-	CommandFunc function;
+struct MeshClient {
+	struct BaseRoutingNode base;
+	struct GNUNET_MESH_Channel *channel;
+	struct GNUNET_PeerIdentity remote;
+	struct GNUNET_MESH_TransmitHandle *wh;
+	GNUNET_SCHEDULER_TaskIdentifier terminate_task;
+	GNUNET_SCHEDULER_TaskIdentifier timeout_task;
 };
 
-extern const struct client_function registration_commands[];
-extern const struct client_function normal_commands[];
-extern const struct client_function inbound_mesh_commands[];
+void mesh_connect(struct MeshClient *);
+void continue_writing(void *cls);
+void mesh_init(const struct GNUNET_CONFIGURATION_Handle *);
 
-CommandFunc get_command_function(const struct client_function *, const char *);
-
-#endif /* COMMAND_RELAY_H_ */
+#endif /* MESH_H_ */
