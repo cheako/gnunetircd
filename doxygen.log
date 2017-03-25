@@ -91,11 +91,11 @@ Computing/home/travis/build/cheako/gnunetircd/src/ecdsa.c:54: warning: argument 
 /home/travis/build/cheako/gnunetircd/src/ecdsa.c:45: warning: argument 'conn' of command @param is not found in the argument list of ecdsa_lookup(struct ConnectionNode *c)
 /home/travis/build/cheako/gnunetircd/src/ecdsa.c:45: warning: The following parameters of ecdsa_lookup(struct ConnectionNode *c) are not documented:
   parameter 'c'
-/home/travis/build/cheako/gnunetircd/src/gns.c:91: warning: argument 'cfg' of command @param is not found in the argument list of gns_is_go(struct ConnectionNode *c)
-/home/travis/build/cheako/gnunetircd/src/gns.c:91: warning: The following parameters of gns_is_go(struct ConnectionNode *c) are not documented:
+/home/travis/build/cheako/gnunetircd/src/gns.c:93: warning: argument 'cfg' of command @param is not found in the argument list of gns_is_go(struct ConnectionNode *c)
+/home/travis/build/cheako/gnunetircd/src/gns.c:93: warning: The following parameters of gns_is_go(struct ConnectionNode *c) are not documented:
   parameter 'c'
-/home/travis/build/cheako/gnunetircd/src/gns.c:91: warning: argument 'cfg' of command @param is not found in the argument list of gns_is_go(struct ConnectionNode *c)
-/home/travis/build/cheako/gnunetircd/src/gns.c:91: warning: The following parameters of gns_is_go(struct ConnectionNode *c) are not documented:
+/home/travis/build/cheako/gnunetircd/src/gns.c:93: warning: argument 'cfg' of command @param is not found in the argument list of gns_is_go(struct ConnectionNode *c)
+/home/travis/build/cheako/gnunetircd/src/gns.c:93: warning: The following parameters of gns_is_go(struct ConnectionNode *c) are not documented:
   parameter 'c'
  member relations...
 Building full member lists recursively...
