@@ -44,6 +44,16 @@ const struct client_function normal_commands[] = {
 		{ "notice", privmsg_func },
 		{ NULL, NULL } };
 
+/**
+ * @brief registration
+ */
+const struct client_function inbound_mesh_commands[] = {
+		{ "ping", ping_func },
+		{ "quit", quit_func },
+		{ "privmsg", privmsg_func },
+		{ "notice", privmsg_func },
+		{ NULL, NULL } };
+
 CommandFunc get_command_function(const struct client_function *commands,
 		const char *cmd) {
 

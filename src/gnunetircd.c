@@ -18,6 +18,7 @@
 #include "inetd.h"
 #include "ecdsa.h"
 #include "gns.h"
+#include "mesh.h"
 #include "routing.h"
 #include "arm.h"
 
@@ -30,6 +31,7 @@ static void run (void *cls, char *const *args, const char *cfgfile,
 	routing_init();
 	ecdsa_init(cfg);
 	gns_init(cfg);
+	mesh_init(cfg);
 
 	struct sockaddr_in sa;
 	struct GNUNET_NETWORK_Handle *h;
