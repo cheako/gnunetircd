@@ -1,6 +1,7 @@
 PKGCONFIGLIBS += gnunetutil
 PKGCONFIGLIBS += gnunetarm
 PKGCONFIGLIBS += gnunetidentity
+PKGCONFIGLIBS += gnunetnamestore
 CFLAGS += $(shell pkg-config --cflags $(PKGCONFIGLIBS))
 LDLIBS += $(shell pkg-config --libs $(PKGCONFIGLIBS))
 
@@ -14,6 +15,9 @@ OBJS += hybrid-6/s_user.o
 
 ecdsa.o: ecdsa.h
 OBJS += ecdsa.o
+
+gns.o: gns.h
+OBJS += gns.o
 
 message_commands.o: message_commands.h
 OBJS += message_commands.o
