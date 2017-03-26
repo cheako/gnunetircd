@@ -16,6 +16,7 @@
  */
 
 #include "misc_commands.h"
+#include "message_commands.h"
 #include "registration_commands.h"
 #include "command_relay.h"
 
@@ -39,6 +40,8 @@ const struct client_function normal_commands[] = {
 		{ "user", registration_done_func },
 		{ "ping", ping_func },
 		{ "quit", quit_func },
+		{ "privmsg", privmsg_func },
+		{ "notice", privmsg_func },
 		{ NULL, NULL } };
 
 CommandFunc get_command_function(const struct client_function *commands,
