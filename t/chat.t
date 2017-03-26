@@ -1,4 +1,4 @@
-use Test::More tests => 30;
+use Test::More tests => 39;
 use IPC::Run qw(start);
 
 my $ihlt =
@@ -62,11 +62,27 @@ is $sockets[2]->send("ping :Hello World!\r\n"), 20, 'bob ping';
 $sockets[2]->recv( $response, 1024 );
 is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'bob pong';
 
-is $sockets[3]->send("ping :Hello World!\r\n"), 20, 'charlie ping';
+is $sockets[3]->send("ping :Hello World!\r\n"), 20, 'char ping';
 $sockets[3]->recv( $response, 1024 );
 is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'charlie pong';
 
-is $sockets[1]->send("nick test[Dan]\r\n"), 16, 'nick david';
+is $sockets[1]->send("user a b c :Test, Alice\r\n"), 25, 'user alice';
+is $sockets[2]->send("user e f g :Test Bob\r\n"), 22, 'user bob';
+is $sockets[3]->send("user i j k testcharlie\r\n"), 24, 'user charlie';
+
+is $sockets[1]->send("privmsg test-char :Hello World!\r\n"), 33, 'send charlie msg';
+$sockets[3]->recv( $response, 1024 );
+is $response, ":test[Ali] privmsg test-char :Hello World!\r\n", 'recv charlie msg';
+
+is $sockets[2]->send("privmsg test[Ali] :Hello World!\r\n"), 33, 'send alice msg';
+$sockets[1]->recv( $response, 1024 );
+is $response, ":Test{bob} privmsg test[Ali] :Hello World!\r\n", 'recv alice msg';
+
+is $sockets[3]->send("privmsg Test{bob} :Hello World!\r\n"), 33, 'send bob msg';
+$sockets[2]->recv( $response, 1024 );
+is $response, ":test-char privmsg Test{bob} :Hello World!\r\n", 'recv bob msg';
+
+is $sockets[1]->send("nick test[Dan]\r\n"), 16, 'nick dan';
 is $sockets[1]->send("ping :Hello World!\r\n"), 20, 'dan ping';
 $sockets[1]->recv( $response, 1024 );
 is $response, ":gnunetircd PONG gnunetircd :Hello World!\r\n", 'dan pong';
