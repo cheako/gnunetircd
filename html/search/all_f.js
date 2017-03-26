@@ -9,7 +9,6 @@ var searchData=
   ['rnick_5ffunc',['rnick_func',['../df/d2f/registration__commands_8c.html#a1941a85d6dc3b89777f996b76b82d278',1,'rnick_func(struct ConnectionNode *conn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a066b3eb17dd2e96edb3cd6ced107eee1',1,'rnick_func(struct ConnectionNode *, int, char **):&#160;registration_commands.c']]],
   ['routing_2ec',['routing.c',['../d7/d32/routing_8c.html',1,'']]],
   ['routing_2eh',['routing.h',['../d7/d98/routing_8h.html',1,'']]],
-  ['routing_5fhash',['routing_hash',['../d7/d32/routing_8c.html#a5efd9a42af826635345ff5872e4c946c',1,'routing.c']]],
   ['routing_5finit',['routing_init',['../d7/d32/routing_8c.html#a370c9151bc5bf377bcd24bc08ec73437',1,'routing_init():&#160;routing.c'],['../d7/d98/routing_8h.html#a370c9151bc5bf377bcd24bc08ec73437',1,'routing_init():&#160;routing.c']]],
   ['routing_5fput',['routing_put',['../d7/d32/routing_8c.html#a8ae0fc949290640ff9caf117542a1713',1,'routing_put(struct BaseRoutingNode *value, const char *name):&#160;routing.c'],['../d7/d98/routing_8h.html#a2581098accb6e88118eab390671c569a',1,'routing_put(struct BaseRoutingNode *, const char *):&#160;routing.c']]],
   ['routing_5fsend',['routing_send',['../d7/d32/routing_8c.html#a42628250ccc8dfb7964c820bdbfcfd0e',1,'routing_send(struct BaseRoutingNode *reply, const char *dest, const char *data):&#160;routing.c'],['../d7/d98/routing_8h.html#aa2b8cd1f14b5ffed1232cb18203d90e9',1,'routing_send(struct BaseRoutingNode *, const char *, const char *):&#160;routing.c']]],
