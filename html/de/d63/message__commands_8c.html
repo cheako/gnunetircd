@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: src/gnunet_container_lib.h File Reference</title>
+<title>gnunetircd - example distributed application: src/message_commands.c File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -86,39 +86,59 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">gnunet_container_lib.h File Reference</div>  </div>
+<div class="title">message_commands.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><a href="../../d0/d08/gnunet__container__lib_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gad67dfc81fcff1ce179868cddb8b764fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#gad67dfc81fcff1ce179868cddb8b764fb">GNUNET_CONTAINER_CDLL_insert_before</a>(other, element)</td></tr>
-<tr class="separator:gad67dfc81fcff1ce179868cddb8b764fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7388b7b0302ea478c6e10a953318f9f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#ga7388b7b0302ea478c6e10a953318f9f2">GNUNET_CONTAINER_CDLL_insert_after</a>(other, element)</td></tr>
-<tr class="separator:ga7388b7b0302ea478c6e10a953318f9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b8e14a33def4db90b195eff118efdec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#ga5b8e14a33def4db90b195eff118efdec">GNUNET_CONTAINER_CDLL_insert_tail</a>(head, element)</td></tr>
-<tr class="separator:ga5b8e14a33def4db90b195eff118efdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5036ab89aad9c51dc7d65a30be17c105"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#ga5036ab89aad9c51dc7d65a30be17c105">GNUNET_CONTAINER_CDLL_push</a>(head, element)</td></tr>
-<tr class="separator:ga5036ab89aad9c51dc7d65a30be17c105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga951247cc44ff21099dc39ff800667e0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#ga951247cc44ff21099dc39ff800667e0e">GNUNET_CONTAINER_CDLL_insert</a>(head, element)</td></tr>
-<tr class="separator:ga951247cc44ff21099dc39ff800667e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb81cdfe12e34be57008b55ad75e9d74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#gafb81cdfe12e34be57008b55ad75e9d74">GNUNET_CONTAINER_CDLL_unshift</a>(head, element)</td></tr>
-<tr class="separator:gafb81cdfe12e34be57008b55ad75e9d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae80d8ec6b13a188e6d29583d61cfca52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#gae80d8ec6b13a188e6d29583d61cfca52">GNUNET_CONTAINER_CDLL_remove</a>(head, element)</td></tr>
-<tr class="separator:gae80d8ec6b13a188e6d29583d61cfca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae78e9f48f56ea3052613bafe88b0325d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ddd/group__dll.html#gae78e9f48f56ea3052613bafe88b0325d">GNUNET_CONTAINER_CDLL_insert_sorted</a>(TYPE, comparator, comparator_cls, head, element)</td></tr>
-<tr class="separator:gae78e9f48f56ea3052613bafe88b0325d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
+<code>#include &lt;gnunet/platform.h&gt;</code><br/>
+<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d89/message__commands_8h_source.html">message_commands.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5cdba7f7761e7fc931df1240587713ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *brn, int argc, char **argv)</td></tr>
+<tr class="memdesc:a5cdba7f7761e7fc931df1240587713ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<a href="https://tools.ietf.org/html/rfc1459#section-4.4.1">https://tools.ietf.org/html/rfc1459#section-4.4.1</a>]  <a href="#a5cdba7f7761e7fc931df1240587713ee">More...</a><br/></td></tr>
+<tr class="separator:a5cdba7f7761e7fc931df1240587713ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Christian Grothoff </dd>
-<dd>
-Nils Durner</dd></dl>
-<p>Container classes for GNUnet </p>
-</div></div><!-- contents -->
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a5cdba7f7761e7fc931df1240587713ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int privmsg_func </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>brn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[<a href="https://tools.ietf.org/html/rfc1459#section-4.4.1">https://tools.ietf.org/html/rfc1459#section-4.4.1</a>] </p>
+<p>also used for notice, 4.4.2. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Mon Mar 27 2017 17:22:14 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
