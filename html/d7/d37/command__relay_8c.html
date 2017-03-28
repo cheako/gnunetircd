@@ -152,17 +152,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        { <span class="stringliteral">&quot;pass&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#a3cf4b3c25e632a0b514a70bca85b57d3">pass_func</a> },</div>
-<div class="line">        { <span class="stringliteral">&quot;nick&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#a0d6c820fd2b6672cba03b3b46ed95c14">rnick_func</a> },</div>
-<div class="line">        { <span class="stringliteral">&quot;user&quot;</span>, <a class="code" href="../../df/d2f/registration__commands_8c.html#aab46107237923bacdcffe0d3ddf93d96">user_func</a> },</div>
 <div class="line">        { <span class="stringliteral">&quot;ping&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#a8390b695deda5ec4f68e95fcd5043df2">ping_func</a> },</div>
 <div class="line">        { <span class="stringliteral">&quot;quit&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#a5c56bf5e94fefeb1863a63295dc844d9">quit_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;privmsg&quot;</span>, <a class="code" href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;notice&quot;</span>, <a class="code" href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a> },</div>
 <div class="line">        { NULL, NULL } }</div>
 <div class="ttc" id="misc__commands_8c_html_a8390b695deda5ec4f68e95fcd5043df2"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a8390b695deda5ec4f68e95fcd5043df2">ping_func</a></div><div class="ttdeci">int ping_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.6.2] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:23</div></div>
-<div class="ttc" id="registration__commands_8c_html_a3cf4b3c25e632a0b514a70bca85b57d3"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#a3cf4b3c25e632a0b514a70bca85b57d3">pass_func</a></div><div class="ttdeci">int pass_func(struct BaseRoutingNode *cls, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.1] </div><div class="ttdef"><b>Definition:</b> registration_commands.c:45</div></div>
-<div class="ttc" id="registration__commands_8c_html_aab46107237923bacdcffe0d3ddf93d96"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#aab46107237923bacdcffe0d3ddf93d96">user_func</a></div><div class="ttdeci">int user_func(struct BaseRoutingNode *cls, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.3] </div><div class="ttdef"><b>Definition:</b> registration_commands.c:94</div></div>
-<div class="ttc" id="registration__commands_8c_html_a0d6c820fd2b6672cba03b3b46ed95c14"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#a0d6c820fd2b6672cba03b3b46ed95c14">rnick_func</a></div><div class="ttdeci">int rnick_func(struct BaseRoutingNode *cls, int argc, char **argv)</div><div class="ttdoc">called during registration </div><div class="ttdef"><b>Definition:</b> registration_commands.c:83</div></div>
 <div class="ttc" id="misc__commands_8c_html_a5c56bf5e94fefeb1863a63295dc844d9"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a5c56bf5e94fefeb1863a63295dc844d9">quit_func</a></div><div class="ttdeci">int quit_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:52</div></div>
+<div class="ttc" id="message__commands_8c_html_a5cdba7f7761e7fc931df1240587713ee"><div class="ttname"><a href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a></div><div class="ttdeci">int privmsg_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.4.1] </div><div class="ttdef"><b>Definition:</b> message_commands.c:29</div></div>
 </div><!-- fragment -->
 <p>registration </p>
 
@@ -225,7 +222,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 00:03:25 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 28 2017 15:27:37 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

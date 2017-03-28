@@ -93,7 +93,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">routing.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;hybrid-6/ircd_defs.h&quot;</code><br/>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &quot;hybrid-6/ircd_defs.h&quot;</code><br/>
 </div>
 <p><a href="../../d7/d98/routing_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -119,9 +120,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a2581098accb6e88118eab390671c569a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/routing_8h.html#a2581098accb6e88118eab390671c569a">routing_put</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, const char *)</td></tr>
 <tr class="memdesc:a2581098accb6e88118eab390671c569a"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert new nick/chan into map  <a href="#a2581098accb6e88118eab390671c569a">More...</a><br/></td></tr>
 <tr class="separator:a2581098accb6e88118eab390671c569a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2b8cd1f14b5ffed1232cb18203d90e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/routing_8h.html#aa2b8cd1f14b5ffed1232cb18203d90e9">routing_send</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, const char *, const char *)</td></tr>
-<tr class="memdesc:aa2b8cd1f14b5ffed1232cb18203d90e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">add data to queue  <a href="#aa2b8cd1f14b5ffed1232cb18203d90e9">More...</a><br/></td></tr>
-<tr class="separator:aa2b8cd1f14b5ffed1232cb18203d90e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137fb2079683a80ff3b78b5b64568604"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/routing_8h.html#a137fb2079683a80ff3b78b5b64568604">routing_query</a> (const char *)</td></tr>
+<tr class="memdesc:a137fb2079683a80ff3b78b5b64568604"><td class="mdescLeft">&#160;</td><td class="mdescRight">used in privmsg  <a href="#a137fb2079683a80ff3b78b5b64568604">More...</a><br/></td></tr>
+<tr class="separator:a137fb2079683a80ff3b78b5b64568604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd759f1d928c1c1d30538f4597c6bd5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/routing_8h.html#abcd759f1d928c1c1d30538f4597c6bd5">routing_get</a> (const char *)</td></tr>
+<tr class="memdesc:abcd759f1d928c1c1d30538f4597c6bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">create if needed  <a href="#abcd759f1d928c1c1d30538f4597c6bd5">More...</a><br/></td></tr>
+<tr class="separator:abcd759f1d928c1c1d30538f4597c6bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382015509dd5b52ae50f7818fef719ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/routing_8h.html#a382015509dd5b52ae50f7818fef719ee">routing_send</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, const char *)</td></tr>
+<tr class="memdesc:a382015509dd5b52ae50f7818fef719ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">add data to queue  <a href="#a382015509dd5b52ae50f7818fef719ee">More...</a><br/></td></tr>
+<tr class="separator:a382015509dd5b52ae50f7818fef719ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370c9151bc5bf377bcd24bc08ec73437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d98/routing_8h.html#a370c9151bc5bf377bcd24bc08ec73437">routing_init</a> ()</td></tr>
 <tr class="memdesc:a370c9151bc5bf377bcd24bc08ec73437"><td class="mdescLeft">&#160;</td><td class="mdescRight">setup hashmap  <a href="#a370c9151bc5bf377bcd24bc08ec73437">More...</a><br/></td></tr>
 <tr class="separator:a370c9151bc5bf377bcd24bc08ec73437"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +157,30 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="abcd759f1d928c1c1d30538f4597c6bd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a>* routing_get </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create if needed </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>destination string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a370c9151bc5bf377bcd24bc08ec73437"></a>
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +233,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa2b8cd1f14b5ffed1232cb18203d90e9"></a>
+<a class="anchor" id="a137fb2079683a80ff3b78b5b64568604"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a>* routing_query </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>used in privmsg </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>destination string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a382015509dd5b52ae50f7818fef719ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -215,8 +270,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>brn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -233,11 +288,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>add data to queue </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000003">Todo:</a></b></dt><dd>looks up remote destinations</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reply</td><td>closure for sending errors and replies </td></tr>
-    <tr><td class="paramname">dest</td><td>name of destination </td></tr>
+    <tr><td class="paramname">dest</td><td>destination </td></tr>
     <tr><td class="paramname">data</td><td>string to send </td></tr>
   </table>
   </dd>
@@ -248,7 +302,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 00:03:25 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 28 2017 15:27:37 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
