@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="../../d0/d51/gns_8h_source.html">gns.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d8/d3b/mesh_8h_source.html">mesh.h</a>&quot;</code><br/>
 <code>#include &lt;gnunet/gnunet_gnsrecord_lib.h&gt;</code><br/>
 <code>#include &lt;gnunet/gnunet_namestore_service.h&gt;</code><br/>
 <code>#include &lt;gnunet/gnunet_gns_service.h&gt;</code><br/>
@@ -104,11 +105,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 Functions</h2></td></tr>
 <tr class="memitem:aa74b2e8ad58a3ee440bc731a34f6b370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/gns_8c.html#aa74b2e8ad58a3ee440bc731a34f6b370">LookupResultProcessor</a> (void *cls, uint32_t rd_count, const struct GNUNET_GNSRECORD_Data *rd)</td></tr>
 <tr class="separator:aa74b2e8ad58a3ee440bc731a34f6b370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11aa7a070921f383169af769c0627cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/gns_8c.html#a11aa7a070921f383169af769c0627cb1">do_stuff</a> (void *cls, char str[])</td></tr>
-<tr class="separator:a11aa7a070921f383169af769c0627cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bfd8c4477e24cd0acbfe3a47603e6ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/gns_8c.html#a9bfd8c4477e24cd0acbfe3a47603e6ea">gns_is_go</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *c)</td></tr>
-<tr class="memdesc:a9bfd8c4477e24cd0acbfe3a47603e6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">publish gns record  <a href="#a9bfd8c4477e24cd0acbfe3a47603e6ea">More...</a><br/></td></tr>
-<tr class="separator:a9bfd8c4477e24cd0acbfe3a47603e6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adde3f221dc52f4ae73bd4cdc702063d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/gns_8c.html#adde3f221dc52f4ae73bd4cdc702063d0">gns_lookup</a> (const struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *reply, struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *brn, const char *str)</td></tr>
+<tr class="separator:adde3f221dc52f4ae73bd4cdc702063d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511c95125a68d4e01812a7202307a0cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/gns_8c.html#a511c95125a68d4e01812a7202307a0cc">gns_publish</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *brn)</td></tr>
+<tr class="memdesc:a511c95125a68d4e01812a7202307a0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">publish gns record  <a href="#a511c95125a68d4e01812a7202307a0cc">More...</a><br/></td></tr>
+<tr class="separator:a511c95125a68d4e01812a7202307a0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10fa2a06c05db86e92b026750105d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da7/gns_8c.html#ad10fa2a06c05db86e92b026750105d95">gns_init</a> (const struct GNUNET_CONFIGURATION_Handle *cfg)</td></tr>
 <tr class="memdesc:ad10fa2a06c05db86e92b026750105d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">connect to namestore and gns services  <a href="#ad10fa2a06c05db86e92b026750105d95">More...</a><br/></td></tr>
 <tr class="separator:ad10fa2a06c05db86e92b026750105d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,32 +120,6 @@ Variables</h2></td></tr>
 <tr class="separator:a0a1984eeab36959eca5da05ed91adf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a11aa7a070921f383169af769c0627cb1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void do_stuff </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>cls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>str</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ad10fa2a06c05db86e92b026750105d95"></a>
 <div class="memitem">
 <div class="memproto">
@@ -169,15 +144,47 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9bfd8c4477e24cd0acbfe3a47603e6ea"></a>
+<a class="anchor" id="adde3f221dc52f4ae73bd4cdc702063d0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void gns_is_go </td>
+          <td class="memname">void gns_lookup </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
+          <td class="paramtype">const struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>reply</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>brn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a511c95125a68d4e01812a7202307a0cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gns_publish </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>brn</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -241,7 +248,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 15:27:37 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 28 2017 21:10:47 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

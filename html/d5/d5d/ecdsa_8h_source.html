@@ -109,20 +109,23 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef ECDSA_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ECDSA_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d86/inetd_8h.html">inetd.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d5d/ecdsa_8h.html#a7f4b2fd0c8a7d9ead111ef97ed641b01">ecdsa_lookup</a>(<span class="keyword">struct</span> <a class="code" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d5d/ecdsa_8h.html#a6bf2051a839f5c245e57b3ca443d2c52">ecdsa_init</a>(<span class="keyword">const</span> <span class="keyword">struct</span> GNUNET_CONFIGURATION_Handle *);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;gnunet/gnunet_config.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;gnunet/platform.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;gnunet/gnunet_util_lib.h&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d98/routing_8h.html">routing.h</a>&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ECDSA_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="structConnectionNode_html"><div class="ttname"><a href="../../df/d3d/structConnectionNode.html">ConnectionNode</a></div><div class="ttdoc">closure for inetd </div><div class="ttdef"><b>Definition:</b> inetd.h:31</div></div>
-<div class="ttc" id="inetd_8h_html"><div class="ttname"><a href="../../db/d86/inetd_8h.html">inetd.h</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d5d/ecdsa_8h.html#a8f8af953ea026f6f3c72b349f0ff9706">ecdsa_lookup</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d5/d5d/ecdsa_8h.html#a6bf2051a839f5c245e57b3ca443d2c52">ecdsa_init</a>(<span class="keyword">const</span> <span class="keyword">struct</span> GNUNET_CONFIGURATION_Handle *);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* ECDSA_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structBaseRoutingNode_html"><div class="ttname"><a href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a></div><div class="ttdoc">closure indicating path to another node </div><div class="ttdef"><b>Definition:</b> routing.h:44</div></div>
+<div class="ttc" id="ecdsa_8h_html_a8f8af953ea026f6f3c72b349f0ff9706"><div class="ttname"><a href="../../d5/d5d/ecdsa_8h.html#a8f8af953ea026f6f3c72b349f0ff9706">ecdsa_lookup</a></div><div class="ttdeci">void ecdsa_lookup(struct BaseRoutingNode *)</div><div class="ttdoc">find the identity for this connection </div><div class="ttdef"><b>Definition:</b> ecdsa.c:48</div></div>
+<div class="ttc" id="routing_8h_html"><div class="ttname"><a href="../../d7/d98/routing_8h.html">routing.h</a></div></div>
 <div class="ttc" id="ecdsa_8h_html_a6bf2051a839f5c245e57b3ca443d2c52"><div class="ttname"><a href="../../d5/d5d/ecdsa_8h.html#a6bf2051a839f5c245e57b3ca443d2c52">ecdsa_init</a></div><div class="ttdeci">void ecdsa_init(const struct GNUNET_CONFIGURATION_Handle *)</div><div class="ttdoc">connect to identity services </div><div class="ttdef"><b>Definition:</b> ecdsa.c:58</div></div>
-<div class="ttc" id="ecdsa_8h_html_a7f4b2fd0c8a7d9ead111ef97ed641b01"><div class="ttname"><a href="../../d5/d5d/ecdsa_8h.html#a7f4b2fd0c8a7d9ead111ef97ed641b01">ecdsa_lookup</a></div><div class="ttdeci">void ecdsa_lookup(struct ConnectionNode *)</div><div class="ttdoc">find the identity for this connection </div><div class="ttdef"><b>Definition:</b> ecdsa.c:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 15:27:37 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 28 2017 21:10:47 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

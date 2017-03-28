@@ -91,15 +91,18 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">ecdsa.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../db/d86/inetd_8h_source.html">inetd.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &lt;gnunet/gnunet_config.h&gt;</code><br/>
+<code>#include &lt;gnunet/platform.h&gt;</code><br/>
+<code>#include &lt;gnunet/gnunet_util_lib.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="../../d7/d98/routing_8h_source.html">routing.h</a>&quot;</code><br/>
 </div>
 <p><a href="../../d5/d5d/ecdsa_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7f4b2fd0c8a7d9ead111ef97ed641b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/ecdsa_8h.html#a7f4b2fd0c8a7d9ead111ef97ed641b01">ecdsa_lookup</a> (struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *)</td></tr>
-<tr class="memdesc:a7f4b2fd0c8a7d9ead111ef97ed641b01"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the identity for this connection  <a href="#a7f4b2fd0c8a7d9ead111ef97ed641b01">More...</a><br/></td></tr>
-<tr class="separator:a7f4b2fd0c8a7d9ead111ef97ed641b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8af953ea026f6f3c72b349f0ff9706"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/ecdsa_8h.html#a8f8af953ea026f6f3c72b349f0ff9706">ecdsa_lookup</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *)</td></tr>
+<tr class="memdesc:a8f8af953ea026f6f3c72b349f0ff9706"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the identity for this connection  <a href="#a8f8af953ea026f6f3c72b349f0ff9706">More...</a><br/></td></tr>
+<tr class="separator:a8f8af953ea026f6f3c72b349f0ff9706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf2051a839f5c245e57b3ca443d2c52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/ecdsa_8h.html#a6bf2051a839f5c245e57b3ca443d2c52">ecdsa_init</a> (const struct GNUNET_CONFIGURATION_Handle *)</td></tr>
 <tr class="memdesc:a6bf2051a839f5c245e57b3ca443d2c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">connect to identity services  <a href="#a6bf2051a839f5c245e57b3ca443d2c52">More...</a><br/></td></tr>
 <tr class="separator:a6bf2051a839f5c245e57b3ca443d2c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,15 +132,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7f4b2fd0c8a7d9ead111ef97ed641b01"></a>
+<a class="anchor" id="a8f8af953ea026f6f3c72b349f0ff9706"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ecdsa_lookup </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="../../df/d3d/structConnectionNode.html">ConnectionNode</a> *&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td>
+          <td class="paramname"><em>brn</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -156,7 +159,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 28 2017 15:27:37 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 28 2017 21:10:47 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
