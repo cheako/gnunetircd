@@ -103,6 +103,58 @@ void mesh_continue_writing(void *cls) {
 static int MessageCallback(void *cls, struct GNUNET_MESH_Channel *channel,
 		void **channel_ctx, const struct GNUNET_MessageHeader *message) {
 	struct MeshClient *sc = *channel_ctx;
+	struct BaseRoutingNode *brn = &sc->base;
+	if (message->type != htons(6667))
+		return GNUNET_OK;
+
+	uint16_t mlen;
+	mlen = ntohs(message->size) - sizeof(struct GNUNET_MessageHeader);
+
+	const struct {
+		struct GNUNET_MessageHeader m;
+		char d[];
+	}*data = (void *) message;
+
+	char *buf = GNUNET_malloc(mlen + 1);
+	memcpy(buf, data->d, mlen);
+
+	char *str1, *saveptr1, *ntoken, *token;
+	for (str1 = buf;; str1 = NULL ) {
+		ntoken = strtok_r(str1, "\r", &saveptr1);
+		if (saveptr1[0] == '\n')
+			saveptr1++;
+		if (str1 == NULL ) {
+			if (strlen(token) != 0 && (ntoken != NULL )) {
+				char *str2, *saveptr2, *subtoken, **argv;
+				argv = GNUNET_malloc(0);
+				int argc = 0;
+
+				for (str2 = token;; str2 = NULL ) {
+					subtoken = strtok_r(str2, " ", &saveptr2);
+					if (subtoken == NULL )
+						break;
+					argv = GNUNET_realloc(argv, sizeof(void*) * (argc + 1));
+					argv[argc++] = subtoken;
+					if (saveptr2[0] == ':') {
+						argv = GNUNET_realloc(argv, sizeof(void*) * (argc + 1));
+						argv[argc++] = saveptr2;
+						break;
+					}
+				}
+				CommandFunc f;
+				f = get_command_function(brn->commands, argv[1]);
+				if (!f) {
+					routing_send(brn, routing_get(brn, brn->name),
+							":gnunetircd 421 %s %s :Unknown command.\r\n");
+				} else
+					f(brn, --argc, argv);
+				GNUNET_free(argv);
+			}
+		}
+		token = ntoken;
+	}
+	GNUNET_free(buf);
+	continue_reading(sc);
 	return GNUNET_OK;
 }
 
