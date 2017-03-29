@@ -82,17 +82,17 @@ Building interface member list...
 /home/travis/build/cheako/gnunetircd/src/ecdsa.c:44: warning: argument 'conn' of command @param is not found in the argument list of ecdsa_lookup(struct BaseRoutingNode *brn)
 /home/travis/build/cheako/gnunetircd/src/ecdsa.c:44: warning: The following parameters of ecdsa_lookup(struct BaseRoutingNode *brn) are not documented:
   parameter 'brn'
-/home/travis/build/cheako/gnunetircd/src/gns.c:102: warning: argument 'c' of command @param is not found in the argument list of gns_publish(struct BaseRoutingNode *brn)
-/home/travis/build/cheako/gnunetircd/src/gns.c:102: warning: The following parameters of gns_publish(struct BaseRoutingNode *brn) are not documented:
+/home/travis/build/cheako/gnunetircd/src/gns.c:103: warning: argument 'c' of command @param is not found in the argument list of gns_publish(struct BaseRoutingNode *brn)
+/home/travis/build/cheako/gnunetircd/src/gns.c:103: warning: The following parameters of gns_publish(struct BaseRoutingNode *brn) are not documented:
   parameter 'brn'
-/home/travis/build/cheako/gnunetircd/src/gns.c:102: warning: argument 'c' of command @param is not found in the argument list of gns_publish(struct BaseRoutingNode *brn)
-/home/travis/build/cheako/gnunetircd/src/gns.c:102: warning: The following parameters of gns_publish(struct BaseRoutingNode *brn) are not documented:
+/home/travis/build/cheako/gnunetircd/src/gns.c:103: warning: argument 'c' of command @param is not found in the argument list of gns_publish(struct BaseRoutingNode *brn)
+/home/travis/build/cheako/gnunetircd/src/gns.c:103: warning: The following parameters of gns_publish(struct BaseRoutingNode *brn) are not documented:
   parameter 'brn'
-/home/travis/build/cheako/gnunetircd/src/routing.c:89: warning: argument 'dest' of command @param is not found in the argument list of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data)
-/home/travis/build/cheako/gnunetircd/src/routing.c:89: warning: The following parameters of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data) are not documented:
+/home/travis/build/cheako/gnunetircd/src/routing.c:91: warning: argument 'dest' of command @param is not found in the argument list of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data)
+/home/travis/build/cheako/gnunetircd/src/routing.c:91: warning: The following parameters of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data) are not documented:
   parameter 'brn'
-/home/travis/build/cheako/gnunetircd/src/routing.c:89: warning: argument 'dest' of command @param is not found in the argument list of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data)
-/home/travis/build/cheako/gnunetircd/src/routing.c:89: warning: The following parameters of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data) are not documented:
+/home/travis/build/cheako/gnunetircd/src/routing.c:91: warning: argument 'dest' of command @param is not found in the argument list of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data)
+/home/travis/build/cheako/gnunetircd/src/routing.c:91: warning: The following parameters of routing_send(struct BaseRoutingNode *reply, struct BaseRoutingNode *brn, const char *data) are not documented:
   parameter 'brn'
 Building member list...
 Searching for friends...
@@ -197,5 +197,5 @@ Generating file index...
 Generating file member index...
 Generating example index...
 finalizing index lists...
-lookup cache used 138/65536 hits=554 misses=147
+lookup cache used 138/65536 hits=555 misses=147
 finished...
