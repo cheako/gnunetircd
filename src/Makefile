@@ -1,4 +1,5 @@
 PKGCONFIGLIBS += gnunetutil
+PKGCONFIGLIBS += gnunetarm
 CFLAGS += $(shell pkg-config --cflags $(PKGCONFIGLIBS))
 LDLIBS += $(shell pkg-config --libs $(PKGCONFIGLIBS))
 
@@ -12,6 +13,9 @@ OBJS += hybrid-6/s_user.o
 
 message_commands.o: message_commands.h
 OBJS += message_commands.o
+
+arm.o: arm.h
+OBJS += arm.o
 
 routing.o: routing.h
 OBJS += routing.o
