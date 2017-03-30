@@ -17,12 +17,14 @@
 
 #include "inetd.h"
 #include "routing.h"
+#include "arm.h"
 
 static int ret = 16;
 
 static void run (void *cls, char *const *args, const char *cfgfile,
 		const struct GNUNET_CONFIGURATION_Handle *cfg) {
 
+	arm_init(cfg);
 	routing_init();
 
 	struct sockaddr_in sa;
