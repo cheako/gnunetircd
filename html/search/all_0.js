@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['base',['base',['../df/d3d/structConnectionNode.html#aaa9befe0c97489d4cf96972ac83e8949',1,'ConnectionNode::base()'],['../d5/dec/structMeshClient.html#ae3cdb292277a3998cfea4650f93e2859',1,'MeshClient::base()']]],
-  ['baseroutingnode',['BaseRoutingNode',['../d1/db7/structBaseRoutingNode.html',1,'']]],
-  ['buf',['buf',['../df/d3d/structConnectionNode.html#af6198cbfc8da8033a9ee9de52e967783',1,'ConnectionNode']]],
-  ['buflen',['buflen',['../df/d3d/structConnectionNode.html#a2731ce0456273c666f1315b3dfc79700',1,'ConnectionNode']]]
+  ['arm_2ec',['arm.c',['../de/d00/arm_8c.html',1,'']]],
+  ['arm_2eh',['arm.h',['../d2/d31/arm_8h.html',1,'']]],
+  ['arm_5finit',['arm_init',['../de/d00/arm_8c.html#a8d8f753b2e2135e1038c7a5f0e4249b5',1,'arm_init(const struct GNUNET_CONFIGURATION_Handle *cfg):&#160;arm.c'],['../d2/d31/arm_8h.html#a95d4eab7fabe5db1557b505ede025d25',1,'arm_init(const struct GNUNET_CONFIGURATION_Handle *):&#160;arm.c']]]
 ];

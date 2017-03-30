@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['continue_5fwriting',['continue_writing',['../d6/d6b/mesh_8c.html#a76247c3e7a240165f37b90fbd940dfbf',1,'continue_writing(void *cls):&#160;mesh.c'],['../d8/d3b/mesh_8h.html#a76247c3e7a240165f37b90fbd940dfbf',1,'continue_writing(void *cls):&#160;mesh.c']]]
+  ['arm_5finit',['arm_init',['../de/d00/arm_8c.html#a8d8f753b2e2135e1038c7a5f0e4249b5',1,'arm_init(const struct GNUNET_CONFIGURATION_Handle *cfg):&#160;arm.c'],['../d2/d31/arm_8h.html#a95d4eab7fabe5db1557b505ede025d25',1,'arm_init(const struct GNUNET_CONFIGURATION_Handle *):&#160;arm.c']]]
 ];
