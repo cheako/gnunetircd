@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_5ffunc',['user_func',['../df/d2f/registration__commands_8c.html#aab46107237923bacdcffe0d3ddf93d96',1,'user_func(struct BaseRoutingNode *cls, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a26936602caf46f962c304a465c95336e',1,'user_func(struct BaseRoutingNode *, int, char **):&#160;registration_commands.c']]]
+  ['quit_5ffunc',['quit_func',['../d9/db3/misc__commands_8c.html#a5c56bf5e94fefeb1863a63295dc844d9',1,'quit_func(struct BaseRoutingNode *brn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#a1709ef6e3f009a6e863bdbda8f06234f',1,'quit_func(struct BaseRoutingNode *, int, char **):&#160;misc_commands.c']]]
 ];

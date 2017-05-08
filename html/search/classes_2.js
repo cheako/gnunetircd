@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['element',['Element',['../d0/dcd/structElement.html',1,'']]]
+  ['dhtclient',['DHTClient',['../de/d49/structDHTClient.html',1,'']]],
+  ['dhtclientnode',['DHTClientNode',['../dc/db2/structDHTClient_1_1DHTClientNode.html',1,'DHTClient']]]
 ];

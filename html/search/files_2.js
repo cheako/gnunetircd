@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ecdsa_2ec',['ecdsa.c',['../dc/d09/ecdsa_8c.html',1,'']]],
-  ['ecdsa_2eh',['ecdsa.h',['../d5/d5d/ecdsa_8h.html',1,'']]]
+  ['dht_2ec',['dht.c',['../da/d9f/dht_8c.html',1,'']]],
+  ['dht_2eh',['dht.h',['../d1/dbb/dht_8h.html',1,'']]]
 ];

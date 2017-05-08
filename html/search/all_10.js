@@ -1,12 +1,14 @@
 var searchData=
 [
   ['real',['real',['../d1/db7/structBaseRoutingNode.html#a212d001183db4a6c4e2cc1471367a9c6',1,'BaseRoutingNode']]],
+  ['record_5fnot_5ffound',['record_not_found',['../da/d9f/dht_8c.html#a13d8ba65c5a1d5df30936424efb1d0fa',1,'dht.c']]],
   ['registration_5fcommands',['registration_commands',['../d7/d37/command__relay_8c.html#ad0a2602e66329a99ec94f2740be41602',1,'registration_commands():&#160;command_relay.c'],['../de/d98/command__relay_8h.html#ad0a2602e66329a99ec94f2740be41602',1,'registration_commands():&#160;command_relay.c']]],
   ['registration_5fcommands_2ec',['registration_commands.c',['../df/d2f/registration__commands_8c.html',1,'']]],
   ['registration_5fcommands_2eh',['registration_commands.h',['../dd/db4/registration__commands_8h.html',1,'']]],
   ['registration_5fdone_5ffunc',['registration_done_func',['../df/d2f/registration__commands_8c.html#a7ac0f2cd1a4a060e29d1aa27e77080e5',1,'registration_done_func(struct BaseRoutingNode *brn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a09e79be31db55d05ee50604cfd10c7ec',1,'registration_done_func(struct BaseRoutingNode *, int, char **):&#160;registration_commands.c']]],
   ['remote',['remote',['../d5/dec/structMeshClient.html#aaa172fc7bfadb1cb486c8e15af46dceb',1,'MeshClient']]],
   ['reply',['reply',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html#a5984ddf4b6804065ee299da23df4ecd9',1,'BaseRoutingNode::WriteQueueItem']]],
+  ['req',['req',['../de/d49/structDHTClient.html#a7136e0c4804c8c75a6991245df4b919a',1,'DHTClient']]],
   ['rnick_5ffunc',['rnick_func',['../df/d2f/registration__commands_8c.html#a0d6c820fd2b6672cba03b3b46ed95c14',1,'rnick_func(struct BaseRoutingNode *cls, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a88dbc53edecc387d805f0a0bb8e30aad',1,'rnick_func(struct BaseRoutingNode *, int, char **):&#160;registration_commands.c']]],
   ['routing_2ec',['routing.c',['../d7/d32/routing_8c.html',1,'']]],
   ['routing_2eh',['routing.h',['../d7/d98/routing_8h.html',1,'']]],

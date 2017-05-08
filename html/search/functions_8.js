@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pass_5ffunc',['pass_func',['../df/d2f/registration__commands_8c.html#a3cf4b3c25e632a0b514a70bca85b57d3',1,'pass_func(struct BaseRoutingNode *cls, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#afa86f6bc25d8e1fc81c6a4e57be37055',1,'pass_func(struct BaseRoutingNode *, int, char **):&#160;registration_commands.c']]],
-  ['ping_5ffunc',['ping_func',['../d9/db3/misc__commands_8c.html#a8390b695deda5ec4f68e95fcd5043df2',1,'ping_func(struct BaseRoutingNode *brn, int argc, char **argv):&#160;misc_commands.c'],['../de/d92/misc__commands_8h.html#abd5e03f9823687c7f2d2f22a57fe9504',1,'ping_func(struct BaseRoutingNode *, int, char **):&#160;misc_commands.c']]],
-  ['privmsg_5ffunc',['privmsg_func',['../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee',1,'privmsg_func(struct BaseRoutingNode *brn, int argc, char **argv):&#160;message_commands.c'],['../de/d89/message__commands_8h.html#aff58f6b3e9bd997d6cf9553051db518a',1,'privmsg_func(struct BaseRoutingNode *, int, char **):&#160;message_commands.c']]]
+  ['main',['main',['../d4/d7e/gnunetircd_8c.html#ad1835a0a190dc5fe4f925bb69443c770',1,'main(int argc, char *const *argv):&#160;gnunetircd.c'],['../d6/da2/test__container__cdll_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_container_cdll.c']]],
+  ['mesh_5fconnect',['mesh_connect',['../d6/d6b/mesh_8c.html#a694723aa8b544e6b22e784c329c959c9',1,'mesh_connect(struct MeshClient *sc):&#160;mesh.c'],['../d8/d3b/mesh_8h.html#a2a7dbe23d9a818d965c37061aa5924f0',1,'mesh_connect(struct MeshClient *):&#160;mesh.c']]],
+  ['mesh_5finit',['mesh_init',['../d6/d6b/mesh_8c.html#ac7f17a91693754ca5fb9342df9c31810',1,'mesh_init(const struct GNUNET_CONFIGURATION_Handle *cfg):&#160;mesh.c'],['../d8/d3b/mesh_8h.html#a218bce41eb0027b6695b74d69e20c3bd',1,'mesh_init(const struct GNUNET_CONFIGURATION_Handle *):&#160;mesh.c']]]
 ];
