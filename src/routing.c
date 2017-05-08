@@ -19,6 +19,7 @@
 #include "inetd.h"
 #include "gns.h"
 #include "mesh.h"
+#include "dht.h"
 #include "ecdsa.h"
 #include "hybrid-6/irc_string.h"
 
@@ -28,8 +29,9 @@ static const struct {
 	enum IRCD_ROUTING_NODE_TYPE t;
 	void (*f)(void *);
 } handler[] = { { IRCD_ROUTING_NODE_INETD, &inetd_start_sending }, {
-		IRCD_ROUTING_NODE_MESH, &mesh_continue_writing }, { IRCD_ROUTING_NODE_NONE,
-		NULL } };
+		IRCD_ROUTING_NODE_MESH, &mesh_continue_writing }, {
+		IRCD_ROUTING_NODE_DHT, &dht_continue_writing }, {
+		IRCD_ROUTING_NODE_NONE, NULL } };
 
 static void routing_hash(const char *name, struct GNUNET_HashCode *result) {
 	char upper[CHANNELLEN + 1], *str;

@@ -46,6 +46,7 @@ struct client_function {
 extern const struct client_function registration_commands[];
 extern const struct client_function normal_commands[];
 extern const struct client_function inbound_mesh_commands[];
+extern const struct client_function inbound_dht_commands[];
 
 CommandFunc get_command_function(const struct client_function *, const char *);
 

@@ -32,6 +32,8 @@ void ConnectionStatusCallback(void *cls, int connected) {
 				GNUNET_TIME_UNIT_FOREVER_REL, NULL, NULL );
 		GNUNET_ARM_request_service_start(h, "mesh", GNUNET_OS_INHERIT_STD_NONE,
 				GNUNET_TIME_UNIT_FOREVER_REL, NULL, NULL );
+		GNUNET_ARM_request_service_start(h, "dht", GNUNET_OS_INHERIT_STD_NONE,
+				GNUNET_TIME_UNIT_FOREVER_REL, NULL, NULL );
 	}
 }
 

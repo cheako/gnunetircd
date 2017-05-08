@@ -15,71 +15,59 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef INETD_H_
-#define INETD_H_
+#ifndef DHT_H_
+#define DHT_H_
 
 #include <gnunet/gnunet_config.h>
 #include <gnunet/platform.h>
-#include <stdbool.h>
 #include <gnunet/gnunet_util_lib.h>
-#include "hybrid-6/ircd_defs.h"
 #include "routing.h"
 
-struct DHTChannel;
-/**
- * @brief closure for inetd
- */
-struct InetdConnection {
+struct InetdChannel;
+struct DHTClient {
 	struct BaseRoutingNode base;
-	/**
-	 * @brief incoming connection
-	 */
-	struct GNUNET_NETWORK_Handle *nhandle;
-	/**
-	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.1]
-	 */
-	char pass[PASSWDLEN + 1];
-	/**
-	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
-	 */
-	char user[USERLEN + 1];
-	/**
-	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
-	 */
-	char host[HOSTLEN + 1];
-	/**
-	 * @brief [https://tools.ietf.org/html/rfc1459#section-4.1.3]
-	 */
-	char srvr[HOSTLEN + 1];
+	int keys_cnt;
+	int join_index;
+	struct GNUNET_HashCode key;
+	struct GNUNET_DHT_GetHandle *gh;
+	struct GNUNET_CRYPTO_EddsaPublicKey pub;
+	struct GNUNET_GNS_LookupRequest *lr;
+	GNUNET_SCHEDULER_TaskIdentifier timeout_gns;
 	/**
 	 * @brief channel a connection belongs
 	 */
-	struct InetdChannel {
+	struct DHTChannel {
 		/**
 		 * @brief CDLL
 		 */
-		struct InetdChannel *next;
+		struct DHTChannel *next;
 		/**
 		 * @brief CDLL
 		 */
-		struct InetdChannel *prev;
-		struct DHTClient *client;
-		struct DHTChannel *channel;
+		struct DHTChannel *prev;
+		struct InetdConnection *connection;
+		struct InetdChannel *channel;
 	/**
 	 * @brief channels CDLL
 	 */
-	}*channels_head;
+	}*connection_head;
 	/**
-	 * @brief remaining byte(s) size
+	 * @brief nick names as strings, for new joins
 	 */
-	size_t buflen;
-	/**
-	 * @brief remaining byte(s) from input stream
-	 */
-	char *buf;
+	struct GNUNET_CONTAINER_MultiHashMap *members;
 };
 
-void inetd_start_sending(void *);
-void run_accept(void *, const struct GNUNET_SCHEDULER_TaskContext *);
+struct DHTClientNode {
+	struct GNUNET_TIME_Absolute exp;
+	struct GNUNET_DHT_PutHandle *ph;
+	bool channel_state;
+	GNUNET_SCHEDULER_TaskIdentifier republish_task;
+	const struct GNUNET_HashCode *key;
+	size_t val_size;
+	char *val;
+};
 
-#endif /* INETD_H_ */
+void dht_continue_writing(void *cls);
+void dht_init(const struct GNUNET_CONFIGURATION_Handle *);
+
+#endif /* DHT_H_ */

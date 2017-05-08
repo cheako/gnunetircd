@@ -16,8 +16,9 @@
  */
 
 #include "misc_commands.h"
-#include "message_commands.h"
 #include "registration_commands.h"
+#include "message_commands.h"
+#include "channel_commands.h"
 #include "command_relay.h"
 
 /**
@@ -42,6 +43,8 @@ const struct client_function normal_commands[] = {
 		{ "quit", quit_func },
 		{ "privmsg", privmsg_func },
 		{ "notice", privmsg_func },
+		{ "privmsg", ot_privmsg_func },
+		{ "notice", ot_privmsg_func },
 		{ NULL, NULL } };
 
 /**
@@ -52,6 +55,16 @@ const struct client_function inbound_mesh_commands[] = {
 		{ "quit", quit_func },
 		{ "privmsg", privmsg_func },
 		{ "notice", privmsg_func },
+		{ NULL, NULL } };
+
+/**
+ * @brief channel
+ */
+const struct client_function inbound_dht_commands[] = {
+		{ "join", in_join_func },
+		{ "part", in_part_func },
+		{ "privmsg", in_privmsg_func },
+		{ "notice", in_privmsg_func },
 		{ NULL, NULL } };
 
 CommandFunc get_command_function(const struct client_function *commands,

@@ -28,6 +28,8 @@
 #define GNS_OP_PRID 3
 #define GNS_OP_REPK 4
 #define GNS_OP_CHAN 5
+#define GNS_OP_HMAC 6
+#define GNS_OP_PBKY 7
 
 GNUNET_NETWORK_STRUCT_BEGIN
 /**
