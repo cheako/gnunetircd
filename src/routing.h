@@ -42,6 +42,11 @@ enum IRCD_ROUTING_NODE_TYPE {
 	 */
 	IRCD_ROUTING_NODE_MESH,
 
+	/**
+	 * @brief once we get the hmac from gns
+	 */
+	IRCD_ROUTING_NODE_DHT,
+
 };
 
 /**

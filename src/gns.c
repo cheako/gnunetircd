@@ -18,6 +18,7 @@
 #include <stdint.h>
 #include "gns.h"
 #include "mesh.h"
+#include "dht.h"
 #include <gnunet/gnunet_gnsrecord_lib.h>
 #include <gnunet/gnunet_namestore_service.h>
 #include <gnunet/gnunet_gns_service.h>
@@ -45,6 +46,7 @@ void LookupResultProcessor(void *cls, uint32_t rd_count,
 			for (int i = 0; i < nopcodes; i++) {
 				int offset = hsize + ntohs(gns->opcodes[i].offset);
 				switch (ntohs(gns->opcodes[i].code)) {
+				case GNS_OP_CHAN:
 				case GNS_OP_NICK: {
 					char *name = (void *) gns + offset;
 					if (routing_query(name) != brn) {
@@ -155,6 +157,42 @@ void gns_publish(struct BaseRoutingNode *brn) {
 		data.p = pid;
 		strncpy(data.d, brn->name, NICKLEN);
 		strncpy(data.d + namelen + 1, brn->real, REALLEN);
+
+		GNUNET_NAMESTORE_records_store(ns, key, label, 1, &data.rd, NULL,
+				NULL );
+	} else if (brn->name[0] == '#') {
+		GNUNET_NETWORK_STRUCT_BEGIN
+		struct {
+			struct GNUNET_GNSRECORD_Data rd;
+			struct IrcdGnsHeader h;
+			struct IrcdGnsOpcode o[3];
+			struct GNUNET_HashCode hc;
+			struct GNUNET_CRYPTO_EddsaPublicKey p;
+			char d[CHANNELLEN + 1];
+		} data;
+		GNUNET_NETWORK_STRUCT_END
+
+		data.rd.data = &data.h;
+		data.rd.data_size = sizeof(data.h) + sizeof(data.o);
+		data.rd.data_size += sizeof(data.p) + sizeof(data.hc) + namelen + 1;
+		data.rd.expiration_time = expire.abs_value_us;
+		data.rd.record_type = 6667;
+		data.rd.flags = GNUNET_GNSRECORD_RF_NONE;
+
+		data.h.type = 0;
+		data.h.version = 1;
+		data.h.o_count = htons(3);
+
+		data.o[0].code = htons(GNS_OP_CHAN);
+		data.o[0].offset = htons(sizeof(data.hc) + sizeof(data.p));
+		data.o[1].code = htons(GNS_OP_HMAC);
+		data.o[1].offset = htons(0);
+		data.o[2].code = htons(GNS_OP_PBKY);
+		data.o[2].offset = htons(sizeof(data.hc));
+
+		// data.hc = brn->;
+		// data.p = brn->;
+		strcpy(data.d, brn->name);
 
 		GNUNET_NAMESTORE_records_store(ns, key, label, 1, &data.rd, NULL,
 				NULL );
