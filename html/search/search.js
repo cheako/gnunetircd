@@ -15,7 +15,7 @@ var indexSectionsWithContent =
   5: "c",
   6: "i",
   7: "i",
-  8: "gi",
+  8: "dgi",
   9: "c",
   10: "dt"
 };

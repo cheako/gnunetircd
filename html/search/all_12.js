@@ -6,5 +6,5 @@ var searchData=
   ['timeout_5fgns',['timeout_gns',['../de/d49/structDHTClient.html#a12ac60fa768225f019e1af5c42a27a20',1,'DHTClient']]],
   ['timeout_5ftask',['timeout_task',['../d5/dec/structMeshClient.html#ab427df8a70ca65b9ec252c9a99a44000',1,'MeshClient']]],
   ['todo_20list',['Todo List',['../dd/da0/todo.html',1,'']]],
-  ['type',['type',['../de/d07/structIrcdGnsHeader.html#a604a93338e62b46b2b90a5fe45285eea',1,'IrcdGnsHeader::type()'],['../d1/db7/structBaseRoutingNode.html#a39d24687061cba9602492317875b023a',1,'BaseRoutingNode::type()']]]
+  ['type',['type',['../db/ddd/structIrcdDhtHeader.html#a235edd5483d4e825a7a61f16dac14286',1,'IrcdDhtHeader::type()'],['../de/d07/structIrcdGnsHeader.html#a604a93338e62b46b2b90a5fe45285eea',1,'IrcdGnsHeader::type()'],['../d1/db7/structBaseRoutingNode.html#a39d24687061cba9602492317875b023a',1,'BaseRoutingNode::type()']]]
 ];
