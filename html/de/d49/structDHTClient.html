@@ -94,17 +94,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db2/structDHTClient_1_1DHTClientNode.html">DHTClientNode</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html">DHTClientKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a3f86e53c0ea028828872a9f77f5f710f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a3f86e53c0ea028828872a9f77f5f710f">base</a></td></tr>
 <tr class="separator:a3f86e53c0ea028828872a9f77f5f710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a80bd1b5d5fd80e1d4e70436070f39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#ac9a80bd1b5d5fd80e1d4e70436070f39">head_cnt</a></td></tr>
-<tr class="separator:ac9a80bd1b5d5fd80e1d4e70436070f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ceca604afb09366a7bef650a95cbd1"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../dc/db2/structDHTClient_1_1DHTClientNode.html">DHTClient::DHTClientNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#ac5ceca604afb09366a7bef650a95cbd1">head</a></td></tr>
-<tr class="separator:ac5ceca604afb09366a7bef650a95cbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af931340489c434341e502760f048a241"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#af931340489c434341e502760f048a241">keys_cnt</a></td></tr>
+<tr class="separator:af931340489c434341e502760f048a241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2c248fec12ef379133901c7ec2ab95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a2e2c248fec12ef379133901c7ec2ab95">join_index</a></td></tr>
+<tr class="separator:a2e2c248fec12ef379133901c7ec2ab95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de5ead65469a4f050c85f59cb9a95e7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html">DHTClient::DHTClientKey</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a4de5ead65469a4f050c85f59cb9a95e7">keys</a></td></tr>
+<tr class="separator:a4de5ead65469a4f050c85f59cb9a95e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc296f657d2b408214706209ca846a42"><td class="memItemLeft" align="right" valign="top">struct GNUNET_CRYPTO_EddsaPublicKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#acc296f657d2b408214706209ca846a42">pub</a></td></tr>
 <tr class="separator:acc296f657d2b408214706209ca846a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7136e0c4804c8c75a6991245df4b919a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a7136e0c4804c8c75a6991245df4b919a">req</a></td></tr>
@@ -127,24 +129,36 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac5ceca604afb09366a7bef650a95cbd1"></a>
+<a class="anchor" id="a2e2c248fec12ef379133901c7ec2ab95"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="../../dc/db2/structDHTClient_1_1DHTClientNode.html">DHTClient::DHTClientNode</a> * DHTClient::head</td>
+          <td class="memname">int DHTClient::join_index</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac9a80bd1b5d5fd80e1d4e70436070f39"></a>
+<a class="anchor" id="a4de5ead65469a4f050c85f59cb9a95e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int DHTClient::head_cnt</td>
+          <td class="memname">struct <a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html">DHTClient::DHTClientKey</a> * DHTClient::keys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af931340489c434341e502760f048a241"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DHTClient::keys_cnt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,7 +219,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 15 2017 20:56:02 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 15 2017 21:30:22 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

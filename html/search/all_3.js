@@ -12,5 +12,5 @@ var searchData=
   ['dht_5fop_5fosig',['DHT_OP_OSIG',['../da/d9f/dht_8c.html#ac4e73e444f459375a7094c63af01e092',1,'dht.c']]],
   ['dht_5fop_5fpart',['DHT_OP_PART',['../da/d9f/dht_8c.html#a997aa50a677a292eb2e845cdc40cb747',1,'dht.c']]],
   ['dhtclient',['DHTClient',['../de/d49/structDHTClient.html',1,'']]],
-  ['dhtclientnode',['DHTClientNode',['../dc/db2/structDHTClient_1_1DHTClientNode.html',1,'DHTClient']]]
+  ['dhtclientkey',['DHTClientKey',['../d8/d1e/structDHTClient_1_1DHTClientKey.html',1,'DHTClient']]]
 ];
