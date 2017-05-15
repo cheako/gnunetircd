@@ -8,6 +8,7 @@ var searchData=
   ['registration_5fdone_5ffunc',['registration_done_func',['../df/d2f/registration__commands_8c.html#a7ac0f2cd1a4a060e29d1aa27e77080e5',1,'registration_done_func(struct BaseRoutingNode *brn, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a09e79be31db55d05ee50604cfd10c7ec',1,'registration_done_func(struct BaseRoutingNode *, int, char **):&#160;registration_commands.c']]],
   ['remote',['remote',['../d5/dec/structMeshClient.html#aaa172fc7bfadb1cb486c8e15af46dceb',1,'MeshClient']]],
   ['reply',['reply',['../df/d7a/structBaseRoutingNode_1_1WriteQueueItem.html#a5984ddf4b6804065ee299da23df4ecd9',1,'BaseRoutingNode::WriteQueueItem']]],
+  ['republish_5ftask',['republish_task',['../dc/db2/structDHTClient_1_1DHTClientNode.html#ac57c2cfa006fa42d43e00960e52632be',1,'DHTClient::DHTClientNode']]],
   ['req',['req',['../de/d49/structDHTClient.html#a7136e0c4804c8c75a6991245df4b919a',1,'DHTClient']]],
   ['rnick_5ffunc',['rnick_func',['../df/d2f/registration__commands_8c.html#a0d6c820fd2b6672cba03b3b46ed95c14',1,'rnick_func(struct BaseRoutingNode *cls, int argc, char **argv):&#160;registration_commands.c'],['../dd/db4/registration__commands_8h.html#a88dbc53edecc387d805f0a0bb8e30aad',1,'rnick_func(struct BaseRoutingNode *, int, char **):&#160;registration_commands.c']]],
   ['routing_2ec',['routing.c',['../d7/d32/routing_8c.html',1,'']]],
