@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: DHTClient::DHTClientKey Struct Reference</title>
+<title>gnunetircd - example distributed application: DHTClientNode Struct Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -80,16 +80,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="../../de/d49/structDHTClient.html">DHTClient</a></li><li class="navelem"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html">DHTClientKey</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">DHTClient::DHTClientKey Struct Reference</div>  </div>
+<div class="title">DHTClientNode Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,128 +93,100 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a77136e0f2af7fe68ae684de023814da4"><td class="memItemLeft" align="right" valign="top">struct GNUNET_HashCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#a77136e0f2af7fe68ae684de023814da4">key</a></td></tr>
-<tr class="separator:a77136e0f2af7fe68ae684de023814da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f61b49180aa98dd5976fde3706197a3"><td class="memItemLeft" align="right" valign="top">struct GNUNET_TIME_Absolute&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#a8f61b49180aa98dd5976fde3706197a3">exp</a></td></tr>
-<tr class="separator:a8f61b49180aa98dd5976fde3706197a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe09ede0817e71a005872b45340100a8"><td class="memItemLeft" align="right" valign="top">struct GNUNET_DHT_GetHandle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#afe09ede0817e71a005872b45340100a8">gh</a></td></tr>
-<tr class="separator:afe09ede0817e71a005872b45340100a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a437bf098f10c4ab1836bab4d1ee678"><td class="memItemLeft" align="right" valign="top">struct GNUNET_DHT_PutHandle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#a5a437bf098f10c4ab1836bab4d1ee678">ph</a></td></tr>
-<tr class="separator:a5a437bf098f10c4ab1836bab4d1ee678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c10ad59a6079c31d846e8b41309423"><td class="memItemLeft" align="right" valign="top">struct GNUNET_HashCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#ae8c10ad59a6079c31d846e8b41309423">val_hash</a></td></tr>
-<tr class="separator:ae8c10ad59a6079c31d846e8b41309423"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06eb4016ecc4a470fff3248d441fa225"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#a06eb4016ecc4a470fff3248d441fa225">channel_state</a></td></tr>
-<tr class="separator:a06eb4016ecc4a470fff3248d441fa225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52d3c5df1a8fb68db50fd0d598613d47"><td class="memItemLeft" align="right" valign="top">GNUNET_SCHEDULER_TaskIdentifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#a52d3c5df1a8fb68db50fd0d598613d47">republish_task</a></td></tr>
-<tr class="separator:a52d3c5df1a8fb68db50fd0d598613d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaadb5bbdf46cc0348b9259ccb0211c9d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#aaadb5bbdf46cc0348b9259ccb0211c9d">val</a></td></tr>
-<tr class="separator:aaadb5bbdf46cc0348b9259ccb0211c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75f9d77cce461c117c263dfc7fd0cebd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/structDHTClient_1_1DHTClientKey.html#a75f9d77cce461c117c263dfc7fd0cebd">val_size</a></td></tr>
-<tr class="separator:a75f9d77cce461c117c263dfc7fd0cebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66076afe2506a91f70df6117e19da190"><td class="memItemLeft" align="right" valign="top">struct GNUNET_TIME_Absolute&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#a66076afe2506a91f70df6117e19da190">exp</a></td></tr>
+<tr class="separator:a66076afe2506a91f70df6117e19da190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02366d081e0f53242505457af6376ca9"><td class="memItemLeft" align="right" valign="top">struct GNUNET_DHT_PutHandle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#a02366d081e0f53242505457af6376ca9">ph</a></td></tr>
+<tr class="separator:a02366d081e0f53242505457af6376ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd250117f30e5f44fd0e7f652a08a4d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#abd250117f30e5f44fd0e7f652a08a4d8">channel_state</a></td></tr>
+<tr class="separator:abd250117f30e5f44fd0e7f652a08a4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6e58e45fa21b05f7079e37eec170cd"><td class="memItemLeft" align="right" valign="top">GNUNET_SCHEDULER_TaskIdentifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#ada6e58e45fa21b05f7079e37eec170cd">republish_task</a></td></tr>
+<tr class="separator:ada6e58e45fa21b05f7079e37eec170cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e8421a0c0ac34f59c1cae83648e1c7"><td class="memItemLeft" align="right" valign="top">const struct GNUNET_HashCode *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#a68e8421a0c0ac34f59c1cae83648e1c7">key</a></td></tr>
+<tr class="separator:a68e8421a0c0ac34f59c1cae83648e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49386a5e2c43c9212614cafbcad3eff5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#a49386a5e2c43c9212614cafbcad3eff5">val_size</a></td></tr>
+<tr class="separator:a49386a5e2c43c9212614cafbcad3eff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8fe8d95636a1eb4a3d7a24d03fce6a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/structDHTClientNode.html#a9d8fe8d95636a1eb4a3d7a24d03fce6a">val</a></td></tr>
+<tr class="separator:a9d8fe8d95636a1eb4a3d7a24d03fce6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a06eb4016ecc4a470fff3248d441fa225"></a>
+<a class="anchor" id="abd250117f30e5f44fd0e7f652a08a4d8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool DHTClient::DHTClientKey::channel_state</td>
+          <td class="memname">bool DHTClientNode::channel_state</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a8f61b49180aa98dd5976fde3706197a3"></a>
+<a class="anchor" id="a66076afe2506a91f70df6117e19da190"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GNUNET_TIME_Absolute DHTClient::DHTClientKey::exp</td>
+          <td class="memname">struct GNUNET_TIME_Absolute DHTClientNode::exp</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="afe09ede0817e71a005872b45340100a8"></a>
+<a class="anchor" id="a68e8421a0c0ac34f59c1cae83648e1c7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GNUNET_DHT_GetHandle* DHTClient::DHTClientKey::gh</td>
+          <td class="memname">const struct GNUNET_HashCode* DHTClientNode::key</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a77136e0f2af7fe68ae684de023814da4"></a>
+<a class="anchor" id="a02366d081e0f53242505457af6376ca9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GNUNET_HashCode DHTClient::DHTClientKey::key</td>
+          <td class="memname">struct GNUNET_DHT_PutHandle* DHTClientNode::ph</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5a437bf098f10c4ab1836bab4d1ee678"></a>
+<a class="anchor" id="ada6e58e45fa21b05f7079e37eec170cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GNUNET_DHT_PutHandle* DHTClient::DHTClientKey::ph</td>
+          <td class="memname">GNUNET_SCHEDULER_TaskIdentifier DHTClientNode::republish_task</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a52d3c5df1a8fb68db50fd0d598613d47"></a>
+<a class="anchor" id="a9d8fe8d95636a1eb4a3d7a24d03fce6a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GNUNET_SCHEDULER_TaskIdentifier DHTClient::DHTClientKey::republish_task</td>
+          <td class="memname">char* DHTClientNode::val</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aaadb5bbdf46cc0348b9259ccb0211c9d"></a>
+<a class="anchor" id="a49386a5e2c43c9212614cafbcad3eff5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char* DHTClient::DHTClientKey::val</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae8c10ad59a6079c31d846e8b41309423"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct GNUNET_HashCode DHTClient::DHTClientKey::val_hash</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a75f9d77cce461c117c263dfc7fd0cebd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t DHTClient::DHTClientKey::val_size</td>
+          <td class="memname">size_t DHTClientNode::val_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +199,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 16 2017 17:30:48 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 19 2017 19:00:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

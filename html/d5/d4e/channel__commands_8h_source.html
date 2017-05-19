@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>gnunetircd - example distributed application: src/channel.h Source File</title>
+<title>gnunetircd - example distributed application: src/channel_commands.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -86,10 +86,10 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">channel.h</div>  </div>
+<div class="title">channel_commands.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d5/d7b/channel_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  gnunetircd Distributed example.</span></div>
+<a href="../../d5/d4e/channel__commands_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*  gnunetircd Distributed example.</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *  Copyright (C) 2017  Michael Mestnik &lt;cheako+github_com@mikemestnik.net&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  This program is free software: you can redistribute it and/or modify</span></div>
@@ -109,11 +109,28 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef CHANNEL_H_</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CHANNEL_H_</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CHANNEL_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d7/d98/routing_8h.html">routing.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d5/d4e/channel__commands_8h.html#ad9f3e2739b69a38d42e667cbdee8692e">in_join_func</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d5/d4e/channel__commands_8h.html#a883c8f5da8688f358a7fdcce50cc366e">in_part_func</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d5/d4e/channel__commands_8h.html#aa3d9f06bcd83fb80009ab77144f9beb0">in_privmsg_func</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d5/d4e/channel__commands_8h.html#a5bce487e36ccd7026ad9e2e0b1c90517">ot_join_func</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d5/d4e/channel__commands_8h.html#ad44db53cefc57789874a047789308ef4">ot_part_func</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d5/d4e/channel__commands_8h.html#ac4e508f7dbc464f99304d2dd79e263a0">ot_privmsg_func</a>(<span class="keyword">struct</span> <a class="code" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> **);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CHANNEL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="channel__commands_8h_html_aa3d9f06bcd83fb80009ab77144f9beb0"><div class="ttname"><a href="../../d5/d4e/channel__commands_8h.html#aa3d9f06bcd83fb80009ab77144f9beb0">in_privmsg_func</a></div><div class="ttdeci">int in_privmsg_func(struct BaseRoutingNode *, int, char **)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:86</div></div>
+<div class="ttc" id="channel__commands_8h_html_a5bce487e36ccd7026ad9e2e0b1c90517"><div class="ttname"><a href="../../d5/d4e/channel__commands_8h.html#a5bce487e36ccd7026ad9e2e0b1c90517">ot_join_func</a></div><div class="ttdeci">int ot_join_func(struct BaseRoutingNode *, int, char **)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:37</div></div>
+<div class="ttc" id="structBaseRoutingNode_html"><div class="ttname"><a href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a></div><div class="ttdoc">closure indicating path to another node </div><div class="ttdef"><b>Definition:</b> routing.h:55</div></div>
+<div class="ttc" id="routing_8h_html"><div class="ttname"><a href="../../d7/d98/routing_8h.html">routing.h</a></div></div>
+<div class="ttc" id="channel__commands_8h_html_a883c8f5da8688f358a7fdcce50cc366e"><div class="ttname"><a href="../../d5/d4e/channel__commands_8h.html#a883c8f5da8688f358a7fdcce50cc366e">in_part_func</a></div><div class="ttdeci">int in_part_func(struct BaseRoutingNode *, int, char **)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:72</div></div>
+<div class="ttc" id="channel__commands_8h_html_ad44db53cefc57789874a047789308ef4"><div class="ttname"><a href="../../d5/d4e/channel__commands_8h.html#ad44db53cefc57789874a047789308ef4">ot_part_func</a></div><div class="ttdeci">int ot_part_func(struct BaseRoutingNode *, int, char **)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:64</div></div>
+<div class="ttc" id="channel__commands_8h_html_ad9f3e2739b69a38d42e667cbdee8692e"><div class="ttname"><a href="../../d5/d4e/channel__commands_8h.html#ad9f3e2739b69a38d42e667cbdee8692e">in_join_func</a></div><div class="ttdeci">int in_join_func(struct BaseRoutingNode *, int, char **)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:57</div></div>
+<div class="ttc" id="channel__commands_8h_html_ac4e508f7dbc464f99304d2dd79e263a0"><div class="ttname"><a href="../../d5/d4e/channel__commands_8h.html#ac4e508f7dbc464f99304d2dd79e263a0">ot_privmsg_func</a></div><div class="ttdeci">int ot_privmsg_func(struct BaseRoutingNode *, int, char **)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:79</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 16 2017 17:30:48 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 19 2017 19:00:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

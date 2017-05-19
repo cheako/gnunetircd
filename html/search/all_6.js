@@ -1,7 +1,7 @@
 var searchData=
 [
   ['get_5fcommand_5ffunction',['get_command_function',['../d7/d37/command__relay_8c.html#a4acb87090cef36a855c24edc96d0709e',1,'get_command_function(const struct client_function *commands, const char *cmd):&#160;command_relay.c'],['../de/d98/command__relay_8h.html#a326c1654e51aa69243fbfac50a8b34f9',1,'get_command_function(const struct client_function *, const char *):&#160;command_relay.c']]],
-  ['gh',['gh',['../d8/d1e/structDHTClient_1_1DHTClientKey.html#afe09ede0817e71a005872b45340100a8',1,'DHTClient::DHTClientKey']]],
+  ['gh',['gh',['../de/d49/structDHTClient.html#af97508ad7b342ef5cca8c178954b205f',1,'DHTClient']]],
   ['gns_2ec',['gns.c',['../d7/da7/gns_8c.html',1,'']]],
   ['gns_2eh',['gns.h',['../d0/d51/gns_8h.html',1,'']]],
   ['gns_5finit',['gns_init',['../d7/da7/gns_8c.html#ad10fa2a06c05db86e92b026750105d95',1,'gns_init(const struct GNUNET_CONFIGURATION_Handle *cfg):&#160;gns.c'],['../d0/d51/gns_8h.html#a133f9d9e91c14362b029f8d025a58b73',1,'gns_init(const struct GNUNET_CONFIGURATION_Handle *):&#160;gns.c']]],

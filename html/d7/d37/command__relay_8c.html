@@ -93,8 +93,9 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../de/d92/misc__commands_8h_source.html">misc_commands.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="../../de/d89/message__commands_8h_source.html">message_commands.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../dd/db4/registration__commands_8h_source.html">registration_commands.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../de/d89/message__commands_8h_source.html">message_commands.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="../../d5/d4e/channel__commands_8h_source.html">channel_commands.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d98/command__relay_8h_source.html">command_relay.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -111,8 +112,11 @@ Variables</h2></td></tr>
 <tr class="memdesc:a92cb1c5b582c9524479c1b3509680642"><td class="mdescLeft">&#160;</td><td class="mdescRight">regular  <a href="#a92cb1c5b582c9524479c1b3509680642">More...</a><br/></td></tr>
 <tr class="separator:a92cb1c5b582c9524479c1b3509680642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9b05fd186f03539ee040dbd4fbd7bd"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d37/command__relay_8c.html#afd9b05fd186f03539ee040dbd4fbd7bd">inbound_mesh_commands</a> []</td></tr>
-<tr class="memdesc:afd9b05fd186f03539ee040dbd4fbd7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">registration  <a href="#afd9b05fd186f03539ee040dbd4fbd7bd">More...</a><br/></td></tr>
+<tr class="memdesc:afd9b05fd186f03539ee040dbd4fbd7bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">incoming  <a href="#afd9b05fd186f03539ee040dbd4fbd7bd">More...</a><br/></td></tr>
 <tr class="separator:afd9b05fd186f03539ee040dbd4fbd7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4b2e3a6025da26b8a144f735020bc2"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d37/command__relay_8c.html#aad4b2e3a6025da26b8a144f735020bc2">inbound_dht_commands</a> []</td></tr>
+<tr class="memdesc:aad4b2e3a6025da26b8a144f735020bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">channel  <a href="#aad4b2e3a6025da26b8a144f735020bc2">More...</a><br/></td></tr>
+<tr class="separator:aad4b2e3a6025da26b8a144f735020bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a4acb87090cef36a855c24edc96d0709e"></a>
@@ -142,6 +146,29 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aad4b2e3a6025da26b8a144f735020bc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="../../d3/d29/structclient__function.html">client_function</a> inbound_dht_commands[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">        { <span class="stringliteral">&quot;join&quot;</span>, <a class="code" href="../../dd/d13/channel__commands_8c.html#a61f89386d45029becfb72f634d419cad">in_join_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;part&quot;</span>, <a class="code" href="../../dd/d13/channel__commands_8c.html#a12c30c185cfa48eca7913c0689d36578">in_part_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;privmsg&quot;</span>, <a class="code" href="../../dd/d13/channel__commands_8c.html#a7f2e80a35ab1941837bdc96e81278fbd">in_privmsg_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;notice&quot;</span>, <a class="code" href="../../dd/d13/channel__commands_8c.html#a7f2e80a35ab1941837bdc96e81278fbd">in_privmsg_func</a> },</div>
+<div class="line">        { NULL, NULL } }</div>
+<div class="ttc" id="channel__commands_8c_html_a61f89386d45029becfb72f634d419cad"><div class="ttname"><a href="../../dd/d13/channel__commands_8c.html#a61f89386d45029becfb72f634d419cad">in_join_func</a></div><div class="ttdeci">int in_join_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:57</div></div>
+<div class="ttc" id="channel__commands_8c_html_a7f2e80a35ab1941837bdc96e81278fbd"><div class="ttname"><a href="../../dd/d13/channel__commands_8c.html#a7f2e80a35ab1941837bdc96e81278fbd">in_privmsg_func</a></div><div class="ttdeci">int in_privmsg_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:86</div></div>
+<div class="ttc" id="channel__commands_8c_html_a12c30c185cfa48eca7913c0689d36578"><div class="ttname"><a href="../../dd/d13/channel__commands_8c.html#a12c30c185cfa48eca7913c0689d36578">in_part_func</a></div><div class="ttdeci">int in_part_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:72</div></div>
+</div><!-- fragment -->
+<p>channel </p>
+
+</div>
+</div>
 <a class="anchor" id="afd9b05fd186f03539ee040dbd4fbd7bd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +188,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="misc__commands_8c_html_a5c56bf5e94fefeb1863a63295dc844d9"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a5c56bf5e94fefeb1863a63295dc844d9">quit_func</a></div><div class="ttdeci">int quit_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:52</div></div>
 <div class="ttc" id="message__commands_8c_html_a5cdba7f7761e7fc931df1240587713ee"><div class="ttname"><a href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a></div><div class="ttdeci">int privmsg_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.4.1] </div><div class="ttdef"><b>Definition:</b> message_commands.c:29</div></div>
 </div><!-- fragment -->
-<p>registration </p>
+<p>incoming </p>
 
 </div>
 </div>
@@ -182,9 +209,12 @@ Variables</h2></td></tr>
 <div class="line">        { <span class="stringliteral">&quot;quit&quot;</span>, <a class="code" href="../../d9/db3/misc__commands_8c.html#a5c56bf5e94fefeb1863a63295dc844d9">quit_func</a> },</div>
 <div class="line">        { <span class="stringliteral">&quot;privmsg&quot;</span>, <a class="code" href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a> },</div>
 <div class="line">        { <span class="stringliteral">&quot;notice&quot;</span>, <a class="code" href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;privmsg&quot;</span>, <a class="code" href="../../dd/d13/channel__commands_8c.html#aaec2a151babc786ab9aacd6f0eee551c">ot_privmsg_func</a> },</div>
+<div class="line">        { <span class="stringliteral">&quot;notice&quot;</span>, <a class="code" href="../../dd/d13/channel__commands_8c.html#aaec2a151babc786ab9aacd6f0eee551c">ot_privmsg_func</a> },</div>
 <div class="line">        { NULL, NULL } }</div>
 <div class="ttc" id="registration__commands_8c_html_a7ac0f2cd1a4a060e29d1aa27e77080e5"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#a7ac0f2cd1a4a060e29d1aa27e77080e5">registration_done_func</a></div><div class="ttdeci">int registration_done_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">you may not reregister </div><div class="ttdef"><b>Definition:</b> registration_commands.c:37</div></div>
 <div class="ttc" id="misc__commands_8c_html_a8390b695deda5ec4f68e95fcd5043df2"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a8390b695deda5ec4f68e95fcd5043df2">ping_func</a></div><div class="ttdeci">int ping_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.6.2] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:23</div></div>
+<div class="ttc" id="channel__commands_8c_html_aaec2a151babc786ab9aacd6f0eee551c"><div class="ttname"><a href="../../dd/d13/channel__commands_8c.html#aaec2a151babc786ab9aacd6f0eee551c">ot_privmsg_func</a></div><div class="ttdeci">int ot_privmsg_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> channel_commands.c:79</div></div>
 <div class="ttc" id="registration__commands_8c_html_ae7877ca3cdf1e19495ef3c331d08c554"><div class="ttname"><a href="../../df/d2f/registration__commands_8c.html#ae7877ca3cdf1e19495ef3c331d08c554">nick_func</a></div><div class="ttdeci">int nick_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.2] </div><div class="ttdef"><b>Definition:</b> registration_commands.c:64</div></div>
 <div class="ttc" id="misc__commands_8c_html_a5c56bf5e94fefeb1863a63295dc844d9"><div class="ttname"><a href="../../d9/db3/misc__commands_8c.html#a5c56bf5e94fefeb1863a63295dc844d9">quit_func</a></div><div class="ttdeci">int quit_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.1.6] </div><div class="ttdef"><b>Definition:</b> misc_commands.c:52</div></div>
 <div class="ttc" id="message__commands_8c_html_a5cdba7f7761e7fc931df1240587713ee"><div class="ttname"><a href="../../de/d63/message__commands_8c.html#a5cdba7f7761e7fc931df1240587713ee">privmsg_func</a></div><div class="ttdeci">int privmsg_func(struct BaseRoutingNode *brn, int argc, char **argv)</div><div class="ttdoc">[https://tools.ietf.org/html/rfc1459#section-4.4.1] </div><div class="ttdef"><b>Definition:</b> message_commands.c:29</div></div>
@@ -222,7 +252,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 16 2017 17:30:48 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 19 2017 19:00:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

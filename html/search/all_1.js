@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['base',['base',['../de/d49/structDHTClient.html#a3f86e53c0ea028828872a9f77f5f710f',1,'DHTClient::base()'],['../df/d3d/structConnectionNode.html#aaa9befe0c97489d4cf96972ac83e8949',1,'ConnectionNode::base()'],['../d5/dec/structMeshClient.html#ae3cdb292277a3998cfea4650f93e2859',1,'MeshClient::base()']]],
+  ['base',['base',['../de/d49/structDHTClient.html#a3f86e53c0ea028828872a9f77f5f710f',1,'DHTClient::base()'],['../d4/d72/structInetdConnection.html#a7e540bc5e59fb3351b5fc9f99d91e664',1,'InetdConnection::base()'],['../d5/dec/structMeshClient.html#ae3cdb292277a3998cfea4650f93e2859',1,'MeshClient::base()']]],
   ['baseroutingnode',['BaseRoutingNode',['../d1/db7/structBaseRoutingNode.html',1,'']]],
-  ['buf',['buf',['../df/d3d/structConnectionNode.html#af6198cbfc8da8033a9ee9de52e967783',1,'ConnectionNode']]],
-  ['buflen',['buflen',['../df/d3d/structConnectionNode.html#a2731ce0456273c666f1315b3dfc79700',1,'ConnectionNode']]]
+  ['buf',['buf',['../d4/d72/structInetdConnection.html#a98cc284ae563b287f461c63d398bfcfa',1,'InetdConnection']]],
+  ['buflen',['buflen',['../d4/d72/structInetdConnection.html#ab9fc886d8b9a4dd1ba3935a55d79014a',1,'InetdConnection']]]
 ];
