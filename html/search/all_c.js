@@ -1,6 +1,8 @@
 var searchData=
 [
   ['main',['main',['../d4/d7e/gnunetircd_8c.html#ad1835a0a190dc5fe4f925bb69443c770',1,'main(int argc, char *const *argv):&#160;gnunetircd.c'],['../d6/da2/test__container__cdll_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;test_container_cdll.c']]],
+  ['member_5fadd',['member_add',['../dd/d13/channel__commands_8c.html#a8ef305e696c9478277113d61603465e6',1,'channel_commands.c']]],
+  ['members',['members',['../de/d49/structDHTClient.html#a018596ab53453f98c78141ac9870fea1',1,'DHTClient']]],
   ['mesh_2ec',['mesh.c',['../d6/d6b/mesh_8c.html',1,'']]],
   ['mesh_2eh',['mesh.h',['../d8/d3b/mesh_8h.html',1,'']]],
   ['mesh_5fconnect',['mesh_connect',['../d6/d6b/mesh_8c.html#a694723aa8b544e6b22e784c329c959c9',1,'mesh_connect(struct MeshClient *sc):&#160;mesh.c'],['../d8/d3b/mesh_8h.html#a2a7dbe23d9a818d965c37061aa5924f0',1,'mesh_connect(struct MeshClient *):&#160;mesh.c']]],

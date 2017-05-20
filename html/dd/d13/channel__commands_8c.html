@@ -94,11 +94,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d0/d08/gnunet__container__lib_8h_source.html">gnunet_container_lib.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d5/d4e/channel__commands_8h_source.html">channel_commands.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../de/d89/message__commands_8h_source.html">message_commands.h</a>&quot;</code><br/>
+<code>#include &quot;hybrid-6/irc_string.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../db/d86/inetd_8h_source.html">inetd.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="../../d1/dbb/dht_8h_source.html">dht.h</a>&quot;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aaf1ce2595feac1bc976df17aba4015e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d13/channel__commands_8c.html#aaf1ce2595feac1bc976df17aba4015e9">it_strcmp</a> (void *cls, const struct GNUNET_HashCode *key, void *value)</td></tr>
+<tr class="separator:aaf1ce2595feac1bc976df17aba4015e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef305e696c9478277113d61603465e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d13/channel__commands_8c.html#a8ef305e696c9478277113d61603465e6">member_add</a> (struct <a class="el" href="../../de/d49/structDHTClient.html">DHTClient</a> *d, char *name)</td></tr>
+<tr class="separator:a8ef305e696c9478277113d61603465e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fda9cf8ddb0c7bbb1b2ac698fb9a40b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d13/channel__commands_8c.html#a7fda9cf8ddb0c7bbb1b2ac698fb9a40b">connect_inetd2dht</a> (struct <a class="el" href="../../d4/d72/structInetdConnection.html">InetdConnection</a> *c, struct <a class="el" href="../../de/d49/structDHTClient.html">DHTClient</a> *d)</td></tr>
 <tr class="separator:a7fda9cf8ddb0c7bbb1b2ac698fb9a40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbe5220e6eef322c3b331e55c97e0a4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d13/channel__commands_8c.html#afbe5220e6eef322c3b331e55c97e0a4e">ot_join_func</a> (struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> *brn, int argc, char **argv)</td></tr>
@@ -237,6 +242,64 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaf1ce2595feac1bc976df17aba4015e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int it_strcmp </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct GNUNET_HashCode *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ef305e696c9478277113d61603465e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void member_add </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="../../de/d49/structDHTClient.html">DHTClient</a> *&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="afbe5220e6eef322c3b331e55c97e0a4e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +399,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 19 2017 19:00:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 20 2017 21:40:04 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

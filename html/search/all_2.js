@@ -7,7 +7,6 @@ var searchData=
   ['channels_5fhead',['channels_head',['../d4/d72/structInetdConnection.html#a4a58550b5a39bb2f1951d05ea30c719a',1,'InetdConnection']]],
   ['client',['client',['../d2/d32/structInetdConnection_1_1InetdChannel.html#a203fe7d05f399bce9e3d5723b353b7e1',1,'InetdConnection::InetdChannel']]],
   ['client_5ffunction',['client_function',['../d3/d29/structclient__function.html',1,'']]],
-  ['client_5ftable',['client_table',['../de/d49/structDHTClient.html#a7ce4bd38fab68f11e31baaba236b19a8',1,'DHTClient']]],
   ['command_5frelay_2ec',['command_relay.c',['../d7/d37/command__relay_8c.html',1,'']]],
   ['command_5frelay_2eh',['command_relay.h',['../de/d98/command__relay_8h.html',1,'']]],
   ['commandfunc',['CommandFunc',['../de/d98/command__relay_8h.html#a22770777426bdb35f03aa78febe83a6b',1,'command_relay.h']]],

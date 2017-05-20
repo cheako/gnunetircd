@@ -106,24 +106,22 @@ Data Fields</h2></td></tr>
 <tr class="separator:af931340489c434341e502760f048a241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e2c248fec12ef379133901c7ec2ab95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a2e2c248fec12ef379133901c7ec2ab95">join_index</a></td></tr>
 <tr class="separator:a2e2c248fec12ef379133901c7ec2ab95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9feb3d52b94db96e04003392462e098"><td class="memItemLeft" align="right" valign="top">struct <br class="typebreak"/>
-GNUNET_CONTAINER_MultiHashMap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#ac9feb3d52b94db96e04003392462e098">node_table</a></td></tr>
-<tr class="separator:ac9feb3d52b94db96e04003392462e098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab38522b40f9a1b6960a2391e0acce5e5"><td class="memItemLeft" align="right" valign="top">struct GNUNET_HashCode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#ab38522b40f9a1b6960a2391e0acce5e5">key</a></td></tr>
 <tr class="separator:ab38522b40f9a1b6960a2391e0acce5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af97508ad7b342ef5cca8c178954b205f"><td class="memItemLeft" align="right" valign="top">struct GNUNET_DHT_GetHandle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#af97508ad7b342ef5cca8c178954b205f">gh</a></td></tr>
 <tr class="separator:af97508ad7b342ef5cca8c178954b205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc296f657d2b408214706209ca846a42"><td class="memItemLeft" align="right" valign="top">struct GNUNET_CRYPTO_EddsaPublicKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#acc296f657d2b408214706209ca846a42">pub</a></td></tr>
 <tr class="separator:acc296f657d2b408214706209ca846a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce4bd38fab68f11e31baaba236b19a8"><td class="memItemLeft" align="right" valign="top">struct <br class="typebreak"/>
-GNUNET_CONTAINER_MultiHashMap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a7ce4bd38fab68f11e31baaba236b19a8">client_table</a></td></tr>
-<tr class="separator:a7ce4bd38fab68f11e31baaba236b19a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e62e646eae9f2ca396d64716eb1f7a"><td class="memItemLeft" align="right" valign="top">struct GNUNET_GNS_LookupRequest *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a47e62e646eae9f2ca396d64716eb1f7a">lr</a></td></tr>
 <tr class="separator:a47e62e646eae9f2ca396d64716eb1f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12ac60fa768225f019e1af5c42a27a20"><td class="memItemLeft" align="right" valign="top">GNUNET_SCHEDULER_TaskIdentifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a12ac60fa768225f019e1af5c42a27a20">timeout_gns</a></td></tr>
 <tr class="separator:a12ac60fa768225f019e1af5c42a27a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ff58dcca3cd3ecde9fb5d0cd4e9f72"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../dd/d0e/structDHTClient_1_1DHTChannel.html">DHTClient::DHTChannel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#ac2ff58dcca3cd3ecde9fb5d0cd4e9f72">connection_head</a></td></tr>
 <tr class="separator:ac2ff58dcca3cd3ecde9fb5d0cd4e9f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018596ab53453f98c78141ac9870fea1"><td class="memItemLeft" align="right" valign="top">struct <br class="typebreak"/>
+GNUNET_CONTAINER_MultiHashMap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d49/structDHTClient.html#a018596ab53453f98c78141ac9870fea1">members</a></td></tr>
+<tr class="memdesc:a018596ab53453f98c78141ac9870fea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">nick names as strings, for new joins  <a href="#a018596ab53453f98c78141ac9870fea1">More...</a><br/></td></tr>
+<tr class="separator:a018596ab53453f98c78141ac9870fea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a3f86e53c0ea028828872a9f77f5f710f"></a>
@@ -132,18 +130,6 @@ GNUNET_CONTAINER_MultiHashMap *&#160;</td><td class="memItemRight" valign="botto
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="../../d1/db7/structBaseRoutingNode.html">BaseRoutingNode</a> DHTClient::base</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7ce4bd38fab68f11e31baaba236b19a8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct GNUNET_CONTAINER_MultiHashMap* DHTClient::client_table</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -222,15 +208,17 @@ GNUNET_CONTAINER_MultiHashMap *&#160;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
-<a class="anchor" id="ac9feb3d52b94db96e04003392462e098"></a>
+<a class="anchor" id="a018596ab53453f98c78141ac9870fea1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct GNUNET_CONTAINER_MultiHashMap* DHTClient::node_table</td>
+          <td class="memname">struct GNUNET_CONTAINER_MultiHashMap* DHTClient::members</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>nick names as strings, for new joins </p>
 
 </div>
 </div>
@@ -264,7 +252,7 @@ GNUNET_CONTAINER_MultiHashMap *&#160;</td><td class="memItemRight" valign="botto
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 19 2017 19:00:23 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 20 2017 21:40:04 for gnunetircd - example distributed application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
